@@ -1,0 +1,49 @@
+uxvt*geometry:                53x20
+
+urxvt*font:xft:Source Code Pro:pixelsize=13:antialias=true
+urxvt*boldFont:xft:Source Code Pro:pixelsize=13:antialias=true
+
+urxvt*depth:                32
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
+urxvt*foreground:            [100]#ffffff
+urxvt*borderless: 1
+urxvt*scrollBar:            false
+urxvt*scrollBar_right:      false
+urxvt*saveLines:  5000
+urxvt*tintColor: grey 
+urxvt*shading: 40 
+urxvt*termName:    rxvt-256color
+
+#urxvt*background: #262729
+#urxvt*foreground: #f8f8f2
+! Black
+urxvt*color0:  #1a2122
+urxvt*color8:  #555555
+! Red
+urxvt*color1:  #f92671
+urxvt*color9:  #ff669d
+! Green
+urxvt*color2:  #a6e22e
+urxvt*color10: #beed5f
+! Yellow
+urxvt*color3:  #fd971f
+urxvt*color11: #e6db74
+! Blue
+urxvt*color4:  #1692d0
+urxvt*color12: #66d9ef
+! Magenta
+urxvt*color5:  #9e6ffe
+urxvt*color13: #df92f6
+! Cyan
+urxvt*color6:  #89b6e2
+urxvt*color14: #46a4ff
+! White
+urxvt*color7:  #ffffff
+urxvt*color15: #ffffff
+
+URxvt.perl-ext-common:  default,matcher,vtwheel
+URxvt.url-launcher:      /usr/bin/chromium
+URxvt.matcher.button:   1
+
+
