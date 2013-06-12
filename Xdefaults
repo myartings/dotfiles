@@ -13,6 +13,9 @@ urxvt*saveLines:       5000
 urxvt*termName:        rxvt-256color
 urxvt.iso14755:        false
 
+! -- Cursor -- !
+Xcursor.theme: X-BLACK_2
+
 ! -- Fonts settings -- !
 Xft.autohint:  0
 Xft.hintstyle: hintslight
@@ -53,11 +56,11 @@ urxvt*color14: #46a4ff
 urxvt*color7:  #ffffff
 urxvt*color15: #ffffff
 
-! -- Misc -- !
-URxvt.perl-ext-common:        default,matcher,clipboard
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.url-launcher:           /usr/bin/chromium
-URxvt.matcher.button:         1
-Xcursor.theme: X-BLACK_2
+! -- Extension -- !
+URxvt.perl-ext-common:     default,clipboard,url-select,keyboard-select
+URxvt.keysym.M-c:          perl:clipboard:copy
+URxvt.keysym.M-v:          perl:clipboard:paste
+URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
+URxvt.url-select.launcher: chromium
 
 
