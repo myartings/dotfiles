@@ -58,6 +58,6 @@ URxvt.perl-ext-common:        default,matcher,clipboard
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.url-launcher:           /usr/bin/chromium
 URxvt.matcher.button:         1
-Xcursor.theme: Adwaita
+Xcursor.theme: X-BLACK_2
 
 
