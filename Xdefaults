@@ -1,22 +1,33 @@
-uxvt*geometry:                53x20
+! file: .Xdefaults
+! author: serdotlinecho 
+! https://github.com/serdotlinecho/dotfiles/blob/master/Xdefaults
 
-urxvt*font:xft:Source Code Pro:pixelsize=13:antialias=true
-urxvt*boldFont:xft:Source Code Pro:pixelsize=13:antialias=true
+! -- Urxvt -- !
+urxvt*depth:           32
+urxvt*borderless:      1
+urxvt*scrollBar:       false
+urxvt*scrollBar_right: false
+urxvt*saveLines:       5000
+!urxvt*tintColor:       grey 
+!urxvt*shading:         40 
+urxvt*termName:        rxvt-256color
+URxvt.iso14755:        false
 
-urxvt*depth:                32
-urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0200/c800
-urxvt*foreground:            [100]#ffffff
-urxvt*borderless: 1
-urxvt*scrollBar:            false
-urxvt*scrollBar_right:      false
-urxvt*saveLines:  5000
-urxvt*tintColor: grey 
-urxvt*shading: 40 
-urxvt*termName:    rxvt-256color
+! -- Fonts settings -- !
+Xft.autohint:  0
+Xft.hintstyle: hintslight
+Xft.hinting:   1
+Xft.antialias: 1
+Xft.dpi:       96
+Xft.rgba:      rgb
 
-#urxvt*background: #262729
-#urxvt*foreground: #f8f8f2
+! -- Fonts -- !
+urxvt*font:xft:source code pro:medium:size=10
+urxvt*boldFont:xft:source code pro:medium:size=10
+
+! -- Colour -- !
+urxvt*background: #000000
+urxvt*foreground: #ffffff
 ! Black
 urxvt*color0:  #1a2122
 urxvt*color8:  #555555
@@ -42,8 +53,11 @@ urxvt*color14: #46a4ff
 urxvt*color7:  #ffffff
 urxvt*color15: #ffffff
 
-URxvt.perl-ext-common:  default,matcher,vtwheel
-URxvt.url-launcher:      /usr/bin/chromium
-URxvt.matcher.button:   1
+! -- Extensions -- !
+URxvt.perl-ext-common:        default,matcher,clipboard
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.url-launcher:           /usr/bin/chromium
+URxvt.matcher.button:         1
+
 
 
