@@ -1,11 +1,11 @@
 # My i3 config
 # Please see http://i3wm.org/docs/userguide.html for a complete reference
 
-# default mod
+# Use Windows key as Mod
 set $mod Mod4
 
 # window style
-new_window pixel 2
+new_window pixel 1
 
 # wallpaper
 exec --no-startup-id feh --bg-scale /home/serdotlinecho/Pictures/seria-lunar-melodies.png
