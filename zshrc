@@ -11,6 +11,8 @@ ZSH_THEME="nicoulaj"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tmuxrc="vim ~/.tmux.conf"
+alias cp="acp -g"
+alias mv="amv -g"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -49,8 +51,8 @@ source $ZSH/oh-my-zsh.sh
 #
 # Start tmux on every shell login
 # If not running interactively, do not do anything
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+#[[ $- != *i* ]] && return
+#[[ -z "$TMUX" ]] && exec tmux
 
 
 
