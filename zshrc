@@ -13,6 +13,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tmuxrc="vim ~/.tmux.conf"
 alias cp="acp -g"
 alias mv="amv -g"
+alias scb="sudo setpci -s 00:02.0 F4.B=70"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
