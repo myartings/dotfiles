@@ -1,16 +1,14 @@
 ! file: .Xdefaults
 ! author: serdotlinecho 
-! https://github.com/serdotlinecho/dotfiles/blob/master/Xdefaults
 
 ! -- Urxvt -- !
-urxvt*depth:           32
 urxvt*borderless:      1
 urxvt*scrollBar:       false
 urxvt*scrollBar_right: false
 urxvt*saveLines:       5000
 !urxvt*tintColor:       grey 
 !urxvt*shading:         40 
-urxvt*termName:        rxvt-256color
+urxvt*termName:        rxvt
 urxvt.iso14755:        false
 
 ! -- Cursor -- !
