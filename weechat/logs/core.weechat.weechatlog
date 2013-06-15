@@ -1,0 +1,134 @@
+2013-06-15 15:35:01		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 15:35:08		[core]
+2013-06-15 15:35:08		  away    color   debug   help    key     mute    quit    save    upgrade wait   
+2013-06-15 15:35:08		  bar     command eval    history layout  plugin  reload  set     uptime  window 
+2013-06-15 15:35:08		  buffer  cursor  filter  input   mouse   proxy   repeat  unset   version
+2013-06-15 15:35:08		[python]
+2013-06-15 15:35:08		  python
+2013-06-15 15:35:08		[rmodifier]
+2013-06-15 15:35:08		  rmodifier
+2013-06-15 15:35:08		[relay]
+2013-06-15 15:35:08		  relay
+2013-06-15 15:35:08		[xfer]
+2013-06-15 15:35:08		  me   xfer
+2013-06-15 15:35:08		[perl]
+2013-06-15 15:35:08		  perl
+2013-06-15 15:35:08		[alias]
+2013-06-15 15:35:08		  AAWAY   AMSG    C       CLOSE   J       LEAVE   N       SAY     UB      V       WI     
+2013-06-15 15:35:08		  alias   ANICK   CHAT    EXIT    K       M       Q       SIGNOFF UMODE   W       WII    
+2013-06-15 15:35:08		  AME     BYE     CL      IG      KB      MUB     REDRAW  T       unalias WC      WW     
+2013-06-15 15:35:08		[irc]
+2013-06-15 15:35:08		  admin      dehalfop   invite     lusers     notice     quiet      sapart     summon     voice     
+2013-06-15 15:35:08		  allchan    deop       ison       map        notify     quote      saquit     time       wallchops 
+2013-06-15 15:35:08		  allserv    devoice    join       me         op         reconnect  server     topic      wallops   
+2013-06-15 15:35:08		  ban        die        kick       mode       oper       rehash     service    trace      who       
+2013-06-15 15:35:08		  connect    disconnect kickban    motd       part       restart    servlist   unban      whois     
+2013-06-15 15:35:08		  ctcp       halfop     kill       msg        ping       sajoin     squery     userhost   whowas    
+2013-06-15 15:35:08		  cycle      ignore     links      names      pong       samode     squit      users     
+2013-06-15 15:35:08		  dcc        info       list       nick       query      sanick     stats      version   
+2013-06-15 15:35:08		[logger]
+2013-06-15 15:35:08		  logger
+2013-06-15 15:35:08		[script]
+2013-06-15 15:35:08		  script
+2013-06-15 15:35:08		[charset]
+2013-06-15 15:35:08		  charset
+2013-06-15 15:35:08		[aspell]
+2013-06-15 15:35:08		  aspell
+2013-06-15 15:35:08		[lua]
+2013-06-15 15:35:08		  lua
+2013-06-15 15:36:48		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 16:39:59	=!=	irc: unable to create server "irc.freenode.net/6665"
+2013-06-15 16:40:23	=!=	irc: unable to create server "irc.freenode.net/6666"
+2013-06-15 16:40:29	=!=	Error: unknown command "diconnect" (type /help for help)
+2013-06-15 16:40:34	=!=	Error with command "disconnect" (try /help disconnect)
+2013-06-15 16:40:46	=!=	Error with command "disconnect" (try /help disconnect)
+2013-06-15 16:41:47	=!=	irc: unable to create server "irc.freenode.net/6665"
+2013-06-15 16:41:56	=!=	Error with command "disconnect" (try /help disconnect)
+2013-06-15 16:42:14		irc: server brooks.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 16:43:06		irc: server 6665 created (temporary server, NOT SAVED!)
+2013-06-15 16:43:59		irc: server asimov.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 16:44:16	=!=	Error: unknown command "disconnet" (type /help for help)
+2013-06-15 16:44:29	=!=	irc: currently connecting to server "asimov.freenode.net"!
+2013-06-15 16:44:29	=!=	Error with command "connect" (try /help connect)
+2013-06-15 16:44:35	=!=	irc: currently connecting to server "asimov.freenode.net"!
+2013-06-15 16:44:35	=!=	Error with command "connect" (try /help connect)
+2013-06-15 16:45:02		fifo: pipe closed
+2013-06-15 16:45:04		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 16:45:27		irc: server chat.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 16:46:46	=!=	irc: unable to create server "chat.freenode.net/6665"
+2013-06-15 16:46:57		irc: server 6665 created (temporary server, NOT SAVED!)
+2013-06-15 16:47:58		Option "irc.server.freenode.autoconnect":
+2013-06-15 16:47:58		  description: automatically connect to server when WeeChat is starting
+2013-06-15 16:47:58		  type: boolean
+2013-06-15 16:47:58		  values: on, off
+2013-06-15 16:47:58		  default value: (undefined)
+2013-06-15 16:47:58		  current value: (undefined)
+2013-06-15 16:47:58		  undefined value allowed (null)
+2013-06-15 16:48:30	=!=	Error with command "disconnect" (try /help disconnect)
+2013-06-15 16:48:34		fifo: pipe closed
+2013-06-15 16:51:00		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 16:51:18		irc: server chat.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 16:52:19		fifo: pipe closed
+2013-06-15 16:54:32		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 16:55:00		irc: server chat.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 16:55:33	=!=	Error: unknown command "diconnect" (type /help for help)
+2013-06-15 16:56:24		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 16:57:04	=!=	irc: unable to create server "irc.freenode.net/6665"
+2013-06-15 16:57:16	=!=	irc: unable to create server "chat.freenode.net/6665"
+2013-06-15 16:57:27	=!=	irc: unable to create server "chat.freenode.net/6666"
+2013-06-15 16:57:37	=!=	irc: unable to create server "chat.freenode.net/6667"
+2013-06-15 16:57:49	=!=	irc: unable to create server "chat.freenode.net/7000"
+2013-06-15 16:58:00		fifo: pipe closed
+2013-06-15 16:58:01		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 16:58:34		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 16:59:32		irc: server bradbury.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:15:33		fifo: pipe closed
+2013-06-15 17:18:24		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 17:18:51		irc: server chat.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:19:41	=!=	Error: unknown command "disconnet" (type /help for help)
+2013-06-15 17:19:46	=!=	Error: unknown command "diconnect" (type /help for help)
+2013-06-15 17:19:49		fifo: pipe closed
+2013-06-15 17:20:14		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 17:20:25		irc: server chat.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:20:52	=!=	irc: unable to create server "chat.freenode.net/6665"
+2013-06-15 17:21:29	=!=	irc: unable to create server "chat.freenode.net/6697"
+2013-06-15 17:21:33	=!=	irc: unable to create server "chat.freenode.net/6697"
+2013-06-15 17:21:48		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:22:21	=!=	irc: unable to create server "irc.freenode.net/6697"
+2013-06-15 17:22:31	=!=	irc: unable to create server "chat.freenode.net/6665"
+2013-06-15 17:22:35	=!=	irc: unable to create server "chat.freenode.net/6697"
+2013-06-15 17:22:41	=!=	irc: unable to create server "irc.freenode.net/6697"
+2013-06-15 17:23:21	=!=	irc: unable to create server "chat.freenode.net/6666"
+2013-06-15 17:24:02		irc: server roddenberry.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:24:25		fifo: pipe closed
+2013-06-15 17:25:45		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 17:25:47		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:26:41		irc: server irc.oftc.net created (temporary server, NOT SAVED!)
+2013-06-15 17:27:17		fifo: pipe closed
+2013-06-15 17:30:41		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 17:32:01		irc: server /etc/ssl/certs created (temporary server, NOT SAVED!)
+2013-06-15 17:32:01		irc: server chat.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:32:01		irc: server 6697 created (temporary server, NOT SAVED!)
+2013-06-15 17:32:28	=!=	irc: currently connecting to server "chat.freenode.net"!
+2013-06-15 17:32:28	=!=	Error with command "connect" (try /help connect)
+2013-06-15 17:32:40	=!=	Error: WeeChat main buffer can't be closed
+2013-06-15 17:32:46	=!=	Error with command "disconnect" (try /help disconnect)
+2013-06-15 17:32:49		fifo: pipe closed
+2013-06-15 17:32:52		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 17:33:12		irc: server chat.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:33:12		irc: server 6665 created (temporary server, NOT SAVED!)
+2013-06-15 17:33:33		fifo: pipe closed
+2013-06-15 17:34:11		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 17:34:25		irc: server irc.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:34:25		irc: server 6665 created (temporary server, NOT SAVED!)
+2013-06-15 17:34:31		fifo: pipe closed
+2013-06-15 17:53:54		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 17:54:08		irc: server chat.freenode.net created (temporary server, NOT SAVED!)
+2013-06-15 17:54:08		irc: server 6665 created (temporary server, NOT SAVED!)
+2013-06-15 17:54:22		fifo: pipe closed
+2013-06-15 17:55:08		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 17:55:29		fifo: pipe closed
+2013-06-15 17:55:48		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 19:39:41		fifo: pipe closed
+2013-06-15 19:43:33		Plugins loaded: alias, aspell, charset, fifo, irc, logger, lua, perl, python, relay, rmodifier, script, xfer
+2013-06-15 19:43:59		fifo: pipe closed
