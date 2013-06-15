@@ -11,6 +11,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
     unset f
 fi
 
-# --- window manager ---
-# launch i3-wm
+# launch i3wm
 exec i3
