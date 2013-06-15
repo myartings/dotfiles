@@ -1,4 +1,3 @@
-# rc.local systemd 
 [Unit]
 Description=/etc/rc.local Compatibility
 ConditionPathExists=/etc/rc.local
