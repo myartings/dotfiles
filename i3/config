@@ -8,11 +8,11 @@ set $mod Mod4
 new_window pixel 1
 
 # wallpaper
-exec --no-startup-id feh --bg-scale /home/serdotlinecho/Pictures/seria-lunar-melodies.png
+exec --no-startup-id feh --bg-scale /home/serdotlinecho/Pictures/archrtfm.png
 
 # volume control
-bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master '3%+'
-bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master '2%-'
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 
 # screen locker
 bindsym $mod+Control+l exec i3lock -d -c 444444
