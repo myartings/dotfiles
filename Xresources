@@ -1,0 +1,62 @@
+! file: ~/.Xresources
+! author: serdotlinecho 
+
+! -- Urxvt -- !
+URxvt*borderless:      1
+URxvt*scrollBar:       false
+URxvt*scrollBar_right: false
+URxvt*saveLines:       512
+!URxvt*tintColor:       grey 
+!URxvt*.transparent:    true
+!URxvt*shading:         110 
+URxvt*termName:        rxvt
+URxvt.iso14755:        false
+
+! -- Cursor -- !
+Xcursor.theme: X-BLACK_2
+
+! -- Fonts settings -- !
+Xft.hintstyle: hintmedium
+Xft.hinting:   true
+Xft.antialias: true
+Xft.dpi:       96
+Xft.rgba:      rgb
+
+! -- Fonts -- !
+URxvt*font:xft:source code pro:medium:antialias=false:size=10
+URxvt*boldFont:xft:source code pro:medium:antialias=false:size=10
+
+! -- Colour -- !
+URxvt*background: #090808
+URxvt*foreground: #bfb5b5
+! Black
+URxvt*color0:  #1a2122
+URxvt*color8:  #555555
+! Red
+URxvt*color1:  #f92671
+URxvt*color9:  #ff669d
+! Green
+URxvt*color2:  #a6e22e
+URxvt*color10: #beed5f
+! Yellow
+URxvt*color3:  #fd971f
+URxvt*color11: #e6db74
+! Blue
+URxvt*color4:  #1692d0
+URxvt*color12: #66d9ef
+! Magenta
+URxvt*color5:  #9e6ffe
+URxvt*color13: #df92f6
+! Cyan
+URxvt*color6:  #89b6e2
+URxvt*color14: #46a4ff
+! White
+URxvt*color7:  #ffffff
+URxvt*color15: #ffffff
+
+! -- Extension -- !
+URxvt.perl-ext-common:     default,clipboard,url-select,keyboard-select
+URxvt.keysym.M-c:          perl:clipboard:copy
+URxvt.keysym.M-v:          perl:clipboard:paste
+URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
+URxvt.url-select.launcher: chromium
