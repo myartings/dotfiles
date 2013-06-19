@@ -55,8 +55,9 @@ URxvt*color7:  #ffffff
 URxvt*color15: #ffffff
 
 ! -- Extension -- !
-URxvt.perl-ext-common:     default,clipboard,url-select,keyboard-select
-URxvt.keysym.M-c:          perl:clipboard:copy
-URxvt.keysym.M-v:          perl:clipboard:paste
-URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
-URxvt.url-select.launcher: chromium
+URxvt.perl-ext-common: default,clipboard,matcher,keyboard-select
+URxvt.keysym.M-c:      perl:clipboard:copy
+URxvt.keysym.M-v:      perl:clipboard:paste
+URxvt.keysym.M-C-v:    perl:clipboard:paste_escaped
+URxvt.url-launcher:    /usr/bin/chromium
+URxvt.matcher.button:  1
