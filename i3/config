@@ -7,14 +7,14 @@ default_orientation vertical
 new_window pixel 1
 
 # font for window titles and bar
-font pango:Droid Sans 10
+font pango:Envy Code R 10
 
 # float the following window
 for_window [class="feh"] floating enable
 for_window [class="mplayer2"] floating enable
 
 # assign the following to specific workspaces
-assign [class="chromium"] $ws2
+assign [class="Chromium"] $ws2
 
 # i3bar
 bar {
@@ -25,7 +25,7 @@ bar {
             statusline #bfb5b5
             separator  #46a4ff
 
-            focused_workspace  #268BD2 #268BD2 #073642
+            focused_workspace  #268bd2 #090808 #bfb5b5
             active_workspace   #333333 #5f676a #bfb5b5
             inactive_workspace #333333 #222222 #888888
             urgent_workspace   #2f343a #ff669d #bfb5b5
@@ -36,7 +36,7 @@ bar {
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /usr/bin/urxvt
+bindsym $mod+Return exec /usr/bin/urxvtc
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -97,13 +97,14 @@ bindsym $mod+a focus parent
 # custom variables for workspaces
 set $ws1 1:term
 set $ws2 2:www
-set $ws3 3:fm
+set $ws3 3:chat
+set $ws4 4:fm
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace 4
+bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
