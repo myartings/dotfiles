@@ -6,9 +6,6 @@ URxvt*borderless:      1
 URxvt*scrollBar:       false
 URxvt*scrollBar_right: false
 URxvt*saveLines:       512
-!URxvt*tintColor:       grey 
-!URxvt*.transparent:    true
-!URxvt*shading:         110 
 URxvt*termName:        rxvt
 URxvt.iso14755:        false
 
@@ -23,8 +20,8 @@ Xft.dpi:       96
 Xft.rgba:      rgb
 
 ! -- Fonts -- !
-URxvt*font:xft:source code pro:medium:antialias=false:size=10
-URxvt*boldFont:xft:source code pro:medium:antialias=false:size=10
+URxvt*font:xft:Envy Code R:size=10:antialias=false
+URxvt*boldFont:xft:Envy Code R:size=10:antialias=false
 
 ! -- Colour -- !
 URxvt*background: #090808
