@@ -12,6 +12,7 @@ font pango:Envy Code R 10
 # float the following window
 for_window [class="feh"] floating enable
 for_window [class="mplayer2"] floating enable
+for_window [class="gcolor2"] floating enable
 
 # assign the following to specific workspaces
 assign [class="Chromium"] $ws2
@@ -94,7 +95,7 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# custom variables for workspaces
+# customize workspace names
 set $ws1 1:term
 set $ws2 2:www
 set $ws3 3:chat
@@ -116,7 +117,7 @@ bindsym $mod+0 workspace 10
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
@@ -159,7 +160,7 @@ bindsym $mod+r mode "resize"
 
 # startup programs
 # run i3lock after computer inactivity
-exec xautolock -time 10 -locker "i3lock -c 302B54" &
+exec xautolock -time 10 -locker "i3lock -c 090808" &
 
 # volume control
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '3%+'"
