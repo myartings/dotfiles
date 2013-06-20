@@ -12,7 +12,11 @@ fi
 # merge in defaults
 [[ -f "$HOME/.Xresources" ]] && xrdb -merge "$HOME/.Xresources"
 
-# restore background
+# wallpaper set command
 eval $(cat ~/.fehbg)
 
+# autostart applications
+urxvtd -q -f -o &
+
+# i3wm
 exec i3
