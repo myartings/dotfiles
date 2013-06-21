@@ -22,7 +22,7 @@ bar {
         position top
         status_command i3status
         colors {
-            background #090808
+            background #2e3336
             statusline #bfb5b5
             separator  #285577
 
@@ -152,13 +152,13 @@ bindsym $mod+r mode "resize"
 
 # startup programs
 # run i3lock after computer inactivity
-exec xautolock -time 10 -locker "i3lock -c 090808" &
+exec --no-startup-id xautolock -time 10 -locker "i3lock -c 444444" &
 
 # volume control
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '3%+'"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '2%-'"
 
-# screen locker
+# lock screen
 bindsym $mod+Control+l exec i3lock -d -c 444444
 
 # take screenshot
