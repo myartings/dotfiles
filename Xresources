@@ -24,7 +24,7 @@ URxvt*font:xft:Envy Code R:size=10:antialias=false
 URxvt*boldFont:xft:Envy Code R:size=10:antialias=false
 
 ! -- Colour -- !
-URxvt*background: #090808
+URxvt*background: #1A1A1A
 URxvt*foreground: #bfb5b5
 ! Black
 URxvt*color0:  #1a2122
