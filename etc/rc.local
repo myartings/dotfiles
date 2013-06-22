@@ -12,5 +12,6 @@
 # By default this script does nothing.
 
 rfkill block bluetooth
+setpci -s 00:02.0 F4.B=70
 
 exit 0
