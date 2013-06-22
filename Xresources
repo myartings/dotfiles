@@ -1,7 +1,7 @@
-! ---------------------
+! --------------------- !
 ! file:   ~/.Xresources
 ! author: serdotlinecho
-! ---------------------
+! --------------------- !
 
 ! -- Urxvt -- !
 URxvt*borderless:      1
