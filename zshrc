@@ -1,4 +1,8 @@
+# ---------------------
 # Requires Oh-my-zsh!!!
+# file: ~/.zshrc
+# author: serdotlinecho
+# ---------------------
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -28,4 +32,3 @@ alias cp="acp -g"
 alias mv="amv -g"
 alias scb="sudo setpci -s 00:02.0 F4.B=70"
 alias nmcon="nmcli con up id"
-
