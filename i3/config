@@ -1,5 +1,7 @@
+# ---------------------
 # i3 config file (v4)
 # author: serdotlinecho
+# ---------------------
 
 # defaults
 set $mod Mod4
