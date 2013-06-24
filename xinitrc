@@ -22,8 +22,5 @@ sh $HOME/.fehbg &
 # automounting
 /usr/bin/udiskie -s &
 
-# conky
-(sleep 10; conky -q) &
-
 # i3wm
 exec i3
