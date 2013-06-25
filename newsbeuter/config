@@ -1,0 +1,41 @@
+# Settings
+always-display-description true
+browser /usr/bin/firefox
+external-url-viewer "urlview"
+goto-first-unread yes
+ignore-mode "display"
+refresh-on-startup yes
+auto-reload yes
+reload-time 30
+confirm-exit yes
+#notify-program "notify-send"
+
+# Theme
+color listnormal default default
+color listfocus white yellow
+color article default default
+color info green default
+
+highlight article "^Feed: .*$" color3 default
+highlight article "^Title: .*$" color13 default bold
+highlight article "^Author: .*$" color5 default
+highlight article "^Link: .*$" color6 default
+highlight article "^Date: .*$" color4 default
+
+# Podbeuter {{{1
+#player "mplayer"
+#download-path "~/Podcasts"
+#max-downloads 3
+
+# Bindings {{{1
+bind-key k      prev-unread
+bind-key j      next-unread
+bind-key <esc>k prev-feed
+bind-key <esc>j next-feed
+bind-key J      next
+bind-key K      prev
+bind-key h      pageup
+bind-key l      pagedown
+bind-key p      pb-play  podbeuter
+bind-key o      open-in-browser
+bind-key SPACE  toggle-article-read
