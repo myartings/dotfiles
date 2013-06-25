@@ -60,3 +60,9 @@ URxvt.keysym.M-v:      perl:clipboard:paste
 URxvt.keysym.M-C-v:    perl:clipboard:paste_escaped
 URxvt.url-launcher:    /usr/bin/chromium
 URxvt.matcher.button:  1
+
+! -- Xautolock screen locker -- !
+Xautolock.time:        10
+Xautolock.corners:     +0-0
+Xautolock.cornerdelay: 10
+Xautolock.locker:      i3lock -c 444444 
