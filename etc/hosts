@@ -111,6 +111,7 @@
 0.0.0.0 pubmatic.com
 0.0.0.0 ads.pubmatic.com
 0.0.0.0 showads.pubmatic.com
+0.0.0.0 image5.pubmatic.com
 0.0.0.0 www.statcounter.com
 0.0.0.0 statcounter.com
 0.0.0.0 c.statcounter.com
@@ -180,6 +181,7 @@
 0.0.0.0 xslt.alexa.com
 0.0.0.0 xsltcache.alexa.com
 0.0.0.0 alexa-sitestats.s3.amazonaws.com
+0.0.0.0 s.amazon-adsystem.com
 0.0.0.0 www.rtbidder.net
 0.0.0.0 rtbidder.net
 0.0.0.0 match.rtbidder.net
@@ -204,6 +206,7 @@
 0.0.0.0 engine.adzerk.net
 0.0.0.0 www.nuffnangx.com
 0.0.0.0 nuffnangx.com
+0.0.0.0 tr.nuffnangx.com
 0.0.0.0 synad.nuffnang.com.my
 0.0.0.0 synad2.nuffnang.com.my
 0.0.0.0 cdn.static.nuffnang.com.my
@@ -321,6 +324,7 @@
 0.0.0.0 s10.histats.com
 0.0.0.0 www.histats.com
 0.0.0.0 histats.com
+0.0.0.0 sstatic1.histats.com
 0.0.0.0 dw.com.com
 0.0.0.0 revsci.net
 0.0.0.0 ads.revsci.net
@@ -429,6 +433,7 @@
 0.0.0.0 media.techhive.com
 0.0.0.0 api.viglink.com
 0.0.0.0 cdn.viglink.com
+0.0.0.0 redirect.viglink.com
 0.0.0.0 www.pgssl.com
 0.0.0.0 pgssl.com
 0.0.0.0 pub.pgssl.com
@@ -1203,3 +1208,7 @@
 0.0.0.0 www.glitter-graphics.net
 0.0.0.0 glitter-graphics.net
 0.0.0.0 dl7.glitter-graphics.net
+0.0.0.0 www.vizury.com
+0.0.0.0 vizury.com
+0.0.0.0 serv1.vizury.com
+0.0.0.0 awin1.com
