@@ -58,7 +58,7 @@ URxvt.perl-ext-common: default,clipboard,matcher,keyboard-select
 URxvt.keysym.M-c:      perl:clipboard:copy
 URxvt.keysym.M-v:      perl:clipboard:paste
 URxvt.keysym.M-C-v:    perl:clipboard:paste_escaped
-URxvt.url-launcher:    /usr/bin/chromium
+URxvt.url-launcher:    /usr/bin/firefox
 URxvt.matcher.button:  1
 
 ! -- Xautolock screen locker -- !
