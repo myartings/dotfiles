@@ -12,7 +12,7 @@ URxvt*termName:        rxvt
 URxvt.iso14755:        false
 
 ! -- Cursor -- !
-Xcursor.theme: X-BLACK_2
+Xcursor.theme: Vanilla-DMZ
 
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
