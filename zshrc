@@ -13,18 +13,11 @@ export PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 ZSH_THEME="nicoulaj"
 
 ##### plugins #####
-# ~/.oh-my-zsh/custom/plugins/
+# ~/.oh-my-zsh/plugins/
 plugins=(git colored-man zsh-syntax-highlighting) 
 
 ##### source #####
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-#
-# Start tmux on every shell login
-# If not running interactively, do not do anything
-#[[ $- != *i* ]] && return
-#[[ -z "$TMUX" ]] && exec tmux
 
 ##### aliases #####
 alias zshconfig="vim ~/.zshrc"
