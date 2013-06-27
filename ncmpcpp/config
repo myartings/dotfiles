@@ -1,0 +1,32 @@
+###################################
+# file:     ~/.ncmpcpp/config    
+# author:   serdotlinecho
+###################################
+
+
+##### connection settings #####
+mpd_host =                  "localhost"
+mpd_port =                  "6600"
+mpd_music_dir =             "/home/serdotlinecho/Music"
+mpd_connection_timeout =    "5"
+mpd_crossfade_time =        "5"
+
+##### music visualizer #####
+
+audio_output {
+type            "fifo"
+name           "my_fifo"
+path            "/tmp/mpd.fifo"
+format          "44100:16:2"
+}
+
+visualizer_fifo_path =      "/tmp/mpd.fifo"
+visualizer_output_name =    "my_fifo"
+visualizer_type =           "spectrum" (wave/spectrum)
+visualizer_sync_interval =  "100"
+visualizer_look =           "●┇"
+
+##### progress bar #####
+song_status_format = "$8%a $1// $8%t $1// $8%b {(Disc %d) }$1// $8%y $1"
+progressbar_look =  "─╼─"
+titles_visibility = "no"
