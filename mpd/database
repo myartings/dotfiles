@@ -1,0 +1,318 @@
+info_begin
+format: 1
+mpd_version: 0.17.4
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: Track
+tag: Name
+tag: Genre
+tag: Date
+tag: Composer
+tag: Performer
+tag: Disc
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+info_end
+directory: Nevermind
+mtime: 1369988436
+begin: Nevermind
+song_begin: 01 Smells Like Teen Spirit.mp3
+Time: 301
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Smells Like Teen Spirit
+Album: Nevermind
+Track: 1
+Date: 1991
+Genre: Rock
+Composer: Dave Grohl/Krist Novoselic/Kurt Cobain
+mtime: 1132323984
+song_end
+song_begin: 02 In Bloom.mp3
+Time: 254
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: In Bloom
+Album: Nevermind
+Track: 2
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323996
+song_end
+song_begin: 03 Come as You Are.mp3
+Time: 219
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Come as You Are
+Album: Nevermind
+Track: 3
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain
+mtime: 1132323991
+song_end
+song_begin: 04 Breed.mp3
+Time: 184
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Breed
+Album: Nevermind
+Track: 4
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323989
+song_end
+song_begin: 05 Lithium.mp3
+Time: 257
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Lithium
+Album: Nevermind
+Track: 5
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain
+mtime: 1132323995
+song_end
+song_begin: 06 Polly.mp3
+Time: 177
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Polly
+Album: Nevermind
+Track: 6
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323990
+song_end
+song_begin: 07 Territorial Pissings.mp3
+Time: 143
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Territorial Pissings
+Album: Nevermind
+Track: 7
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323994
+song_end
+song_begin: 08 Drain You.mp3
+Time: 223
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Drain You
+Album: Nevermind
+Track: 8
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323992
+song_end
+song_begin: 09 Lounge Act.mp3
+Time: 157
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Lounge Act
+Album: Nevermind
+Track: 9
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323983
+song_end
+song_begin: 10 Stay Away.mp3
+Time: 212
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Stay Away
+Album: Nevermind
+Track: 10
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323994
+song_end
+song_begin: 11 On a Plain.mp3
+Time: 196
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: On a Plain
+Album: Nevermind
+Track: 11
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323993
+song_end
+song_begin: 12 Something in the Way.mp3
+Time: 1233
+Artist: Nirvana
+AlbumArtist: Nirvana
+Title: Something in the Way
+Album: Nevermind
+Track: 12
+Date: 1991
+Genre: Rock
+Composer: Kurt Cobain/Nirvana
+mtime: 1132323988
+song_end
+end: Nevermind
+directory: ShutDown Volume 2
+mtime: 1372315286
+begin: ShutDown Volume 2
+song_begin: 01 - Fun, Fun, Fun.mp3
+Time: 126
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Fun Fun Fun
+Album: Shut Down Volume 2
+Track: 13
+Date: 1964
+Genre: Rock
+Composer: Brian Wilson/Love
+mtime: 1268727247
+song_end
+song_begin: 02 - Don't Worry Baby.mp3
+Time: 170
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Don't Worry Baby
+Album: Shut Down Volume 2
+Track: 14
+Date: 1964
+Genre: Rock
+Composer: Christian/Brian Wilson
+mtime: 1268727413
+song_end
+song_begin: 03 - In The Parkin' Lot.mp3
+Time: 124
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: In The Parkin' Lot
+Album: Shut Down Volume 2
+Track: 15
+Date: 1964
+Genre: Rock
+Composer: Brian Wilson/Christian
+mtime: 1268727564
+song_end
+song_begin: 04 - Cassius Love vs. Sonny Wilson.mp3
+Time: 211
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Cassius Love vs. Sonny Wilson
+Album: Shut Down Volume 2
+Track: 16
+Date: 1964
+Genre: Rock
+Composer: Brian Wilson/Love
+mtime: 1268781230
+song_end
+song_begin: 05 - The Warmth Of The Sun.mp3
+Time: 176
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: The Warmth Of The Sun
+Album: Shut Down Volume 2
+Track: 17
+Date: 1964
+Genre: Rock
+Composer: Brian Wilson/Love
+mtime: 1268781341
+song_end
+song_begin: 06 - This Car Of Mine.mp3
+Time: 99
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: This Car Of Mine
+Album: Shut Down Volume 2
+Track: 18
+Date: 1964
+Genre: Rock
+Composer: Brian Wilson/Love
+mtime: 1268728220
+song_end
+song_begin: 07 - Why Do Fools Fall In Love.mp3
+Time: 121
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Why Do Fools Fall In Love
+Album: Shut Down Volume 2
+Track: 19
+Date: 1964
+Genre: Rock
+Composer: Lymon/Levy
+mtime: 1268728334
+song_end
+song_begin: 08 - Pom Pom Play Girl.mp3
+Time: 92
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Pom Pom Play Girl
+Album: Shut Down Volume 2
+Track: 20
+Date: 1964
+Genre: Rock
+Composer: Brian Wilson/Usher
+mtime: 1268728457
+song_end
+song_begin: 09 - Keep An Eye On Summer.mp3
+Time: 143
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Keep An Eye On Summer
+Album: Shut Down Volume 2
+Track: 21
+Date: 1964
+Genre: Rock
+Composer: Norman/Brian Wilson
+mtime: 1268728636
+song_end
+song_begin: 10 - Shut Down, Part 2.mp3
+Time: 131
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Shut Down, Part II
+Album: Shut Down Volume 2
+Track: 22
+Date: 1964
+Genre: Rock
+Composer: Carl Wilson
+mtime: 1268728874
+song_end
+song_begin: 11 - Louie Louie.mp3
+Time: 140
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Louie Louie
+Album: Shut Down Volume 2
+Track: 23
+Date: 1964
+Genre: Rock
+Composer: Richard Berry
+mtime: 1268729098
+song_end
+song_begin: 12 - Denny's Drums.mp3
+Time: 117
+Artist: Beach Boys
+AlbumArtist: The Beach Boys
+Title: Denny's Drums
+Album: Shut Down Volume 2
+Track: 24
+Date: 1964
+Genre: Rock
+Composer: Dennis Wilson
+mtime: 1268729224
+song_end
+end: ShutDown Volume 2

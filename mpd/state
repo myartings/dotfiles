@@ -1,0 +1,17 @@
+sw_volume: 81
+audio_device_state:1:My Pulse Device
+audio_device_state:1:my_fifo
+state: stop
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: nan
+playlist_begin
+0:Nevermind/01 Smells Like Teen Spirit.mp3
+1:ShutDown Volume 2/02 - Don't Worry Baby.mp3
+2:Nevermind/05 Lithium.mp3
+3:Nevermind/08 Drain You.mp3
+playlist_end
