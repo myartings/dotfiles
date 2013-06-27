@@ -19,6 +19,7 @@ for_window [class="Gcolor2"] floating enable
 # assign the following to specific workspaces
 assign [class="Firefox"] $ws2
 assign [class="Chromium"] $ws2
+assign [class="Pcmanfm"] $ws4
 
 # i3bar
 bar {
