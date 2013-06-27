@@ -16,7 +16,9 @@ xinitrc
 i3 
 i3status.conf 
 newsbeuter 
-weechat 
+weechat
+mpd
+ncmpcpp
 gtkrc-2.0 
 conkyrc"  # list of files/folders to symlink in homedir
 
