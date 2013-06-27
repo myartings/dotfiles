@@ -4,17 +4,19 @@
 # author: serdotlinecho
 # ---------------------
 
-# Path to your oh-my-zsh configuration.
+##### path #####
 ZSH=$HOME/.oh-my-zsh
+export PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 
-# Set name of the theme to load.
+##### theme ##### 
 # https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="nicoulaj"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+##### plugins #####
+# ~/.oh-my-zsh/custom/plugins/
 plugins=(git colored-man zsh-syntax-highlighting) 
 
+##### source #####
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -24,7 +26,7 @@ source $ZSH/oh-my-zsh.sh
 #[[ $- != *i* ]] && return
 #[[ -z "$TMUX" ]] && exec tmux
 
-# aliases
+##### aliases #####
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tmuxrc="vim ~/.tmux.conf"
