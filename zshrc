@@ -4,22 +4,25 @@
 # author: serdotlinecho
 # ---------------------
 
-##### path #####
+# path
 ZSH=$HOME/.oh-my-zsh
 export PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 
-##### theme ##### 
+# theme
 # https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="nicoulaj"
 
-##### plugins #####
+# plugins
 # ~/.oh-my-zsh/plugins/
 plugins=(git colored-man zsh-syntax-highlighting) 
 
-##### source #####
+# source
 source $ZSH/oh-my-zsh.sh
 
-##### aliases #####
+# Uncomment following line if you want to disable autosetting terminal title.
+DISABLE_AUTO_TITLE="true"
+
+# aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tmuxrc="vim ~/.tmux.conf"
