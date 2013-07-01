@@ -28,28 +28,28 @@ URxvt*boldFont:-*-tamsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 ! -- Color -- ! 
 URxvt*background: #1A1A1A
 URxvt*foreground: #BFB5B5
-! Black dark/light
+! Black + DarkGrey
 URxvt*color0:  #1E2320
 URxvt*color8:  #555753 
-! Red dark/light
+! DarkRed + Red
 URxvt*color1:  #f92672
 URxvt*color9:  #ff5995
-! Green dark/light
+! DarkGreen + Green
 URxvt*color2:  #82b414
 URxvt*color10: #b6e354
-! Yellow dark/light
+! DarkYellow + Yellow
 URxvt*color3:  #fd971f
 URxvt*color11: #feed6c
-! Blue dark/light
-URxvt*color4:  #56c2d6
-URxvt*color12: #8cedff
-! Magenta dark/light
+! DarkBlue + Blue
+URxvt*color4:  #6a9fb5
+URxvt*color12: #6FC2EF
+! DarkMagenta + Magenta
 URxvt*color5:  #8c54fe
 URxvt*color13: #9e6ffe
-! Cyan dark/light
+! DarkCyan + Cyan
 URxvt*color6:  #465457
 URxvt*color14: #899ca1
-! White dark/light
+! LightGrey + White
 URxvt*color7:  #ccccc6
 URxvt*color15: #f8f8f2
 
