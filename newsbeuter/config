@@ -1,6 +1,12 @@
+# ------------------------------------
+# file:     ~/.newsbeuter/config
+# author:   serdotlinecho
+# ------------------------------------
+
+
 # Settings
 always-display-description true
-browser /usr/bin/firefox
+browser /usr/bin/luakit
 external-url-viewer "urlview"
 goto-first-unread yes
 ignore-mode "display"
@@ -12,7 +18,7 @@ confirm-exit yes
 
 # Theme
 color listnormal default default
-color listfocus white yellow
+color listfocus white cyan
 color article default default
 color info green default
 
