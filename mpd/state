@@ -1,7 +1,8 @@
-sw_volume: 81
+sw_volume: 100
 audio_device_state:1:My Pulse Device
 audio_device_state:1:my_fifo
 state: stop
+current: 4
 random: 0
 repeat: 0
 single: 0
@@ -10,8 +11,19 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: nan
 playlist_begin
-0:Nevermind/01 Smells Like Teen Spirit.mp3
-1:ShutDown Volume 2/02 - Don't Worry Baby.mp3
-2:Nevermind/05 Lithium.mp3
-3:Nevermind/08 Drain You.mp3
+0:Pet Sounds/12 - Pet Sounds.mp3
+1:Pet Sounds/04 - Don't Talk (Put Your Head On My Shoulder).mp3
+2:Pet Sounds/11 - I Just Wasn't Made For These Times.mp3
+3:Pet Sounds/01 - Wouldn't It Be Nice.mp3
+4:Pet Sounds/02 - You Still Believe In Me.mp3
+5:Pet Sounds/03 - That's Not Me.mp3
+6:Pet Sounds/05 - I'm Waiting For The Day.mp3
+7:Pet Sounds/06 - Let's Go Away For Awhile.mp3
+8:Pet Sounds/07 - Sloop John B.mp3
+9:Pet Sounds/08 - God Only Knows.mp3
+10:Pet Sounds/09 - I Know There's An Answer.mp3
+11:Pet Sounds/10 - Here Today.mp3
+12:Pet Sounds/12 - Pet Sounds.mp3
+13:Pet Sounds/13 - Caroline, No.mp3
+14:Pet Sounds/14 - Hang On To Your Ego.mp3
 playlist_end
