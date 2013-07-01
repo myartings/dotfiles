@@ -13,8 +13,8 @@ zshrc
 tmux.conf 
 Xresources 
 xinitrc 
-i3 
-i3status.conf 
+i3
+i3status.conf
 newsbeuter 
 weechat
 mpd
