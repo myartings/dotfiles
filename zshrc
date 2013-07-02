@@ -6,7 +6,7 @@
 
 # path
 ZSH=$HOME/.oh-my-zsh
-export PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
+PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 
 # theme
 # https://github.com/robbyrussell/oh-my-zsh/wiki/themes
@@ -14,7 +14,7 @@ ZSH_THEME="nicoulaj"
 
 # plugins
 # ~/.oh-my-zsh/plugins/
-plugins=(git colored-man zsh-syntax-highlighting) 
+plugins=(git systemd colored-man zsh-syntax-highlighting) 
 
 # source
 source $ZSH/oh-my-zsh.sh
