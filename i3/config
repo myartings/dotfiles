@@ -15,8 +15,13 @@ for_window [class="feh"] floating enable
 for_window [class="mplayer2"] floating enable
 for_window [class="Gcolor2"] floating enable
 
+# App launching
+bindsym $mod+p exec dmenu_run -fn "-misc-tamsyn-medium-r-normal-*-13-*-*-*-*-*-*-*" -i -b -nb '#2b2b2b' -nf '#bfb5b5' -sb '#1692d0' -p 'Run:'
+bindsym $mod+ctrl+l exec /usr/bin/luakit &
+bindsym $mod+ctrl+p exec /usr/bin/pcmanfm &
+bindsym Print exec scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
+
 # assign the following to specific workspaces
-assign [class="Firefox"] $ws2
 assign [class="Chromium"] $ws2
 assign [class="luakit"] $ws2
 assign [class="Pcmanfm"] $ws4
@@ -46,9 +51,6 @@ bindsym $mod+Return exec /usr/bin/urxvtc
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# start dmenu
-bindsym $mod+p exec dmenu_run -fn "-misc-tamsyn-medium-r-normal-*-13-*-*-*-*-*-*-*" -i -b -nb '#2b2b2b' -nf '#bfb5b5' -sb '#1692d0' -p 'Run:'
 
 # change focus
 bindsym $mod+j focus left
@@ -161,7 +163,4 @@ bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '3%+'"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '2%-'"
 
 # lock screen
-bindsym $mod+Control+l exec i3lock -d -c 444444
-
-# Print screenshot
-bindsym Print exec scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
+bindsym $mod+Control+x exec i3lock -d -c 444444
