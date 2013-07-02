@@ -1,4 +1,7 @@
 /weechat/logs/*
+/mpd/pid
+/mpd/database
+/mpd/state
 log*
 *~
 *.swp
