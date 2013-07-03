@@ -30,7 +30,7 @@ URxvt*background: #1A1A1A
 URxvt*foreground: #BFB5B5
 ! Black + DarkGrey
 URxvt*color0:  #1E2320
-URxvt*color8:  #555753 
+URxvt*color8:  #857b6f
 ! DarkRed + Red
 URxvt*color1:  #f92672
 URxvt*color9:  #ff5995
@@ -38,20 +38,20 @@ URxvt*color9:  #ff5995
 URxvt*color2:  #82b414
 URxvt*color10: #b6e354
 ! DarkYellow + Yellow
-URxvt*color3:  #fd971f
+URxvt*color3:  #fd971f 
 URxvt*color11: #feed6c
 ! DarkBlue + Blue
-URxvt*color4:  #6a9fb5
-URxvt*color12: #6FC2EF
+URxvt*color4:  #3b5d9a
+URxvt*color12: #5283d7
 ! DarkMagenta + Magenta
-URxvt*color5:  #8c54fe
-URxvt*color13: #9e6ffe
+URxvt*color5:  #a57ac4
+URxvt*color13: #b698d9
 ! DarkCyan + Cyan
-URxvt*color6:  #465457
-URxvt*color14: #899ca1
+URxvt*color6:  #5da7e1
+URxvt*color14: #a8c6f2
 ! LightGrey + White
-URxvt*color7:  #ccccc6
-URxvt*color15: #f8f8f2
+URxvt*color7:  #f6f3e8
+URxvt*color15: #d3d7cf
 
 ! -- Extension -- !
 URxvt.perl-ext-common:  default,clipboard,matcher,url-select,keyboard-select
