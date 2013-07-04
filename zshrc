@@ -4,9 +4,8 @@
 # author: serdotlinecho
 # ---------------------
 
-# path
+# path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 
 # theme
 # https://github.com/robbyrussell/oh-my-zsh/wiki/themes
@@ -16,11 +15,16 @@ ZSH_THEME="nicoulaj"
 # ~/.oh-my-zsh/plugins/
 plugins=(git systemd colored-man zsh-syntax-highlighting) 
 
-# source
 source $ZSH/oh-my-zsh.sh
+
+# default editor
+export EDITOR=/usr/bin/vim
 
 # Uncomment following line if you want to disable autosetting terminal title.
 DISABLE_AUTO_TITLE="true"
+
+# System-independent paths
+PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 
 # aliases
 alias zshconfig="vim ~/.zshrc"
@@ -35,10 +39,19 @@ alias nmdown="nmcli -p con down id" # disconnect from wifi
 alias wifion="nmcli nm wifi on"     # turn on wifi
 alias wifioff="nmcli nm wifi off"   # turn off wifi
 alias sleep="systemctl suspend"     # suspend the machine
-alias youtube-viewer='youtube-viewer -C -4 --results=10' # color, fullscreen, 480p, number of results
+alias youtube-viewer="youtube-viewer -C" # color, 480p, number of results
 
-# youtube-viewer listen to music without video
-function youtube-music() {
-    youtube-viewer -n $@ ;
-}
-            
+# configuration
+cfg-zshrc() { $EDITOR ~/.zshrc ;}
+cfg-vimrc() { $EDITOR ~/.vimrc ;}
+cfg-xresource() { $EDITOR ~/.Xresources ;}
+cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
+cfg-i3conf() { $EDITOR ~/.i3/config ;}
+
+# capture rtmp links
+sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
+sniff-capture-rtmpsrv() { rtmpsrv ;}
+sniff-end() { sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
+
+# play youtube videos with youtube-viewer and mplayer
+utube() { youtube-viewer -3 $@ ;}
