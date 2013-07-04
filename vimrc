@@ -1,22 +1,31 @@
 " ----------------------
 " file:    ~/.vimrc
 " authtor: serdotlinecho
-" ----------------------
+" ----------------------   
 
-map ; :
-syntax on
+" Basic behaviour
+filetype on
 filetype plugin on
 filetype indent on
+syntax on
 
-set nocompatible        " leave the old ways behind.
+if &t_Co > 2 || has("gui_running")
+    " Syntax highlighting
+    syntax enable
+    colorscheme molokai
+endif
+
+set nocompatible        " Use vim, no vi defaults
+set encoding=utf-8              " use UTF-8 encoding
+set number                      " always show line numbers
+set ruler                       " Show line and column number
+set norelativenumber            " show no relativ line numbers
+
 set nobackup            " disable backup files (filename~)
-set encoding=utf-8      " UTF-8 encoding for all new files
 set backspace=2         " full backspacing capabilities (indent,eol,start)
-"set showcmd             " show (partial) command in status line.
-set number              " show line numbers.
+
 set linebreak           " attempt to wrap lines cleanly
 set wildmenu            " enhanced tab-completion shows all matching cmds in a popup menu
-set background=dark     " use colors that look good on dark background
 
 " tabs and indenting
 set tabstop=4           " tabs appear as n number of columns
