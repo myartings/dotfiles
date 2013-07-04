@@ -4,12 +4,13 @@
 ! --------------------- !
 
 ! -- Urxvt -- !
-URxvt*borderless:      1
-URxvt*scrollBar:       false
-URxvt*scrollBar_right: false
-URxvt*saveLines:       512
-URxvt*termName:        rxvt
-URxvt.iso14755:        false
+URxvt*borderless:       1
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:  false
+URxvt*saveLines:        512
+URxvt*termName:         rxvt-256color
+URxvt.iso14755:         false
+URxvt.depth:            32
 
 ! -- Cursor -- !
 Xcursor.theme: Vanilla-DMZ
@@ -26,32 +27,32 @@ URxvt*font:-*-tamsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*boldFont:-*-tamsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 
 ! -- Color -- ! 
-URxvt*background: #1A1A1A
-URxvt*foreground: #BFB5B5
+URxvt*background: #121212
+URxvt*foreground: #bfb5b5
 ! Black + DarkGrey
 URxvt*color0:  #1E2320
-URxvt*color8:  #857b6f
+URxvt*color8:  #6c6c6c
 ! DarkRed + Red
-URxvt*color1:  #f92672
-URxvt*color9:  #ff5995
+URxvt*color1:  #d7005f
+URxvt*color9:  #d74083
 ! DarkGreen + Green
-URxvt*color2:  #82b414
-URxvt*color10: #b6e354
+URxvt*color2:  #87ff00
+URxvt*color10: #93ff19
 ! DarkYellow + Yellow
-URxvt*color3:  #fd971f 
-URxvt*color11: #feed6c
+URxvt*color3:  #ff8700 
+URxvt*color11: #ff9926
 ! DarkBlue + Blue
-URxvt*color4:  #3b5d9a
-URxvt*color12: #5283d7
+URxvt*color4:  #005f87
+URxvt*color12: #387bab
 ! DarkMagenta + Magenta
-URxvt*color5:  #a57ac4
-URxvt*color13: #b698d9
+URxvt*color5:  #af5fff
+URxvt*color13: #b973ff
 ! DarkCyan + Cyan
-URxvt*color6:  #5da7e1
-URxvt*color14: #a8c6f2
+URxvt*color6:  #81c1c1
+URxvt*color14: #5fd7ff
 ! LightGrey + White
-URxvt*color7:  #f6f3e8
-URxvt*color15: #d3d7cf
+URxvt*color7:  #afaf87
+URxvt*color15: #d0d0d0
 
 ! -- Extension -- !
 URxvt.perl-ext-common:  default,clipboard,matcher,url-select,keyboard-select
