@@ -12,7 +12,7 @@ new_window pixel 1
 
 # float the following window
 for_window [class="feh"] floating enable
-for_window [class="mplayer2"] floating enable
+#for_window [class="mplayer2"] floating enable
 for_window [class="Gcolor2"] floating enable
 
 # App launching
@@ -32,7 +32,7 @@ bar {
         font -misc-termsyn-medium-r-normal-*-13-*-*-*-*-*-iso8859-*
         status_command i3status
         colors {
-            background #2e3336
+            background #222222
             statusline #BFB5B5
             separator  #285577
 
@@ -57,12 +57,6 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -123,6 +117,11 @@ bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
+
+# switch between the current and the previously focused one
+bindsym $mod+Right workspace next
+bindsym $mod+Left workspace prev
+bindsym $mod+Shift+Tab move container to workspace back_and_forth
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
