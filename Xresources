@@ -4,9 +4,10 @@
 ! --------------------- !
 
 ! -- Urxvt -- !
-URxvt*borderless:       1
-URxvt*scrollBar:        false
+URxvt*borderless:       false
 URxvt*scrollBar_right:  false
+URxvt*scrollBar:        false
+URxvt.cursorBlink:      false
 URxvt*saveLines:        512
 URxvt*termName:         rxvt-256color
 URxvt.iso14755:         false
@@ -26,33 +27,8 @@ Xft.rgba:      rgb
 URxvt*font:-*-tamsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*boldFont:-*-tamsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 
-! -- Color -- ! 
-URxvt*background: #121212
-URxvt*foreground: #bfb5b5
-! Black + DarkGrey
-URxvt*color0:  #1E2320
-URxvt*color8:  #6c6c6c
-! DarkRed + Red
-URxvt*color1:  #d7005f
-URxvt*color9:  #d74083
-! DarkGreen + Green
-URxvt*color2:  #87ff00
-URxvt*color10: #93ff19
-! DarkYellow + Yellow
-URxvt*color3:  #ff8700 
-URxvt*color11: #ff9926
-! DarkBlue + Blue
-URxvt*color4:  #005f87
-URxvt*color12: #387bab
-! DarkMagenta + Magenta
-URxvt*color5:  #af5fff
-URxvt*color13: #b973ff
-! DarkCyan + Cyan
-URxvt*color6:  #81c1c1
-URxvt*color14: #5fd7ff
-! LightGrey + White
-URxvt*color7:  #afaf87
-URxvt*color15: #d0d0d0
+! -- Colors -- !
+#include "/home/serdotlinecho/.colors/molokai"
 
 ! -- Extension -- !
 URxvt.perl-ext-common:  default,clipboard,matcher,url-select,keyboard-select
