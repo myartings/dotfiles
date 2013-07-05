@@ -26,18 +26,22 @@ DISABLE_AUTO_TITLE="true"
 PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 
 # aliases
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias cp="acp -g"   # cp with progress bar
-alias mv="amv -g"   # mv with progress bar
-alias scb="sudo setpci -s 00:02.0 F4.B=70"  # set screen brightness to 70
-alias wifilist="nmcli -p dev wifi"  # list available wifi  
-alias nmup="nmcli -p con up id"     # connect to wifi
-alias nmdown="nmcli -p con down id" # disconnect from wifi 
-alias wifion="nmcli nm wifi on"     # turn on wifi
-alias wifioff="nmcli nm wifi off"   # turn off wifi
-alias sleep="systemctl suspend"     # suspend the machine
-alias wee="weechat-curses"
-alias youtube-viewer="youtube-viewer -C" # color, 480p, number of results
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ohmyzsh='vim ~/.oh-my-zsh'
+alias cp='acp -g'   # cp with progress bar
+alias mv='amv -g'   # mv with progress bar
+alias scb='sudo setpci -s 00:02.0 F4.B=70'  # set screen brightness to 70
+alias wifilist='nmcli -p dev wifi'  # list available wifi  
+alias nmup='nmcli -p con up id/'    # connect to wifi
+alias nmdown='nmcli -p con down id' # disconnect from wifi 
+alias wifion='nmcli nm wifi on'     # turn on wifi
+alias wifioff='nmcli nm wifi off'   # turn off wifi
+alias sleep='systemctl suspend'     # suspend the machine
+alias wee='weechat-curses'
+alias youtube-viewer='youtube-viewer -C' # show color
 
 # functions
 # configuration
