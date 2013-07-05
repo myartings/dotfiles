@@ -36,34 +36,37 @@ alias nmdown="nmcli -p con down id" # disconnect from wifi
 alias wifion="nmcli nm wifi on"     # turn on wifi
 alias wifioff="nmcli nm wifi off"   # turn off wifi
 alias sleep="systemctl suspend"     # suspend the machine
+alias wee="weechat-curses"
 alias youtube-viewer="youtube-viewer -C" # color, 480p, number of results
 
+# functions
 # configuration
 cfg-zshrc() { $EDITOR ~/.zshrc ;}
+    rld-zshrc() { source ~/.zshrc ;}
 cfg-vimrc() { $EDITOR ~/.vimrc ;}
 cfg-xresource() { $EDITOR ~/.Xresources ;}
+    rld-xresources() { xrdb -load ~/.Xresources ;}
 cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 
 # capture rtmp links
-sniff-begin() { 
-    sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;
-}
-
-sniff-capture-rtmpsrv() { 
-    rtmpsrv ;
-}
-
-sniff-end() { 
-    sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT ;
-}
+sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
+sniff-capture-rtmpsrv() { rtmpsrv ;}
+sniff-end() { sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
 
 # play youtube video with youtube-viewer and mplayer
-ytv() { 
-    youtube-viewer -3 $@ ;
-}
+# search youtube video
+ytv() { youtube-viewer -4 $@ ;}
+# gotbletu channel
+yts-gotbletu() { youtube-viewer -u gotbletu ;}
+# jupiterbroadcasting channel
+yts-jbcast() { youtube-viewer -u jupiterbroadcasting ;}
+# linux4unme channel
+yts-linux4unme() { youtube-viewer -u linux4unme ;}
+# metalx1000 channel
+yts-metalx1000() { youtube-viewer -u metalx1000 ;}
+# bfmvdo
+yts-bfmvdo() { youtube-viewer -u bfmvdo ;}
 
-# play youtube video with yturl and mplayer
-yt() {
-    mplayer "$(yturl "$@")"
-}
+# python calculator, press Ctrl+D to quit
+calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
