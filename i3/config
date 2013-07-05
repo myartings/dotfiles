@@ -32,14 +32,14 @@ bar {
         font -misc-termsyn-medium-r-normal-*-13-*-*-*-*-*-iso8859-*
         status_command i3status
         colors {
-            background #222222
-            statusline #BFB5B5
+            background #2e3336
+            statusline #bfb5b5
             separator  #285577
 
-            focused_workspace  #285577 #090808 #46A4FF
-            active_workspace   #1A2122 #555555 #BFB5B5
+            focused_workspace  #285577 #090808 #46a4ff
+            active_workspace   #1a2122 #555555 #bfb5b5
             inactive_workspace #333333 #222222 #888888
-            urgent_workspace   #2F343A #FF669D #BFB5b5
+            urgent_workspace   #2f343a #ff669d #bfb5b5
         }
 }
 
