@@ -9,21 +9,22 @@ filetype plugin on
 filetype indent on
 syntax on
 
+set t_Co=256
 if &t_Co > 2 || has("gui_running")
     " Syntax highlighting
     syntax enable
     colorscheme molokai
 endif
 
-set nocompatible        " Use vim, no vi defaults
-set encoding=utf-8              " use UTF-8 encoding
-set number                      " always show line numbers
-set ruler                       " Show line and column number
-set norelativenumber            " show no relativ line numbers
+map <C-c> "+y<CR>
 
+set nocompatible        " Use vim, no vi defaults
+set encoding=utf-8      " use UTF-8 encoding
+set number              " always show line numbers
+set ruler               " Show line and column number
+set norelativenumber    " show no relativ line numbers
 set nobackup            " disable backup files (filename~)
 set backspace=2         " full backspacing capabilities (indent,eol,start)
-
 set linebreak           " attempt to wrap lines cleanly
 set wildmenu            " enhanced tab-completion shows all matching cmds in a popup menu
 
