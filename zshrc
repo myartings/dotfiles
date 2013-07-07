@@ -35,7 +35,7 @@ alias cp='acp -g'   # cp with progress bar
 alias mv='amv -g'   # mv with progress bar
 alias scb='sudo setpci -s 00:02.0 F4.B=70'  # set screen brightness to 70
 alias wifilist='nmcli -p dev wifi'  # list available wifi  
-alias nmup='nmcli -p con up id/'    # connect to wifi
+alias nmup='nmcli -p con up id'    # connect to wifi
 alias nmdown='nmcli -p con down id' # disconnect from wifi 
 alias wifion='nmcli nm wifi on'     # turn on wifi
 alias wifioff='nmcli nm wifi off'   # turn off wifi
@@ -52,6 +52,7 @@ cfg-xresource() { $EDITOR ~/.Xresources ;}
     rld-xresources() { xrdb -load ~/.Xresources ;}
 cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
+cfg-i3status() { $EDITOR ~/.i3status.conf ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
@@ -71,6 +72,10 @@ yts-linux4unme() { youtube-viewer -u linux4unme ;}
 yts-metalx1000() { youtube-viewer -u metalx1000 ;}
 # bfmvdo
 yts-bfmvdo() { youtube-viewer -u bfmvdo ;}
+# russiatoday
+yts-russiatoday() { youtube-viewer -u russiatoday ;}
+# suspicious0bservers
+yts-suspicious0bservers() { youtube-viewer -u suspicious0bservers ;}
 
 # python calculator, press Ctrl+D to quit
 calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
