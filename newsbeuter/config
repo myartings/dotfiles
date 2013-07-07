@@ -6,7 +6,7 @@
 
 # Settings
 always-display-description true
-browser /usr/bin/luakit
+browser /usr/bin/firefox
 external-url-viewer "urlview"
 goto-first-unread yes
 ignore-mode "display"
