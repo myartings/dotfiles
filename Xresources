@@ -14,7 +14,7 @@ URxvt.iso14755:         false
 URxvt.depth:            32
 
 ! -- Cursor -- !
-Xcursor.theme: Vanilla-DMZ
+Xcursor.theme: Vanilla-DMZ-AA
 
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
@@ -24,8 +24,8 @@ Xft.dpi:       96
 Xft.rgba:      rgb
 
 ! -- Fonts -- !
-URxvt*font:-*-tamsyn-medium-*-*-*-14-*-*-*-*-*-*-*
-URxvt*boldFont:-*-tamsyn-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*font:-*-termsyn-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*boldFont:-*-termsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 
 ! -- Colors -- !
 #include "/home/serdotlinecho/.colors/molokai"
@@ -38,7 +38,7 @@ URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
 URxvt.keysym.M-u:       perl:url-select:select_next
 URxvt.keysym.M-h:       perl:keyboard-select:activate
 URxvt.keysym.M-s:       perl:keyboard-select:search
-URxvt.url-launcher:     /usr/bin/luakit
+URxvt.url-launcher:     /usr/bin/aurora
 URxvt.matcher.button:   1
 
 ! -- Xautolock screen locker -- !
