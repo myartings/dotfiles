@@ -28,3 +28,4 @@ mpd ~/.mpd/mpd.conf &
 
 # i3wm
 exec i3
+
