@@ -168,8 +168,6 @@
 0.0.0.0 gigya.com
 0.0.0.0 toolbar.cdn.gigya.com
 0.0.0.0 c.gigcount.com
-0.0.0.0 www.freelancer.com
-0.0.0.0 freelancer.com
 0.0.0.0 www.feedjit.com
 0.0.0.0 feedjit.com
 0.0.0.0 log.feedjit.com
@@ -214,9 +212,6 @@
 0.0.0.0 cdn.static.nuffnang.com.my
 0.0.0.0 s0.2mdn.net
 0.0.0.0 static.2mdn.net
-0.0.0.0 www.clickme.my
-0.0.0.0 clickme.my
-0.0.0.0 a.clickme.my
 0.0.0.0 www.effectivemeasure.com
 0.0.0.0 effectivemeasure.com
 0.0.0.0 admax.effectivemeasure.net
@@ -740,8 +735,6 @@
 0.0.0.0 static.crowdscience.com
 0.0.0.0 www.bdmela.com
 0.0.0.0 bdmela.com
-0.0.0.0 www.buyfacefx.com
-0.0.0.0 buyfacefx.com
 0.0.0.0 aimatch.com
 0.0.0.0 crtl.aimatch.com
 0.0.0.0 www.hubspot.com
@@ -987,6 +980,8 @@
 0.0.0.0 inskinmedia.com
 0.0.0.0 cdn.inskinmedia.com
 0.0.0.0 star-big.knorex.asia
+0.0.0.0 www.asiafriendfinder.com
+0.0.0.0 asiafriendfinder.com
 0.0.0.0 www.adnetwork.net
 0.0.0.0 adnetwork.net
 0.0.0.0 ad.adnetwork.net
@@ -1082,8 +1077,6 @@
 0.0.0.0 ww45.persianptc.com
 0.0.0.0 www.blogpatrol.com
 0.0.0.0 blogpatrol.com
-0.0.0.0 www.diranjang.com
-0.0.0.0 diranjang.com
 0.0.0.0 adserving.carigold.com
 0.0.0.0 banner.cari.com.my
 0.0.0.0 banner2a.cari.com.my
@@ -1162,8 +1155,6 @@
 0.0.0.0 msads.net
 0.0.0.0 ads1.msads.net
 0.0.0.0 beacon.securestudies.com
-0.0.0.0 www.tambahketinggian.com
-0.0.0.0 tambahketinggian.com
 0.0.0.0 cdn.insights.gravity.com
 0.0.0.0 tracker.mozo.com.au
 0.0.0.0 www.geovisite.com
@@ -1246,3 +1237,7 @@
 0.0.0.0 mxpnl.com
 0.0.0.0 cdn.mxpnl.com
 0.0.0.0 log.olark.com
+0.0.0.0 www.topsy.com
+0.0.0.0 topsy.com
+0.0.0.0 cdn.topsy.com
+0.0.0.0 button.topsy.com
