@@ -6,22 +6,24 @@
 
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
+dir=~/dotfiles          # dotfiles directory
+olddir=~/dotfiles_old   # old dotfiles backup directory
 files="vimrc 
-zshrc 
+zshrc
+zshrc.alias
+zshrc.function
 tmux.conf 
 Xresources
 colors
 xinitrc 
 i3
 i3status.conf
+gtkrc-2.0
 newsbeuter 
 weechat
 mpd
 ncmpcpp
-gtkrc-2.0 
-conkyrc"  # list of files/folders to symlink in homedir
+conkyrc"                # list of files/folders to symlink in homedir
 
 ##########
 
