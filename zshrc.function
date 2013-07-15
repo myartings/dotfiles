@@ -2,6 +2,8 @@
 # configuration
 cfg-zshrc() { $EDITOR ~/.zshrc ;}
     rld-zshrc() { source ~/.zshrc ;}
+cfg-alias() { $EDITOR ~/.zshrc.alias ;}
+cfg-function() { $EDITOR ~/.zshrc.function ;}
 cfg-vimrc() { $EDITOR ~/.vimrc ;}
 cfg-xresource() { $EDITOR ~/.Xresources ;}
     rld-xresources() { xrdb -load ~/.Xresources ;}
@@ -25,6 +27,8 @@ yts-jbcast() { youtube-viewer -u jupiterbroadcasting ;}
 yts-linux4unme() { youtube-viewer -u linux4unme ;}
 # metalx1000 channel
 yts-metalx1000() { youtube-viewer -u metalx1000 ;}
+# sinar harian
+yts-sinarharianwebtv() { youtube-viewer -u sinarharianwebtv ;}
 # bfmvdo
 yts-bfmvdo() { youtube-viewer -u bfmvdo ;}
 # russiatoday
