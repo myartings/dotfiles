@@ -27,8 +27,6 @@ yts-jbcast() { youtube-viewer -u jupiterbroadcasting ;}
 yts-linux4unme() { youtube-viewer -u linux4unme ;}
 # metalx1000 channel
 yts-metalx1000() { youtube-viewer -u metalx1000 ;}
-# sinar harian
-yts-sinarharianwebtv() { youtube-viewer -u sinarharianwebtv ;}
 # bfmvdo
 yts-bfmvdo() { youtube-viewer -u bfmvdo ;}
 # russiatoday
