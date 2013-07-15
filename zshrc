@@ -4,6 +4,10 @@
 # author: serdotlinecho
 # ---------------------
 
+# alias and funtion
+[ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
+[ -f ~/.zshrc.function ] && source ~/.zshrc.function
+
 # path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -24,58 +28,3 @@ DISABLE_AUTO_TITLE="true"
 
 # System-independent paths
 PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
-
-# aliases
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias ohmyzsh='vim ~/.oh-my-zsh'
-alias cp='acp -g'   # cp with progress bar
-alias mv='amv -g'   # mv with progress bar
-alias scb='sudo setpci -s 00:02.0 F4.B=70'  # set screen brightness to 70
-alias wifilist='nmcli -p dev wifi'  # list available wifi  
-alias nmup='nmcli -p con up id'    # connect to wifi
-alias nmdown='nmcli -p con down id' # disconnect from wifi 
-alias wifion='nmcli nm wifi on'     # turn on wifi
-alias wifioff='nmcli nm wifi off'   # turn off wifi
-alias sleep='systemctl suspend'     # suspend the machine
-alias wee='weechat-curses'
-alias youtube-viewer='youtube-viewer -C' # show color
-
-# functions
-# configuration
-cfg-zshrc() { $EDITOR ~/.zshrc ;}
-    rld-zshrc() { source ~/.zshrc ;}
-cfg-vimrc() { $EDITOR ~/.vimrc ;}
-cfg-xresource() { $EDITOR ~/.Xresources ;}
-    rld-xresources() { xrdb -load ~/.Xresources ;}
-cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
-cfg-i3conf() { $EDITOR ~/.i3/config ;}
-cfg-i3status() { $EDITOR ~/.i3status.conf ;}
-
-# capture rtmp links
-sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
-sniff-capture-rtmpsrv() { rtmpsrv ;}
-sniff-end() { sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
-
-# play youtube video with youtube-viewer and mplayer
-# search youtube video
-ytv() { youtube-viewer -4 $@ ;}
-# gotbletu channel
-yts-gotbletu() { youtube-viewer -u gotbletu ;}
-# jupiterbroadcasting channel
-yts-jbcast() { youtube-viewer -u jupiterbroadcasting ;}
-# linux4unme channel
-yts-linux4unme() { youtube-viewer -u linux4unme ;}
-# metalx1000 channel
-yts-metalx1000() { youtube-viewer -u metalx1000 ;}
-# bfmvdo
-yts-bfmvdo() { youtube-viewer -u bfmvdo ;}
-# russiatoday
-yts-russiatoday() { youtube-viewer -u russiatoday ;}
-# suspicious0bservers
-yts-suspicious0bservers() { youtube-viewer -u suspicious0bservers ;}
-
-# python calculator, press Ctrl+D to quit
-calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
