@@ -18,23 +18,37 @@ sniff-end() { sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
 
 # play youtube video with youtube-viewer and mplayer
 # search youtube video
-ytv() { youtube-viewer -4 $@ ;}
+ytv() { youtube-viewer -C $@ ;}
 # gotbletu channel
-yts-gotbletu() { youtube-viewer -u gotbletu ;}
+yts-gotbletu() { youtube-viewer -C -u gotbletu ;}
 # jupiterbroadcasting channel
-yts-jbcast() { youtube-viewer -u jupiterbroadcasting ;}
+yts-jbcast() { youtube-viewer -C -u jupiterbroadcasting ;}
 # linux4unme channel
-yts-linux4unme() { youtube-viewer -u linux4unme ;}
+yts-linux4unme() { youtube-viewer -C -u linux4unme ;}
 # metalx1000 channel
-yts-metalx1000() { youtube-viewer -u metalx1000 ;}
-# bfmvdo
-yts-bfmvdo() { youtube-viewer -u bfmvdo ;}
+yts-metalx1000() { youtube-viewer -C -u metalx1000 ;}
+# tvselangor
+yts-tvselangor() { youtube-viewer -C -u tvselangor09 ;}
 # russiatoday
-yts-russiatoday() { youtube-viewer -u russiatoday ;}
+yts-russiatoday() { youtube-viewer -C -u russiatoday ;}
 # rtamerica
-yts-rtamerica() { youtube-viewer -u rtamerica ;}
+yts-rtamerica() { youtube-viewer -C -u rtamerica ;}
+# wuptubeadmin
+yts-wuptubeadmin() { youtube-viewer -C -u wuptubeadmin ;}
 # suspicious0bservers
-yts-suspicious0bservers() { youtube-viewer -u suspicious0bservers ;}
+yts-suspicious0bservers() { youtube-viewer -C -u suspicious0bservers ;}
+# Pinksapphiret2
+yts-pinksapphiret2() { youtube-viewer -C -u Pinksapphiret2 ;}
 
 # python calculator, press Ctrl+D to quit
 calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
+
+# dictionary search from dict.org
+define() {
+    if [[ $# -ge 2 ]] then
+        echo "define: too many arguments" >&2
+        return 1
+    else
+        curl "dict://dict.org/d:$1"
+fi
+}
