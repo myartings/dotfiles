@@ -11,11 +11,12 @@ URxvt.cursorBlink:      false
 URxvt*saveLines:        512
 URxvt*termName:         rxvt-256color
 URxvt.iso14755:         false
-URxvt.depth:            32
+! URxvt.depth:            32
 
 ! -- Cursor -- !
 Xcursor.theme:  Vanilla-DMZ-AA
 Xcursor.size:   16   
+
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
 Xft.hinting:   true
@@ -43,6 +44,6 @@ URxvt.matcher.button:   1
 
 ! -- Xautolock screen locker -- !
 Xautolock.time:        10
-Xautolock.corners:     +0-0
+Xautolock.corners:     -+00
 Xautolock.cornerdelay: 10
 Xautolock.locker:      i3lock -c 2E3336
