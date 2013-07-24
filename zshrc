@@ -16,7 +16,7 @@ ZSH_THEME="nicoulaj"
 
 # plugins
 # ~/.oh-my-zsh/plugins/
-plugins=(git systemd colored-man zsh-syntax-highlighting) 
+plugins=(git fasd systemd colored-man zsh-syntax-highlighting) 
 
 source $ZSH/oh-my-zsh.sh
 
