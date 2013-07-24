@@ -1,32 +1,36 @@
 # ------------------------------
 # file:     ~/.i3/config
 # author:   serdotlinecho
+# vim:filetype=i3
 # ------------------------------
 
-# mod key is the WinKey
+# modifier key
 set $mod Mod4
+set $mod1 Mod1
 
 # defaults
 default_orientation vertical
-new_window pixel 1
+new_window pixel 1 
+new_float pixel 1
 
 # float the following window
 for_window [class="feh"] floating enable
-#for_window [class="mplayer2"] floating enable
 for_window [class="Gcolor2"] floating enable
+for_window [class="I3-exit"] floating enable
 
 # App launching
-bindsym $mod+p exec dmenu_run -fn "-misc-tamsyn-medium-r-normal-*-13-*-*-*-*-*-*-*" -i -b -nb '#2b2b2b' -nf '#bfb5b5' -sb '#1692d0' -p 'Run:'
+bindsym $mod+p exec dmenu_run -fn "-misc-termsyn-medium-r-normal-*-14-*-*-*-*-*-*-*" -i -b -nb '#2b2b2b' -nf '#bfb5b5' -sb '#4d679a' -p 'Run:'
 bindsym Print exec scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
 
 # assign the following to specific workspaces
-assign [class="Aurora"] $ws2
+assign [class="Dwb"] $ws2
 assign [class="luakit"] $ws2
 assign [class="Pcmanfm"] $ws4
 
 # i3bar
 bar {
         position top
+        workspace_buttons yes
         font "-*-termsyn-medium-r-normal-*-14-*-*-*-*-*-*-*"
         status_command i3status
         colors {
@@ -35,7 +39,7 @@ bar {
             separator  #285577
 
             focused_workspace  #285577 #090808 #46a4ff
-            active_workspace   #1a2122 #555555 #bfb5b5
+            active_workspace   #1a2122 #555555 #888888
             inactive_workspace #333333 #222222 #888888
             urgent_workspace   #2f343a #ff669d #bfb5b5
         }
@@ -48,7 +52,7 @@ floating_modifier $mod
 bindsym $mod+Return exec /usr/bin/urxvtc
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # change focus
 bindsym $mod+j focus left
@@ -69,10 +73,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+bar split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+minus split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
@@ -97,28 +101,24 @@ bindsym $mod+a focus parent
 # customize workspace names
 set $ws1 1:term
 set $ws2 2:www
-set $ws3 3:chat
+set $ws3 3:music
 set $ws4 4:fm
-
+ 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
 
 # switch between the current and the previously focused one
-bindsym $mod+Right workspace next
-bindsym $mod+Left workspace prev
+bindsym $mod1+j workspace next
+bindsym $mod1+k workspace prev
 bindsym $mod+Shift+Tab move container to workspace back_and_forth
 
 # reload the configuration file
@@ -126,7 +126,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec ~/.i3/exit_menu.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -161,3 +162,4 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '2%-'"
 
 # lock screen
 bindsym $mod+Control+x exec i3lock -d -c 444444
+
