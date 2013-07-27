@@ -3,10 +3,12 @@
 " authtor: serdotlinecho
 " ----------------------   
 
-execute pathogen#infect()
+call pathogen#infect()
+call pathogen#helptags()
+
+map ; :
 syntax on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 set t_Co=256
 if &t_Co > 2 || has("gui_running")
