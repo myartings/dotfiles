@@ -1,32 +1,76 @@
-###################################
+# ------------------------------ #
 # file:     ~/.ncmpcpp/config    
 # author:   serdotlinecho
-###################################
-
+# ------------------------------ #
 
 ##### connection settings #####
 mpd_host =                  "localhost"
 mpd_port =                  "6600"
-mpd_music_dir =             "/home/serdotlinecho/Music"
+mpd_music_dir =             "~/Music"
 mpd_connection_timeout =    "5"
 mpd_crossfade_time =        "5"
 
-##### music visualizer #####
+##### music visualizer ##### 
 
 audio_output {
 type            "fifo"
-name           "my_fifo"
+name            "my_fifo"
 path            "/tmp/mpd.fifo"
 format          "44100:16:2"
 }
 
+##### song format #####
+##
+## for song format you can use:
+##
+## %l - length
+## %f - filename
+## %D - directory
+## %a - artist
+## %A - album artist
+## %t - title
+## %b - album
+## %y - year
+## %n - track number (01/12 -> 01)
+## %N - full track info (01/12 -> 01/12)
+## %g - genre
+## %c - composer
+## %p - performer
+## %d - disc
+## %C - comment
+## $R - begin right alignment
+##
+## - 0 - default window color (discards all other colors)
+## - 1 - black
+## - 2 - red
+## - 3 - green
+## - 4 - yellow
+## - 5 - blue
+## - 6 - magenta
+## - 7 - cyan
+## - 8 - white
+## - 9 - end of current color
+##
+##### UI #####
+song_list_format = " {$2%a$1 - }{$8%t$1}$R{$4%l} "
+song_status_format = "{$8%a$9 $9•$9 $b$8%t$/b$9 $9•$9 $8%b$9 {$9•$9 $8%y$9}}|{$8%f$9}"
+selected_item_prefix = "$8"
+selected_item_suffix = "$9"
+alternative_header_first_line_format = "$b$8$aqqu$/a$9 $/b$6{%t}|{%f}$9 $b$8$atqq$/a$9$/b"
+alternative_header_second_line_format = "{{$4%a$9}{ ($5%y$9$/b)}}|{%D}"
+
+##### progress bar #####
+# progressbar_look   = "─╼╌"
+# progressbar_look  = "─╼ "
+progressbar_look = "░█ "        
+progressbar_color = "magenta"
+titles_visibility = "no"
+
+
+##### visualizer #####
 visualizer_fifo_path =      "/tmp/mpd.fifo"
 visualizer_output_name =    "my_fifo"
 visualizer_type =           "spectrum" (wave/spectrum)
 visualizer_sync_interval =  "100"
 visualizer_look =           "●┇"
-
-##### progress bar #####
-song_status_format = "$8%a $1// $8%t $1// $8%b {(Disc %d) }$1// $8%y $1"
-progressbar_look =  "─╼─"
-titles_visibility = "no"
+visualizer_color =          "cyan"
