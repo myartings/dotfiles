@@ -11,3 +11,4 @@ alias wmenu='sudo wifi-menu'
 alias sleep='systemctl suspend'  # suspend the machine
 alias ncm='ncmpcpp'
 alias wee='weechat-curses'
+alias speedtest='speedtest-cli'
