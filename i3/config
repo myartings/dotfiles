@@ -2,7 +2,7 @@
 # file:     ~/.i3/config
 # author:   serdotlinecho
 # Please see http://i3wm.org/docs/userguide.html for a complete reference
-# vim:filetype=i3
+# vim: filetype=i3
 # -------------------------------------------------------------------------------- #
 
 # modifier key
@@ -15,7 +15,6 @@ new_window pixel 1
 new_float pixel 1
 
 # float the following window
-for_window [class="feh"] floating enable
 for_window [class="Gcolor2"] floating enable
 
 # App launching
