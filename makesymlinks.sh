@@ -19,6 +19,7 @@ xinitrc
 i3
 i3status.conf
 gtkrc-2.0
+mplayer
 newsbeuter 
 weechat
 mpd
