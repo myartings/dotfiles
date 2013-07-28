@@ -1,5 +1,10 @@
-# functions
-# configuration
+# ------------------------------------------------
+# file:     ~/.zshrc.function
+# author:   serdotlinecho
+# vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=sh:
+# ------------------------------------------------
+
+# config
 cfg-zshrc() { $EDITOR ~/.zshrc ;}
     rld-zshrc() { source ~/.zshrc ;}
 cfg-alias() { $EDITOR ~/.zshrc.alias ;}
@@ -35,10 +40,6 @@ yts-russiatoday() { youtube-viewer -C -u russiatoday ;}
 yts-rtamerica() { youtube-viewer -C -u rtamerica ;}
 # wuptubeadmin
 yts-wuptubeadmin() { youtube-viewer -C -u wuptubeadmin ;}
-# suspicious0bservers
-yts-suspicious0bservers() { youtube-viewer -C -u suspicious0bservers ;}
-# Pinksapphiret2
-yts-pinksapphiret2() { youtube-viewer -C -u Pinksapphiret2 ;}
 
 # python calculator, press Ctrl+D to quit
 calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
