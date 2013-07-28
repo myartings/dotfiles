@@ -1,16 +1,21 @@
-! --------------------- !
-! file:   ~/.Xresources
-! author: serdotlinecho
-! --------------------- !
+! ------------------------------------------------------------- !
+! file:     ~/.Xresources
+! author:   serdotlinecho
+! vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
+! ------------------------------------------------------------- !
 
 ! -- Urxvt -- !
-URxvt*borderless:       false
+URxvt*termName:         rxvt-256color
+URxvt.geometry:         80x22
 URxvt*scrollBar_right:  false
 URxvt*scrollBar:        false
+URxvt.cursorUnderline:  false
 URxvt.cursorBlink:      false
+URxvt*urgentOnBell:     true
 URxvt*saveLines:        512
-URxvt*termName:         rxvt-256color
-URxvt.iso14755:         false
+URxvt*scrollBar_right:  false
+URxvt*scrollBar:        false
+URxvt*borderless:       false
 ! URxvt.depth:            32
 
 ! -- Cursor -- !
@@ -30,13 +35,13 @@ URxvt*boldFont:-*-termsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 ! -- Colors -- !
 #include "/home/serdotlinecho/.colors/molokai"
 
-! -- Extension -- !
+! -- Extensions -- !
 URxvt.perl-ext-common:          default,clipboard,matcher,url-select,keyboard-select
 URxvt.keysym.M-c:               perl:clipboard:copy
 URxvt.keysym.M-v:               perl:clipboard:paste
 URxvt.keysym.M-C-v:             perl:clipboard:paste_escaped
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      /usr/bin/aurora -new-tab
+URxvt.url-select.launcher:      /usr/bin/dwb
 URxvt.url-select.underline:     true
 URxvt.keysym.M-h:               perl:keyboard-select:activate
 URxvt.keysym.M-s:               perl:keyboard-select:search
