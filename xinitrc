@@ -1,7 +1,8 @@
-# ------------------------
+# ---------------------------------------------------
 # file: ~/.xinitrc
 # author: serdotlinecho
-# ------------------------
+# vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=sh:
+# ---------------------------------------------------
 
 #!/bin/sh
 
@@ -30,7 +31,7 @@ sh $HOME/.fehbg &
 mpd ~/.mpd/mpd.conf &
 
 # automounting usb devices
-/usr/bin/udiskie -s &
+/usr/bin/udiskie --suppress &
 
 # screen locker
 /usr/bin/xautolock &
