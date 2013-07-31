@@ -19,7 +19,7 @@ confirm-exit yes
 
 # Theme
 color listnormal default default
-color listfocus black cyan
+color listfocus white blue
 color article default default
 color info green default
 
