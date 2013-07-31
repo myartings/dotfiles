@@ -12,16 +12,16 @@
 ZSH=$HOME/.oh-my-zsh
 
 # theme
-ZSH_THEME="nicoulaj"
+ZSH_THEME="gallois"
 
 # plugins
 # ~/.oh-my-zsh/plugins/
-plugins=(git fasd systemd colored-man zsh-syntax-highlighting) 
+plugins=(git fasd colored-man zsh-syntax-highlighting) 
 
 source $ZSH/oh-my-zsh.sh
 
 # default editor
-export EDITOR=/usr/bin/vim
+export EDITOR="vim"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 DISABLE_AUTO_TITLE="true"
