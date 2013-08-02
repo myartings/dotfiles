@@ -12,6 +12,7 @@ files="vimrc
 zshrc
 zshrc.alias
 zshrc.function
+dir_colors
 tmux.conf 
 Xresources
 colors
