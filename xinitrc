@@ -31,7 +31,7 @@ sh $HOME/.fehbg &
 mpd ~/.mpd/mpd.conf &
 
 # automounting usb devices
-/usr/bin/udiskie --suppress &
+#/usr/bin/udiskie --suppress &
 
 # screen locker
 /usr/bin/xautolock &
