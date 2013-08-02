@@ -18,7 +18,7 @@ URxvt*color2:  #87ff00
 URxvt*color10: #93ff19
 ! DarkYellow + Yellow
 URxvt*color3:  #ff8700 
-URxvt*color11: #ff9926
+URxvt*color11: #ffc74a
 ! DarkBlue + Blue
 URxvt*color4:  #005f87
 URxvt*color12: #387bab
