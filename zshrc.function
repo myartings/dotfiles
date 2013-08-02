@@ -10,7 +10,7 @@ cfg-zshrc() { $EDITOR ~/.zshrc ;}
 cfg-alias() { $EDITOR ~/.zshrc.alias ;}
 cfg-function() { $EDITOR ~/.zshrc.function ;}
 cfg-vimrc() { $EDITOR ~/.vimrc ;}
-cfg-xresource() { $EDITOR ~/.Xresources ;}
+cfg-xresources() { $EDITOR ~/.Xresources ;}
     rld-xresources() { xrdb -load ~/.Xresources ;}
 cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
