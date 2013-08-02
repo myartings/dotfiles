@@ -13,8 +13,6 @@ URxvt.cursorUnderline:  false
 URxvt.cursorBlink:      false
 URxvt*urgentOnBell:     true
 URxvt*saveLines:        512
-URxvt*scrollBar_right:  false
-URxvt*scrollBar:        false
 URxvt*borderless:       false
 ! URxvt.depth:            32
 
