@@ -17,7 +17,7 @@ URxvt*borderless:       false
 ! URxvt.depth:            32
 
 ! -- Colors -- !
-#include "/home/serdotlinecho/.colors/rab"
+#include "/home/serdotlinecho/.colors/serdotlin"
 
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
