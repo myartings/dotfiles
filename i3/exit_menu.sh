@@ -5,4 +5,4 @@ while [ "$select" != "YES" -a "$select" != "NO" ]; do
     [ -z "$select" ] && exit 0
 done
 [ "$select" = "NO" ] && exit 0
-# i3-msg exit
+i3-msg exit
