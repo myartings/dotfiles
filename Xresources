@@ -16,8 +16,8 @@ URxvt*saveLines:        512
 URxvt*borderless:       false
 ! URxvt.depth:            32
 
-! -- Cursor -- !
-Xcursor.theme:  Vanilla-DMZ-AA
+! -- Colors -- !
+#include "/home/serdotlinecho/.colors/rab"
 
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
@@ -30,8 +30,8 @@ Xft.rgba:      rgb
 URxvt*font:-*-termsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*boldFont:-*-termsyn-medium-*-*-*-14-*-*-*-*-*-*-*
 
-! -- Colors -- !
-#include "/home/serdotlinecho/.colors/molokai"
+! -- Cursor -- !
+Xcursor.theme:  Vanilla-DMZ-AA
 
 ! -- Extensions -- !
 URxvt.perl-ext-common:          default,clipboard,matcher,url-select,keyboard-select
