@@ -7,20 +7,23 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+filetype plugin indent on   " filetype detection and settings
+syntax on                   " syntax highlighting
+colorscheme codesweets      " load color scheme
+
+" if exists("syntax_on")
+"       syntax reset
+" endif
+" let g:colors_name = "codesweets"
+" if &t_Co > 2 || has("gui_running")
+"     syntax enable
+"     colorscheme codesweets
+" endif
+
 map ; :
-syntax on
-filetype plugin indent on
-
-set t_Co=256
-if &t_Co > 2 || has("gui_running")
-    " Syntax highlighting
-    syntax enable
-    colorscheme molokai
-endif
-
 map <C-c> "+y<CR>
 
-set nocompatible        " Use vim, no vi defaults
+set nocompatible        " use vim, no vi defaults
 set encoding=utf-8      " use UTF-8 encoding
 set number              " always show line numbers
 set ruler               " Show line and column number
