@@ -1,10 +1,10 @@
 ! serdotlin colors
 
 *foreground: #DDEEDD
-*background: #1C1C1C
+*background: #121212
 
-!black
-*color0: #1C1C1C
+!black color0 #1C1C1C
+*color0: #1E2320
 *color8: #4d4d4d
 !red
 *color1: #D81860
