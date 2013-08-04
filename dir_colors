@@ -100,6 +100,7 @@ STICKY             01;34      # dir with the sticky bit set (+t) and not other-w
 .mpg               01;35     # movies (magenta)
 .mpeg              01;35
 .ogv               01;35
+.webm              01;35 
 
 # all of the rest
 .PL                00;36
