@@ -8,12 +8,12 @@
 
 dir=~/dotfiles          # dotfiles directory
 olddir=~/dotfiles_old   # old dotfiles backup directory
-files="vimrc 
-zshrc
+files="zshrc
 zshrc.alias
 zshrc.function
 dir_colors
-tmux.conf 
+vimrc
+vim
 Xresources
 colors
 xinitrc 
@@ -25,7 +25,7 @@ newsbeuter
 weechat
 mpd
 ncmpcpp
-conkyrc"                # list of files/folders to symlink in homedir
+tmux.conf"                # list of files/folders to symlink in homedir
 
 ##########
 
