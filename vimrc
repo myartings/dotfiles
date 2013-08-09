@@ -13,7 +13,7 @@ call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
-" original repos on github
+" installing bundles to ~/.vim/bundle
 Bundle 'tomtom/tcomment_vim'
 Bundle 'scrooloose/nerdtree'
 
