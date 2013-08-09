@@ -4,12 +4,21 @@
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:fdm=indent:fdn=1:ft=vim:
 " ------------------------------------------------------------------------   
 
-call pathogen#infect()
-call pathogen#helptags()
-
 filetype plugin indent on   " filetype detection and settings
 syntax on                   " syntax highlighting
-colorscheme codesweets      " load color scheme
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" original repos on github
+Bundle 'tomtom/tcomment_vim'
+Bundle 'scrooloose/nerdtree'
+
+set t_Co=256	            " support 256 colors		
+colorscheme molokai         " load color scheme
 
 " if exists("syntax_on")
 "       syntax reset
@@ -21,6 +30,7 @@ colorscheme codesweets      " load color scheme
 " endif
 
 map ; :
+map <F2> :NERDTreeToggle<CR>
 map <C-c> "+y<CR>
 
 set nocompatible        " use vim, no vi defaults
