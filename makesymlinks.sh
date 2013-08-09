@@ -14,12 +14,7 @@ zshrc.function
 dir_colors
 vimrc
 vim
-Xresources
 colors
-xinitrc 
-i3
-i3status.conf
-gtkrc-2.0
 mplayer
 newsbeuter 
 weechat
