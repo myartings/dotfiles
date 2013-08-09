@@ -20,7 +20,7 @@ ZSH_THEME="minimal"
 
 # plugins
 # ~/.oh-my-zsh/plugins/
-plugins=(git vi-mode fasd systemd colored-man zsh-syntax-highlighting) 
+plugins=(git vi-mode fasd colored-man) 
 
 source $ZSH/oh-my-zsh.sh
 
