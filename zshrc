@@ -8,10 +8,6 @@
 [ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
 [ -f ~/.zshrc.function ] && source ~/.zshrc.function
 
-# color coreutils
-eval $(dircolors -b ~/.dir_colors)
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-
 # path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
