@@ -19,10 +19,13 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'scrooloose/nerdtree'
 
 " Highlighting
-if &t_Co > 2 || has("gui_running")
-    syntax on                       " switch syntax highlighting on, when the terminal has colors
-    colorscheme molokai             " load colorscheme
-endif
+set t_Co=256
+syntax on
+colorscheme molokai
+" if &t_Co > 2 || has("gui_running")
+"     syntax on                       " switch syntax highlighting on, when the terminal has colors
+"     colorscheme molokai             " load colorscheme
+" endif
 
 " Editing behaviour 
 set tabstop=4           " tabs appear as n number of columns
