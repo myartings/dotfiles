@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=plank
+Type=Application
+Exec=plank
+Terminal=false
+Icon=plank
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Comment=The finest dock no money can buy.
+Categories=Utility;
