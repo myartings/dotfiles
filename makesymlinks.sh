@@ -9,6 +9,7 @@
 dir=~/dotfiles          # dotfiles directory
 olddir=~/dotfiles_old   # old dotfiles backup directory
 files="zshrc
+zshenv
 zshrc.alias
 zshrc.function
 dir_colors
