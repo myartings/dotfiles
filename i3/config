@@ -18,10 +18,10 @@ new_float pixel 1
 for_window [class="Gcolor2"] floating enable
 
 # App launching
-bindsym $mod+p exec dmenu_run -y 334 -fn "-misc-termsyn-medium-r-normal-*-14-*-*-*-*-*-*-*" -i -b -nb '#2b2b2b' -nf '#bfb5b5' -sb '#4d679a' -p 'Run:'
+bindsym $mod+p exec dmenu_run -fn "-misc-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#2b2b2b' -nf '#bfb5b5' -sb '#4d679a' -p 'Run:'
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
 bindsym $mod+m exec --no-startup-id urxvt -e ncmpcpp
-bindsym $mod1+p exec --no-startup-id mpdmenu -p track 
+#bindsym $mod1+p exec --no-startup-id mpdmenu -p track 
 
 # assign the following to specific workspaces
 #assign [class="Dwb"] 2
@@ -29,20 +29,20 @@ bindsym $mod1+p exec --no-startup-id mpdmenu -p track
 
 # font for window titles. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font "-*-termsyn-medium-r-normal-*-14-*-*-*-*-*-iso8859-1"
+font "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*"
 
 # i3bar
 bar {
-        position top
+        position bottom
         workspace_buttons yes
         font -misc-termsyn.icons-medium-r-normal--14-*-*-100-*-*-iso8859-1
         status_command i3status
         colors {
-            background #2e3336
+            background #161616
             statusline #ddeedd
             separator  #285577
 
-            focused_workspace  #285577 #090808 #46a4ff
+            focused_workspace  #ff8700 #090808 #ffc74a
             active_workspace   #1a2122 #555555 #888888
             inactive_workspace #333333 #222222 #888888
             urgent_workspace   #2f343a #ff669d #bfb5b5
@@ -53,7 +53,7 @@ bar {
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /usr/bin/urxvtc
+bindsym $mod+Return exec /usr/bin/urxvtc -e tmux
 
 # kill focused window
 bindsym $mod+q kill
