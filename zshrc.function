@@ -16,6 +16,8 @@ cfg-xresources() { $EDITOR ~/.Xresources ;}
 cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
+cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
+cfg-pyradio() { $EDITOR ~/.pyradio/stations.csv}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
@@ -39,8 +41,6 @@ yts-tvselangor() { youtube-viewer -C -u tvselangor09 ;}
 yts-russiatoday() { youtube-viewer -C -u russiatoday ;}
 # rtamerica
 yts-rtamerica() { youtube-viewer -C -u rtamerica ;}
-# wuptubeadmin
-yts-wuptubeadmin() { youtube-viewer -C -u wuptubeadmin ;}
 
 # python calculator, press Ctrl+D to quit
 calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
