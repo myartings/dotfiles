@@ -26,7 +26,8 @@ mplayer
 newsbeuter 
 weechat
 mpd
-ncmpcpp"                # list of files/folders to symlink in homedir
+ncmpcpp
+pyradio"                # list of files/folders to symlink in homedir
 
 ##########
 
