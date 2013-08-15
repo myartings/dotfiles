@@ -3,10 +3,9 @@
 # author:   serdotlinecho
 # ------------------------------------
 
-
 # Settings
 always-display-description true
-browser firefox
+browser dwb
 player mplayer
 external-url-viewer "urlview"
 goto-first-unread yes
@@ -19,7 +18,7 @@ confirm-exit yes
 
 # Theme
 color listnormal default default
-color listfocus black blue
+color listfocus default blue
 color article default default
 color info green default
 
