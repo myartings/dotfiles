@@ -27,13 +27,13 @@ Xft.dpi:       96
 Xft.rgba:      rgb
 
 ! -- Fonts -- !
-URxvt*font:-*-termsyn-medium-*-*-*-14-*-*-*-*-*-*-*
-URxvt*boldFont:-*-termsyn-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*font:-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*
+URxvt*boldFont:-*-termsynu-bold-r-*-*-14-*-*-*-*-*-*-*
 
 ! -- Cursor -- !
 Xcursor.theme:  Vanilla-DMZ-AA
 
-! -- Extensions -- !
+! ! -- Extensions -- !
 URxvt.perl-ext-common:          default,clipboard,matcher,url-select,keyboard-select
 URxvt.keysym.M-c:               perl:clipboard:copy
 URxvt.keysym.M-v:               perl:clipboard:paste
