@@ -8,20 +8,26 @@
 
 dir=~/dotfiles          # dotfiles directory
 olddir=~/dotfiles_old   # old dotfiles backup directory
-files="zshrc
+files="xinitrc
+Xresources
+zshrc
 zshenv
 zshrc.alias
 zshrc.function
+tmux.conf
+gtkrc-2.0
 dir_colors
 vimrc
 vim
+i3
+i3status.conf
 colors
 mplayer
 newsbeuter 
 weechat
 mpd
 ncmpcpp
-tmux.conf"                # list of files/folders to symlink in homedir
+pyradio"                # list of files/folders to symlink in homedir
 
 ##########
 
