@@ -5,7 +5,7 @@
 
 # Settings
 always-display-description true
-browser dwb
+browser $BROWSER
 player mplayer
 external-url-viewer "urlview"
 goto-first-unread yes
