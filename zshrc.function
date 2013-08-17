@@ -17,12 +17,33 @@ cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
 cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
-cfg-pyradio() { $EDITOR ~/.pyradio/stations.csv}
+    url-newsbeuter() { $EDITOR ~/.newsbeuter/urls ;}
+cfg-mplayer() { $EDITOR ~/.mplayer/config ;} 
+url-pyradio() { $EDITOR ~/.pyradio/stations.csv}
 
-# capture rtmp links
-sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
-sniff-capture-rtmpsrv() { rtmpsrv ;}
-sniff-end() { sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
+# transmission-cli
+trsm() { transmission-daemon ;}
+trsm-quit() { killall transmission-daemon ;}
+trsm-cli() { transmission-remote-cli ;}
+trsm-list() { transmission-remote --list ;}
+trsm-add() { transmission-remote --add "$1" ;}
+trsm-pause() { transmission-remote -t"$1" --stop ;} 
+trsm-start() { transmission-remote -t"$1" --start ;}
+trsm-purge() { transmission-remote -t"$1" --remove-and-delete ;}
+trsm-remove() { transmission-remote -t"$1" --remove ;}
+
+# python calculator, press Ctrl+D to quit
+calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
+
+# dictionary search from dict.org
+define() {
+    if [[ $# -ge 2 ]] then
+        echo "define: too many arguments" >&2
+        return 1
+    else
+        curl "dict://dict.org/d:$1"
+fi
+}
 
 # play youtube video with youtube-viewer and mplayer
 # search youtube video
@@ -42,15 +63,9 @@ yts-russiatoday() { youtube-viewer -C -u russiatoday ;}
 # rtamerica
 yts-rtamerica() { youtube-viewer -C -u rtamerica ;}
 
-# python calculator, press Ctrl+D to quit
-calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
+# capture rtmp links
+sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
+sniff-capture-rtmpsrv() { rtmpsrv ;}
+sniff-end() { sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
 
-# dictionary search from dict.org
-define() {
-    if [[ $# -ge 2 ]] then
-        echo "define: too many arguments" >&2
-        return 1
-    else
-        curl "dict://dict.org/d:$1"
-fi
-}
+
