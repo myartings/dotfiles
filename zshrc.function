@@ -16,6 +16,7 @@ cfg-xresources() { $EDITOR ~/.Xresources ;}
 cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
+cfg-ncm() { $EDITOR ~/.ncmpcpp/config :}
 cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
     url-newsbeuter() { $EDITOR ~/.newsbeuter/urls ;}
 cfg-mplayer() { $EDITOR ~/.mplayer/config ;} 
@@ -56,12 +57,6 @@ yts-jbcast() { youtube-viewer -C -u jupiterbroadcasting ;}
 yts-linux4unme() { youtube-viewer -C -u linux4unme ;}
 # metalx1000 channel
 yts-metalx1000() { youtube-viewer -C -u metalx1000 ;}
-# tvselangor
-yts-tvselangor() { youtube-viewer -C -u tvselangor09 ;}
-# russiatoday
-yts-russiatoday() { youtube-viewer -C -u russiatoday ;}
-# rtamerica
-yts-rtamerica() { youtube-viewer -C -u rtamerica ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
