@@ -21,7 +21,7 @@ Bundle 'scrooloose/nerdtree'
 " Highlighting
 set t_Co=256
 syntax on
-colorscheme molokai
+colorscheme solarized
 " if &t_Co > 2 || has("gui_running")
 "     syntax on                       " switch syntax highlighting on, when the terminal has colors
 "     colorscheme molokai             " load colorscheme
