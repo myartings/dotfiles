@@ -31,9 +31,6 @@ sh $HOME/.fehbg &
 # start urxvt terminal daemon
 /usr/bin/urxvtd -q -o -f &
 
-# start pulse audio
-#start-pulseaudio-x11 &
-
 # start music player daemon
 mpd ~/.mpd/mpd.conf &
 
