@@ -17,7 +17,7 @@ URxvt*borderless:       false
 ! URxvt.depth:            32
 
 ! -- Colors -- !
-#include "/home/serdotlinecho/.colors/serdotlin"
+#include "/home/serdotlinecho/.colors/solarized"
 
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
@@ -29,6 +29,7 @@ Xft.rgba:      rgb
 ! -- Fonts -- !
 URxvt*font:-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*
 URxvt*boldFont:-*-termsynu-bold-r-*-*-14-*-*-*-*-*-*-*
+! URxvt*font: xft:Source Code Pro Medium:pixelsize=11,xft:Source Code Pro Medium for Powerline:pixelsize=11
 
 ! -- Cursor -- !
 Xcursor.theme:  Vanilla-DMZ-AA
