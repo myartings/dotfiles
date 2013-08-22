@@ -55,6 +55,8 @@ source $ZSH/oh-my-zsh.sh
 # set path
 PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 
+DEFAULT_USER="serdotlinecho"
+
 # enable vim mode on commmand line
 bindkey -v
 
