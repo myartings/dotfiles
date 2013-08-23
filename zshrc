@@ -86,3 +86,5 @@ bindkey '^H' backward-delete-char
 # http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
 bindkey -M viins '^s' history-incremental-search-backward
 bindkey -M vicmd '^s' history-incremental-search-backward
+
+
