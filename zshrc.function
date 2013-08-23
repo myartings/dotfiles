@@ -57,6 +57,8 @@ yts-jbcast() { youtube-viewer -C -u jupiterbroadcasting ;}
 yts-linux4unme() { youtube-viewer -C -u linux4unme ;}
 # metalx1000 channel
 yts-metalx1000() { youtube-viewer -C -u metalx1000 ;}
+# rt channel
+yts-rt() { youtube-viewer -C -u russiatoday ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
