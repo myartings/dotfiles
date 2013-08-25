@@ -18,6 +18,8 @@ URxvt*borderless:       false
 
 ! -- Colors -- !
 #include "/home/serdotlinecho/.colors/solarized"
+! For solarized color scheme
+URxvt.intensityStyles:  false  
 
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
