@@ -11,12 +11,13 @@ cfg-alias() { $EDITOR ~/.zshrc.alias ;}
 cfg-function() { $EDITOR ~/.zshrc.function ;}
 cfg-vimrc() { $EDITOR ~/.vimrc ;}
 cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
+    rld-tmuxrc() { tmux source-file ~/.tmux.conf ;}
 cfg-xresources() { $EDITOR ~/.Xresources ;}
     rld-xresources() { xrdb -load ~/.Xresources ;}
 cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
-cfg-ncm() { $EDITOR ~/.ncmpcpp/config :}
+cfg-ncmpcpp() { $EDITOR ~/.ncmpcpp/config :}
 cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
     url-newsbeuter() { $EDITOR ~/.newsbeuter/urls ;}
 cfg-mplayer() { $EDITOR ~/.mplayer/config ;} 
