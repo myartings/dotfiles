@@ -38,7 +38,7 @@ bar {
         status_command i3status
         colors {
             # solarized dark
-            background #002A38 
+            background #002a38 
             statusline #bfb5b5
             separator  #285577
             
