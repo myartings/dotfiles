@@ -38,19 +38,24 @@ bar {
         status_command i3status
         colors {
             # solarized dark
-            #background #002A38 
-            #statusline #bfb5b5
-            #separator  #285577
-            
-            # solarized light
-            background #FDF6E4
-            statusline #657b83
+            background #002A38 
+            statusline #bfb5b5
             separator  #285577
-
-            focused_workspace  #fdf6e4 #fdf6e4 #268bd2
-            active_workspace   #fdf6e4 #fdf6e4 #bfb5b5
-            inactive_workspace #fdf6e4 #fdf6e4 #bfb5b5
+            
+            focused_workspace  #285577 #090808 #46a4ff
+            active_workspace   #1a2122 #555555 #888888
+            inactive_workspace #333333 #222222 #888888
             urgent_workspace   #2f343a #ff669d #bfb5b5
+
+            # solarized light
+            #background #FDF6E4
+            #statusline #657b83
+            #separator  #285577
+
+            #focused_workspace  #fdf6e4 #fdf6e4 #268bd2
+            #active_workspace   #fdf6e4 #fdf6e4 #bfb5b5
+            #inactive_workspace #fdf6e4 #fdf6e4 #bfb5b5
+            #urgent_workspace   #2f343a #ff669d #bfb5b5
         }
 }
 
