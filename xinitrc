@@ -16,7 +16,7 @@ fi
 xrdb -merge ~/.Xresources
 
 # set wallpaper 
-imlibsetroot -s f ~/Pictures/soft_and_clean_blue.png &
+imlibsetroot -s ~/.i3/archlinux_blue.jpg &
 
 # start urxvt terminal daemon
 /usr/bin/urxvtd -q -o -f &
