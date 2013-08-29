@@ -1,12 +1,10 @@
-127.0.0.1	localhost
-127.0.1.1	pyrus
+#
+# /etc/hosts: static lookup table for host names
+#
 
-# The following lines are desirable for IPv6 capable hosts
-::1     ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
+#<ip-address>	<hostname.domain.org>	<hostname>
+127.0.0.1	localhost.localdomain	localhost
+::1		localhost.localdomain	localhost
 
 # [Google]
 0.0.0.0 www.google-analytics.com
@@ -266,6 +264,7 @@ ff02::2 ip6-allrouters
 0.0.0.0 admax.effectivemeasure.net
 0.0.0.0 au.effectivemeasure.net
 0.0.0.0 c.effectivemeasure.net
+0.0.0.0 id-cdn.effectivemeasure.net
 0.0.0.0 my.effectivemeasure.net
 0.0.0.0 au-cdn.effectivemeasure.net
 0.0.0.0 my-cdn.effectivemeasure.net
@@ -1450,3 +1449,11 @@ ff02::2 ip6-allrouters
 0.0.0.0 www.adreactor.com
 0.0.0.0 adreactor.com
 0.0.0.0 mc.yandex.ru
+0.0.0.0 www.ampmbet.com
+0.0.0.0 ampmbet.com
+0.0.0.0 www.indobookie.com
+0.0.0.0 indobookie.com
+0.0.0.0 www.nagawin.com
+0.0.0.0 nagawin.com
+
+# End of file
