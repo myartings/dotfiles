@@ -1,3 +1,9 @@
+# -------------------------------------------------------------
+# file:     ~/.zshrc.alias
+# author:   serdotlinecho
+# vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=sh:
+# -------------------------------------------------------------
+
 alias cp='acp -g'   # cp with progress bar
 alias mv='amv -g'   # mv with progress bar
 alias vless='/usr/share/vim/vim74/macros/less.sh'
