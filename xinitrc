@@ -21,6 +21,9 @@ imlibsetroot -s f ~/Pictures/soft_and_clean_blue.png &
 # start urxvt terminal daemon
 /usr/bin/urxvtd -q -o -f &
 
+# start music player daemon
+mpd ~/.mpd/mpd.conf &
+
 # screen locker
 /usr/bin/xautolock &
 
