@@ -17,6 +17,9 @@ Bundle 'gmarik/vundle'
 " installing bundles to ~/.vim/bundle
 Bundle 'tomtom/tcomment_vim'
 Bundle 'scrooloose/nerdtree'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
 
 " Highlighting
 set t_Co=256
