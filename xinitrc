@@ -16,16 +16,19 @@ fi
 xrdb -merge ~/.Xresources
 
 # set wallpaper 
-imlibsetroot -s ~/.i3/archlinux_blue.jpg &
+imlibsetroot -s f ~/Pictures/archlinux_blue.jpg &
 
 # start urxvt terminal daemon
-/usr/bin/urxvtd -q -o -f &
+urxvtd -q -o -f &
 
 # start music player daemon
 mpd ~/.mpd/mpd.conf &
 
 # screen locker
-/usr/bin/xautolock &
+xautolock &
 
-# launch i3wm
+# launch WM/DE
+# exec startxfce4
 exec i3
+
+
