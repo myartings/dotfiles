@@ -2,7 +2,8 @@
 eval $(dircolors -b ~/.dir_colors)
 
 # setup environment
-export EDITOR="/usr/bin/vim"
-export BROWSER="/usr/bin/dwb"
-
+export EDITOR="vim"
+export BROWSER="dwb"
+# export BROWSER="firefox"
+# export TERM="xterm-color"
 
