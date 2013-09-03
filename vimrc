@@ -65,3 +65,13 @@ map <F2> :NERDTreeToggle<CR>
 " useful mappings for managing tabs
 nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
+
+" disabling the arrow keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
