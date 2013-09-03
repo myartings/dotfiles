@@ -15,9 +15,10 @@ cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
 cfg-xresources() { $EDITOR ~/.Xresources ;}
     rld-xresources() { xrdb -load ~/.Xresources ;}
 cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
+cfg-herbstluft() { $EDITOR ~/.config/herbstluftwm/autostart ;}
+cfg-panelherbstluft() { $EDITOR ~/.config/herbstluftwm/panel.sh ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
-cfg-ncmpcpp() { $EDITOR ~/.ncmpcpp/config :}
 cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
     url-newsbeuter() { $EDITOR ~/.newsbeuter/urls ;}
 cfg-mplayer() { $EDITOR ~/.mplayer/config ;} 
@@ -51,15 +52,17 @@ fi
 # search youtube video
 ytv() { youtube-viewer -C $@ ;}
 # gotbletu channel
-yts-gotbletu() { youtube-viewer -C -u gotbletu ;}
+yts-gotbletu() { youtube-viewer -C --results 10 -u gotbletu ;}
 # jupiterbroadcasting channel
-yts-jbcast() { youtube-viewer -C -u jupiterbroadcasting ;}
+yts-jbcast() { youtube-viewer -C -u --results 10 jupiterbroadcasting ;}
+# twildottv channel
+yts-twildottv() { youtube-viewer -C -u --results 10 twildottv ;}
 # linux4unme channel
-yts-linux4unme() { youtube-viewer -C -u linux4unme ;}
+yts-linux4unme() { youtube-viewer -C -u --results 10 linux4unme ;}
 # metalx1000 channel
-yts-metalx1000() { youtube-viewer -C -u metalx1000 ;}
+yts-metalx1000() { youtube-viewer -C -u --results 10 metalx1000 ;}
 # rt channel
-yts-rt() { youtube-viewer -C -u russiatoday ;}
+yts-rt() { youtube-viewer -C -u --results 10 russiatoday ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
