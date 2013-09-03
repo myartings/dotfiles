@@ -6,7 +6,7 @@
 
 ! -- Urxvt -- !
 URxvt*termName:         rxvt-256color
-URxvt.geometry:         80x22
+URxvt.geometry:         130x24
 URxvt*scrollBar_right:  false
 URxvt*scrollBar:        false
 URxvt.cursorUnderline:  false
@@ -17,7 +17,7 @@ URxvt*borderless:       false
 ! URxvt.depth:            32
 
 ! -- Colors -- !
-#include "/home/serdotlinecho/.colors/serdotlin"
+#include "/home/serdotlinecho/.colors/solarized"
 ! For solarized color scheme
 ! URxvt.intensityStyles:  false  
 
@@ -44,11 +44,11 @@ URxvt.keysym.M-c:               perl:clipboard:copy
 URxvt.keysym.M-v:               perl:clipboard:paste
 URxvt.keysym.M-C-v:             perl:clipboard:paste_escaped
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      /usr/bin/dwb
+URxvt.url-select.launcher:      dwb
 URxvt.url-select.underline:     true
 URxvt.keysym.M-h:               perl:keyboard-select:activate
 URxvt.keysym.M-s:               perl:keyboard-select:search
-URxvt.url-launcher:             /usr/bin/dwb
+URxvt.url-launcher:             dwb
 URxvt.matcher.button:           1
 
 ! -- Xautolock screen locker -- !
