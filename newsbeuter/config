@@ -17,11 +17,11 @@ confirm-exit yes
 #notify-program "notify-send"
 
 # Theme
-color background color12 color8
-color listnormal color12 color8
-color listfocus color8 color3
-color info color10 color0 bold
-color article color12 color8
+color background   color12 color8
+color listnormal   color12 color8
+color listfocus    color0 color3
+color info         color10 color0 bold
+color article      color12 color8
 
 highlight article "^Feed: .*$" color3 default
 highlight article "^Title: .*$" color13 default bold
