@@ -54,15 +54,15 @@ ytv() { youtube-viewer -C $@ ;}
 # gotbletu channel
 yts-gotbletu() { youtube-viewer -C --results 10 -u gotbletu ;}
 # jupiterbroadcasting channel
-yts-jbcast() { youtube-viewer -C -u --results 10 jupiterbroadcasting ;}
+yts-jbcast() { youtube-viewer -C --results 10 -u jupiterbroadcasting ;}
 # twildottv channel
-yts-twildottv() { youtube-viewer -C -u --results 10 twildottv ;}
+yts-twildottv() { youtube-viewer -C --results 10 -u twildottv ;}
 # linux4unme channel
-yts-linux4unme() { youtube-viewer -C -u --results 10 linux4unme ;}
+yts-linux4unme() { youtube-viewer -C --results 10 -u linux4unme ;}
 # metalx1000 channel
-yts-metalx1000() { youtube-viewer -C -u --results 10 metalx1000 ;}
+yts-metalx1000() { youtube-viewer -C --results 10 -u metalx1000 ;}
 # rt channel
-yts-rt() { youtube-viewer -C -u --results 10 russiatoday ;}
+yts-rt() { youtube-viewer -C --results 10 -u russiatoday ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
