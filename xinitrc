@@ -1,8 +1,8 @@
 #!/bin/sh
 ################################################# 
-## file: ~/.xinitrc                            ##
-## author: serdotlinecho                       ##
-## vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=sh: ##
+# file: ~/.xinitrc                              
+# author: serdotlinecho                         
+# vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=sh:   
 #################################################
 
 # Source scripts in /etc/X11/xinit/xinitrc.d/
