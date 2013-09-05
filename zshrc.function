@@ -15,8 +15,6 @@ cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
 cfg-xresources() { $EDITOR ~/.Xresources ;}
     rld-xresources() { xrdb -load ~/.Xresources ;}
 cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
-cfg-herbstluft() { $EDITOR ~/.config/herbstluftwm/autostart ;}
-cfg-panelherbstluft() { $EDITOR ~/.config/herbstluftwm/panel.sh ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
 cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
