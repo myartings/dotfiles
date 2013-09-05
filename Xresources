@@ -55,4 +55,4 @@ URxvt.matcher.button:           1
 Xautolock.time:        10
 Xautolock.corners:     -+00
 Xautolock.cornerdelay: 10
-Xautolock.locker:      i3lock -c 2E3336
+Xautolock.locker:      i3lock -c 002b36
