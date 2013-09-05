@@ -28,8 +28,7 @@ urxvtd -q -o -f &
 # screen locker
 xautolock &
 
-# launch WM/DE
-# exec startxfce4
+# launch window manager
+# exec monsterwm
 exec i3
-
 
