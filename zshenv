@@ -6,4 +6,3 @@ export EDITOR="vim"
 export BROWSER="dwb"
 # export BROWSER="firefox"
 # export TERM="xterm-color"
-
