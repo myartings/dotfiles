@@ -1,5 +1,5 @@
-################################### 
-##  file:     ~/.ncmpcpp/config  ## 
+###################################
+##  file:     ~/.ncmpcpp/config  ##
 ##  author:   serdotlinecho      ##
 ##  vim: set ft=config:          ##
 ###################################
@@ -11,7 +11,7 @@ mpd_music_dir = "~/Music"
 mpd_connection_timeout = "5"
 mpd_crossfade_time = "5"
 
-##### music visualizer ##### 
+##### music visualizer #####
 
 audio_output {
     type    "fifo"
@@ -64,7 +64,7 @@ now_playing_prefix = ">>"
 ##### progress bar #####
 # progressbar_look   = "─╼╌"
 progressbar_look  = "─╼ "
-# progressbar_look = "░█ " 
+# progressbar_look = "░█ "
 # progressbar_look = "─⊙╶"
 progressbar_color = "magenta"
 titles_visibility = "yes"
