@@ -23,7 +23,7 @@ i3
 i3status.conf
 colors
 mplayer
-newsbeuter 
+newsbeuter
 weechat
 mpd
 ncmpcpp
