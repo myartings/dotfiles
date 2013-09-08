@@ -5,11 +5,11 @@
 # author: serdotlinecho
 ##################################################################
 
-function PM() {  
-while [[ ! -d /sys || ! -d /proc/sys ]]; do sleep 5;done 
+function PM() {
+while [[ ! -d /sys || ! -d /proc/sys ]]; do sleep 5;done
 
 ######Power Management
-setpci -s 00:02.0 F4.B=70 
+setpci -s 00:02.0 F4.B=70
 rfkill block bluetooth
 echo 5 > /proc/sys/vm/laptop_mode
 echo 10 > /proc/sys/vm/swappiness
