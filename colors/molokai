@@ -1,9 +1,9 @@
 ! ----------------------------
-! file:     .colors/molokai                        
+! file:     .colors/molokai
 ! author:   serdotlinecho
 ! ----------------------------
 
-! -- Color -- ! 
+! -- Color -- !
 URxvt*background: #121212
 URxvt*foreground: #bfb5b5
 URxvt*cursorColor: #fda53c
@@ -18,19 +18,17 @@ URxvt*cursorColor: #fda53c
 *color2:  #87ff00
 *color10: #93ff19
 !yellow
-*color3:  #ff8700 
+*color3:  #ff8700
 *color11: #ffc74a
-!blue 
+!blue
 *color4:  #005f87
 *color12: #387bab
 !magenta
 *color5:  #af5fff
 *color13: #b973ff
 !cyan
-*color6:  #42717b  
+*color6:  #42717b
 *color14: #6d878d
 !white
 *color7:  #afaf87
 *color15: #d0d0d0
-
-
