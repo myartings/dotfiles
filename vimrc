@@ -2,7 +2,7 @@
 " file:     ~/.vimrc
 " authtor:  serdotlinecho
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:fdm=indent:fdn=1:ft=vim:
-" ------------------------------------------------------------------------   
+" ------------------------------------------------------------------------
 
 set nocompatible            " use vim, no vi defaults
 filetype plugin indent on   " filetype detection and settings
@@ -20,18 +20,31 @@ Bundle 'scrooloose/nerdtree'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
+Bundle 'bling/vim-airline'
 
 " Highlighting
 set t_Co=256
 syntax enable
 " set background=dark
+let g:solarized_termcolors=16
 colorscheme solarized
 " if &t_Co > 2 || has("gui_running")
 "     syntax on                       " switch syntax highlighting on, when the terminal has colors
 "     colorscheme molokai             " load colorscheme
 " endif
 
-" Editing behaviour 
+" A couple options to make vim-airline work correctly.
+let g:airline_right_sep=''
+let g:airline_left_sep=''
+let g:airline_enable_branch=1
+let g:airline_branch_empty_message=''
+let g:airline_enable_syntastic=1
+let g:airline_detect_modified=1
+let g:airline_detect_paste=1
+let g:airline_powerline_fonts=0
+set laststatus=2
+
+" Editing behaviour
 set tabstop=4           " tabs appear as n number of columns
 set shiftwidth=4        " n cols for auto-indenting
 set expandtab           " insert spaces instead of tabs
@@ -54,13 +67,13 @@ set noswapfile          " do not write annoying intermediate swap files
 set wildmenu            " enhanced tab-completion shows all matching cmds in a popup menu
 
 " status bar info and editor layout
-set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\ 
-set laststatus=2        " always show the status line
-set cmdheight=1         
+" set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\
+" set laststatus=2        " always show the status line
+set cmdheight=1
 set encoding=utf-8      " use UTF-8 encoding
 
 " toggle NERDtree
-map <F2> :NERDTreeToggle<CR>    
+map <F2> :NERDTreeToggle<CR>
 
 " useful mappings for managing tabs
 nnoremap tn :tabnew<CR>
