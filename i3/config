@@ -1,9 +1,9 @@
-# -------------------------------------------------------------------------------- 
+# --------------------------------------------------------------------------------
 # file: ~/.i3/config
 # author: serdotlinecho
 # Please see http://i3wm.org/docs/userguide.html for a complete reference
 # vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=i3:
-# -------------------------------------------------------------------------------- 
+# --------------------------------------------------------------------------------
 
 # modifier key
 set $mod Mod4
@@ -11,7 +11,7 @@ set $mod1 Mod1
 
 # defaults
 default_orientation vertical
-new_window pixel 1 
+new_window pixel 1
 #new_float pixel 1
 
 # float the following window
@@ -20,7 +20,7 @@ for_window [class="Gcolor2"] floating enable
 # App launching
 bindsym $mod+p exec dmenu_run -b -fn "-misc-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#1a2633' -nf '#eee8d5' -sb '#4d679a' -p 'Run:'
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
-#bindsym $mod1+p exec --no-startup-id mpdmenu -p track 
+#bindsym $mod1+p exec --no-startup-id mpdmenu -p track
 
 # assign the following to specific workspaces
 assign [class="Firefox"] 2
@@ -41,9 +41,9 @@ bar {
             background #1A2633
             statusline #bfb5b5
             separator  #285577
-            
+
             focused_workspace  #1C678C #090808 #46a4ff
-            active_workspace   #1a2122 #555555 #eee8d5 
+            active_workspace   #1a2122 #555555 #eee8d5
             inactive_workspace #333333 #222222 #888888
             urgent_workspace   #2f343a #ff669d #eee8d5
         }
@@ -76,7 +76,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# h = vertical, v = horizontal 
+# h = vertical, v = horizontal
 # http://www.wpclipart.com/education/geometry/horizontal_vertical.png
 # split in vertical orientation
 bindsym $mod+backslash split h
@@ -109,7 +109,7 @@ bindsym $mod+a focus parent
 #set $ws2 2:www
 #set $ws3 3:fm
 #set $ws4 4:misc
- 
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
