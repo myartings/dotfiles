@@ -3,9 +3,9 @@
 # audio prefs
 ao = pulse          # audio out
 
-# video prefs   
-vo =        xv             # video out method
-zoom =      yes
+# video prefs
+vo = xv
+zoom = yes
 #cache = 8192
 #cache =     20480       # cache size
 #cache = 32768
