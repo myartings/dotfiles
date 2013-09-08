@@ -103,9 +103,6 @@
 0.0.0.0 extmap.rub.ace.advertising.com
 0.0.0.0 bannerfarm.ace.advertising.com
 # [Wordpress]
-0.0.0.0 stats.wordpress.net
-0.0.0.0 stats.wordpress.com
-0.0.0.0 s.stats.wordpress.net
 0.0.0.0 botd.wordpress.com
 0.0.0.0 botd2.wordpress.com
 # [Dailymotion]
@@ -928,7 +925,7 @@
 0.0.0.0 ox-d.majorgeeks.com
 0.0.0.0 www.livejasmin.com
 0.0.0.0 livejasmin.com
-0.0.0.0 live-cams-1.livejasmin.com 
+0.0.0.0 live-cams-1.livejasmin.com
 0.0.0.0 new.livejasmin.com
 0.0.0.0 static.creatives.livejasmin.com
 0.0.0.0 creatives.livejasmin.com
@@ -1430,7 +1427,7 @@
 0.0.0.0 sync.richmetrics.com
 0.0.0.0 wunderloop.net
 0.0.0.0 req.connect.wunderloop.net
-0.0.0.0 www.ensighten.com 
+0.0.0.0 www.ensighten.com
 0.0.0.0 ensighten.com
 0.0.0.0 codata.ru
 0.0.0.0 mobtop.ru
