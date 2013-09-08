@@ -19,7 +19,7 @@ cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
 cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
     url-newsbeuter() { $EDITOR ~/.newsbeuter/urls ;}
-cfg-mplayer() { $EDITOR ~/.mplayer/config ;} 
+cfg-mplayer() { $EDITOR ~/.mplayer/config ;}
 url-pyradio() { $EDITOR ~/.pyradio/stations.csv}
 
 # transmission-cli
@@ -28,7 +28,7 @@ trsm-quit() { killall transmission-daemon ;}
 trsm-cli() { transmission-remote-cli ;}
 trsm-list() { transmission-remote --list ;}
 trsm-add() { transmission-remote --add "$1" ;}
-trsm-pause() { transmission-remote -t"$1" --stop ;} 
+trsm-pause() { transmission-remote -t"$1" --stop ;}
 trsm-start() { transmission-remote -t"$1" --start ;}
 trsm-purge() { transmission-remote -t"$1" --remove-and-delete ;}
 trsm-remove() { transmission-remote -t"$1" --remove ;}

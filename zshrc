@@ -43,7 +43,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(fasd zsh-syntax-highlighting git colored-man) 
+plugins=(fasd zsh-syntax-highlighting git colored-man)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,5 +86,3 @@ bindkey '^H' backward-delete-char
 # http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
 bindkey -M viins '^s' history-incremental-search-backward
 bindkey -M vicmd '^s' history-incremental-search-backward
-
-
