@@ -1,17 +1,22 @@
 #!/bin/sh
-#
-# rc.local
-#
-# This script is executed at the end of each multiuser runlevel.
-# Make sure that the script will "exit 0" on success or any other
-# value on error.
-#
-# In order to enable or disable this script just change the execution
-# bits.
-#
-# By default this script does nothing.
+##################################################################
+# file: /etc/rc.local
+# description: local multi-user startup script.
+# author: serdotlinecho
+##################################################################
 
+function PM() {  
+while [[ ! -d /sys || ! -d /proc/sys ]]; do sleep 5;done 
+
+######Power Management
+setpci -s 00:02.0 F4.B=70 
 rfkill block bluetooth
-setpci -s 00:02.0 F4.B=70
-
-exit 0
+echo 5 > /proc/sys/vm/laptop_mode
+echo 10 > /proc/sys/vm/swappiness
+echo 0 > /proc/sys/kernel/nmi_watchdog
+echo 1500 > /proc/sys/vm/dirty_writeback_centisecs
+echo 1 > /sys/module/snd_hda_intel/parameters/power_save
+for i in /sys/class/scsi_host/*/link_power_management_policy; do echo min_power > $i; done
+for i in /sys/bus/usb/devices/*/power/level; do echo auto > $i; done
+}
+PM &
