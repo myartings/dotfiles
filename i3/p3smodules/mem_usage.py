@@ -3,7 +3,7 @@ from time import time
 
 class Py3status:
     def RAMinfo(self, json, i3status_config):
-        
+
         response = {'full_text' : '', 'name' : 'RAMinfo'}
 
         mem_total = int(psutil.virtual_memory().total / 1048576)

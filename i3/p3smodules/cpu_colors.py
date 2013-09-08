@@ -3,7 +3,7 @@ from time import time
 
 class Py3status:
     def CPUinfo(self, json, i3status_config):
-        
+
         response = {'full_text' : '', 'name' : 'CPUinfo'}
         cpu_percent = psutil.cpu_percent(interval=0)
 
