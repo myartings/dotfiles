@@ -54,6 +54,9 @@ source $ZSH/oh-my-zsh.sh
 
 # set path
 PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
+# ccache
+export CCACHE_DIR="/home/serdotlinecho/.ccache"
+export PATH="/usr/lib/ccache/bin/:$PATH"
 
 # enable vim mode on commmand line
 bindkey -v
