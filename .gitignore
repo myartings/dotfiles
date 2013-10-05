@@ -1,3 +1,5 @@
+/vim/bundle/**
+~bundle/vundle
 /weechat/logs/*
 /mpd/pid
 /mpd/database
