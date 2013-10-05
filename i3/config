@@ -17,43 +17,25 @@ new_window pixel 1
 # float the following window
 for_window [class="Gcolor2"] floating enable
 
-# App launching
-bindsym $mod+p exec dmenu_run -b -fn "-misc-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#1a2633' -nf '#eee8d5' -sb '#4d679a' -p 'Run:'
-bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
-#bindsym $mod1+p exec --no-startup-id mpdmenu -p track
-
 # assign the following to specific workspaces
-assign [class="Firefox"] 2
-assign [class="Dwb"] 2
+assign [class="Dwb|Firefox"] 2
 assign [class="Thunar"] 3
-
-# font for window titles. ISO 10646 = Unicode
-#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*"
-
-# i3bar
-bar {
-        position top
-        workspace_buttons yes
-        font -misc-termsyn.icons-medium-r-normal-*-14-*-*-100-*-*-iso8859-1
-        status_command py3status -c ~/.i3status.conf -i ~/.i3/p3smodules
-        colors {
-            background #1A2633
-            statusline #bfb5b5
-            separator  #285577
-
-            focused_workspace  #1C678C #090808 #46a4ff
-            active_workspace   #1a2122 #555555 #eee8d5
-            inactive_workspace #333333 #222222 #888888
-            urgent_workspace   #2f343a #ff669d #eee8d5
-        }
-}
-
-# use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec /usr/bin/urxvtc -e tmux
+
+# app launching
+bindsym $mod+p exec dmenu_run -b -fn "-*-ohsnapu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#1a2633' -nf '#eee8d5' -sb '#4d679a' -p 'Run:'
+
+# take screenshot with PrtSc key
+bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
+
+# font for window titles. ISO 10646 = Unicode
+#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font "-*-ohsnapu-medium-r-*-*-14-*-*-*-*-*-*-*"
+
+# use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
 
 # kill focused window
 bindsym $mod+q kill
@@ -168,4 +150,25 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '2%-'"
 
 # lock screen
 bindsym $mod+Control+x exec i3lock -d -c 444444
+
+# i3bar
+bar {
+        position top
+        workspace_buttons yes
+        #font -misc-termsyn.icons-medium-r-normal-*-14-*-*-100-*-*-iso8859-1
+        font -*-ohsnap.icons-medium-r-normal-*-14-*-*-100-*-*-iso8859-1
+        #status_command py3status -c ~/.i3status.conf -i ~/.i3/p3smodules
+        #status_command $HOME/dotfiles/i3/i3bar_exec
+        status_command i3status
+        colors {
+            background #101010
+            statusline #bfb5b5
+            separator  #285577
+
+            focused_workspace  #1C678C #090808 #46a4ff
+            active_workspace   #1a2122 #555555 #eee8d5
+            inactive_workspace #333333 #222222 #888888
+            urgent_workspace   #2f343a #ff669d #eee8d5
+        }
+}
 
