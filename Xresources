@@ -6,7 +6,7 @@
 
 ! -- Urxvt -- !
 URxvt*termName:         rxvt-256color
-URxvt.geometry:         130x24
+URxvt.geometry:         88x24
 URxvt*scrollBar_right:  false
 URxvt*scrollBar:        false
 URxvt.cursorUnderline:  false
@@ -17,9 +17,9 @@ URxvt*borderless:       false
 ! URxvt.depth:            32
 
 ! -- Colors -- !
-#include "/home/serdotlinecho/.colors/solarized"
-! For solarized color scheme
-URxvt.intensityStyles:  false
+#include "/home/serdotlinecho/.colors/serdotlin"
+! For solarized colorscheme
+! URxvt.intensityStyles:  false
 
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
@@ -33,10 +33,9 @@ URxvt*font:-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*
 URxvt*boldFont:-*-termsynu-bold-r-*-*-14-*-*-*-*-*-*-*
 ! URxvt*font:-*-ohsnap-medium-r-*-*-14-*-*-*-*-*-*-*
 ! URxvt*boldFont:-*-ohsnap-bold-r-*-*-14-*-*-*-*-*-*-*
-! URxvt*font: xft:Source Code Pro Medium:pixelsize=11,xft:Source Code Pro Medium for Powerline:pixelsize=11
 
 ! -- Cursor -- !
-Xcursor.theme:  Vanilla-DMZ-AA
+Xcursor.theme: Vanilla-DMZ
 
 ! ! -- Extensions -- !
 URxvt.perl-ext-common:          default,clipboard,matcher,url-select,keyboard-select

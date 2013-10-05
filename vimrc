@@ -16,33 +16,21 @@ Bundle 'gmarik/vundle'
 
 " installing bundles to ~/.vim/bundle
 Bundle 'tomtom/tcomment_vim'
-Bundle 'scrooloose/nerdtree'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
-Bundle 'bling/vim-airline'
+Bundle 'itchyny/lightline.vim'
+Bundle 'scrooloose/nerdtree'
 
 " Highlighting
 set t_Co=256
 syntax enable
+colorscheme codesweets
 " set background=dark
-let g:solarized_termcolors=16
-colorscheme solarized
 " if &t_Co > 2 || has("gui_running")
 "     syntax on                       " switch syntax highlighting on, when the terminal has colors
 "     colorscheme molokai             " load colorscheme
 " endif
-
-" A couple options to make vim-airline work correctly.
-let g:airline_right_sep=''
-let g:airline_left_sep=''
-let g:airline_enable_branch=1
-let g:airline_branch_empty_message=''
-let g:airline_enable_syntastic=1
-let g:airline_detect_modified=1
-let g:airline_detect_paste=1
-let g:airline_powerline_fonts=0
-set laststatus=2
 
 " Editing behaviour
 set tabstop=4           " tabs appear as n number of columns
@@ -71,6 +59,7 @@ set wildmenu            " enhanced tab-completion shows all matching cmds in a p
 " set laststatus=2        " always show the status line
 set cmdheight=1
 set encoding=utf-8      " use UTF-8 encoding
+set laststatus=2
 
 " toggle NERDtree
 map <F2> :NERDTreeToggle<CR>
