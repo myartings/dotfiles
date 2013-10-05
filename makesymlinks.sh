@@ -15,7 +15,6 @@ zshenv
 zshrc.alias
 zshrc.function
 tmux.conf
-gtkrc-2.0
 dir_colors
 vimrc
 vim
@@ -27,7 +26,8 @@ newsbeuter
 weechat
 mpd
 ncmpcpp
-pyradio"                # list of files/folders to symlink in homedir
+gtkrc-2.0
+"                # list of files/folders to symlink in homedir
 
 ##########
 
