@@ -28,6 +28,6 @@ urxvtd -q -o -f &
 # screen locker
 xautolock &
 
-# launch window manager
-# exec monsterwm
+# start X session
 exec i3
+
