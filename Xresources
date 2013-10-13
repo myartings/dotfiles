@@ -29,10 +29,12 @@ Xft.dpi:       96
 Xft.rgba:      rgb
 
 ! -- Fonts -- !
-URxvt*font:-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*
-URxvt*boldFont:-*-termsynu-bold-r-*-*-14-*-*-*-*-*-*-*
+! URxvt*font:-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*
+! URxvt*boldFont:-*-termsynu-bold-r-*-*-14-*-*-*-*-*-*-*
 ! URxvt*font:-*-ohsnap-medium-r-*-*-14-*-*-*-*-*-*-*
 ! URxvt*boldFont:-*-ohsnap-bold-r-*-*-14-*-*-*-*-*-*-*
+URxvt*font:-gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
+URxvt*boldFont:-gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
 
 ! -- Cursor -- !
 Xcursor.theme: Vanilla-DMZ
@@ -44,10 +46,12 @@ URxvt.keysym.M-v:               perl:clipboard:paste
 URxvt.keysym.M-C-v:             perl:clipboard:paste_escaped
 URxvt.keysym.M-u:               perl:url-select:select_next
 URxvt.url-select.launcher:      dwb
+! URxvt.url-select.launcher:      firefox
 URxvt.url-select.underline:     true
 URxvt.keysym.M-h:               perl:keyboard-select:activate
 URxvt.keysym.M-s:               perl:keyboard-select:search
 URxvt.url-launcher:             dwb
+! URxvt.url-launcher:             firefox
 URxvt.matcher.button:           1
 
 ! -- Xautolock screen locker -- !
