@@ -23,8 +23,8 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'scrooloose/nerdtree'
 
 " Highlighting
-set t_Co=256
 syntax enable
+set t_Co=256
 colorscheme codesweets
 " set background=dark
 " if &t_Co > 2 || has("gui_running")
