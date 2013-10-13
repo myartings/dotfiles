@@ -15,14 +15,14 @@ new_window pixel 1
 #new_float pixel 1
 
 # float the following window
-for_window [class="Gcolor2"] floating enable
+for_window [class="Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter|Gcr-viewer"] floating enable
 
 # assign the following to specific workspaces
 assign [class="Dwb|Firefox"] 2
 assign [class="Thunar|Zathura"] 3
 
 # start a terminal
-bindsym $mod+Return exec /usr/bin/urxvtc -e tmux
+bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc -e tmux
 
 # app launching
 bindsym $mod+p exec dmenu_run -b -fn "-gohu-*-medium-*-*-*-14-*-*-*-*-*-*-*" -i -nb '#1a2633' -nf '#eee8d5' -sb '#4d679a' -p 'Run:'
