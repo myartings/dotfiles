@@ -22,6 +22,7 @@ cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
 cfg-mplayer() { $EDITOR ~/.mplayer/config ;}
 url-pyradio() { $EDITOR ~/.pyradio/stations.csv}
 cfg-minitube() { $EDITOR ~/.config/Flavio\ Tordini/Minitube.conf ;}
+cfg-vimperator() { $EDITOR ~/.vimperatorrc ;}
 
 # transmission-cli
 trsm() { transmission-daemon ;}
@@ -62,6 +63,8 @@ yts-metalx1000() { youtube-viewer -C --results 10 -u metalx1000 ;}
 yts-rt() { youtube-viewer -C --results 10 -u russiatoday ;}
 # rtamerica channel
 yts-rtamerica() { youtube-viewer -C --results 10 -u rtamerica ;}
+# valve channel
+yts-valve() { youtube-viewer -C --results 10 -u valve ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}

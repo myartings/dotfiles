@@ -6,7 +6,6 @@
 
 alias cp='acp -g'   # cp with progress bar
 alias mv='amv -g'   # mv with progress bar
-alias ll='ls++ --potsf' # colorized ls on steroids
 alias vless='/usr/share/vim/vim74/macros/less.sh'
 alias scb='sudo setpci -s 00:02.0 F4.B=70'  # set screen brightness to 70
 alias wlist='nmcli -p dev wifi'  # list available wifi
