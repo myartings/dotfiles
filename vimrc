@@ -49,7 +49,7 @@ set ignorecase          " case-insensitive search
 set smartcase           " uppercase causes case-sensitive search
 
 " vim behaviour
-set norelativenumber    " show no relativ line numbers
+set norelativenumber    " show no relative line numbers
 set nobackup            " disable backup files (filename~)
 set noswapfile          " do not write annoying intermediate swap files
 set wildmenu            " enhanced tab-completion shows all matching cmds in a popup menu
