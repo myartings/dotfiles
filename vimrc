@@ -4,7 +4,7 @@
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:fdm=indent:fdn=1:ft=vim:
 " ------------------------------------------------------------------------
 
-set nocompatible            " use vim, no vi defaults
+" general set nocompatible            " we're running Vim, not Vi!
 filetype plugin indent on   " filetype detection and settings
 
 " vundle
@@ -13,24 +13,18 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
-
-" installing bundles to ~/.vim/bundle
+Bundle 'tpope/vim-fugitive'
+Bundle 'bling/vim-airline'
+Bundle 'scrooloose/nerdtree'
+Bundle "garbas/vim-snipmate"
 Bundle 'tomtom/tcomment_vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle 'itchyny/lightline.vim'
-Bundle 'scrooloose/nerdtree'
 
 " Highlighting
-syntax enable
+syntax on
 set t_Co=256
-colorscheme codesweets
-" set background=dark
-" if &t_Co > 2 || has("gui_running")
-"     syntax on                       " switch syntax highlighting on, when the terminal has colors
-"     colorscheme molokai             " load colorscheme
-" endif
+colorscheme solarized
 
 " Editing behaviour
 set tabstop=4           " tabs appear as n number of columns
@@ -54,21 +48,31 @@ set nobackup            " disable backup files (filename~)
 set noswapfile          " do not write annoying intermediate swap files
 set wildmenu            " enhanced tab-completion shows all matching cmds in a popup menu
 
-" status bar info and editor layout
-" set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\
-" set laststatus=2        " always show the status line
-set cmdheight=1
-set encoding=utf-8      " use UTF-8 encoding
-set laststatus=2
+" status bar info
+set cmdheight=1         " use a one-line tall status line
+set laststatus=2        " always show the status line
 
-" toggle NERDtree
-map <F2> :NERDTreeToggle<CR>
+" encoding
+set termencoding=utf-8  " we like utf-8
+set encoding=utf-8
 
-" useful mappings for managing tabs
+" change map <leader> from \ to ,
+:let mapleader = ","
+
+" reload .vimrc
+map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+" Y to yank to end of line
+map Y y$
+
+" toggle line numbers
+nnoremap <leader>n :set nonumber!<CR>
+
+" tabs
 nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
 
-" disabling the arrow keys
+" disable arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -77,3 +81,21 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" ----------------------------------
+" Settings for Bundles
+" ----------------------------------
+
+" vim-airline settings
+" let g:airline_theme='dark'
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline#extensions#whitespace#trailing_format = 'trailing[%s]'
+let g:airline#extensions#whitespace#mixed_indent_format = 'mixed-indent[%s]'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#branch#empty_message = ''
+
+" NERDtree
+nmap <leader>d :NERDTreeToggle <CR>
+nmap <leader>f :NERDTreeFind <CR>
+
