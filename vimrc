@@ -24,7 +24,7 @@ Bundle "tomtom/tlib_vim"
 " Highlighting
 syntax on
 set t_Co=256
-colorscheme solarized
+colorscheme codesweets
 
 " Editing behaviour
 set tabstop=4           " tabs appear as n number of columns
@@ -35,6 +35,7 @@ set number              " always show line numbers
 set backspace=2         " full backspacing capabilities (indent,eol,start)
 set ruler               " show the cursor position all the time
 set linebreak           " attempt to wrap lines cleanly
+set cpoptions=ces$      " `cw` put dollar sign at the end 
 
 " searching
 set hlsearch            " highlight all search results
@@ -57,7 +58,7 @@ set termencoding=utf-8  " we like utf-8
 set encoding=utf-8
 
 " change map <leader> from \ to ,
-:let mapleader = ","
+let mapleader = ","
 
 " reload .vimrc
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
