@@ -5,12 +5,13 @@
 # ------------------------------------------------
 
 # config
+cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
 cfg-zshrc() { $EDITOR ~/.zshrc ;}
     rld-zshrc() { source ~/.zshrc ;}
 cfg-alias() { $EDITOR ~/.zshrc.alias ;}
 cfg-function() { $EDITOR ~/.zshrc.function ;}
 cfg-vimrc() { $EDITOR ~/.vimrc ;}
-cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
+cfg-vimp() { $EDITOR ~/.vimperatorrc ;}
     rld-tmuxrc() { tmux source-file ~/.tmux.conf ;}
 cfg-xresources() { $EDITOR ~/.Xresources ;}
     rld-xresources() { xrdb -load ~/.Xresources ;}
@@ -22,7 +23,6 @@ cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
 cfg-mplayer() { $EDITOR ~/.mplayer/config ;}
 url-pyradio() { $EDITOR ~/.pyradio/stations.csv}
 cfg-minitube() { $EDITOR ~/.config/Flavio\ Tordini/Minitube.conf ;}
-cfg-vimperator() { $EDITOR ~/.vimperatorrc ;}
 
 # transmission-cli
 trsm() { transmission-daemon ;}
@@ -49,26 +49,29 @@ fi
 }
 
 # play youtube video with youtube-viewer and mplayer
-# search youtube video
 ytv() { youtube-viewer -C $@ ;}
-# gotbletu channel
+# gotbletu
 yts-gotbletu() { youtube-viewer -C --results 10 -u gotbletu ;}
-# jupiterbroadcasting channel
+# jupiterbroadcasting
 yts-jbcast() { youtube-viewer -C --results 10 -u jupiterbroadcasting ;}
-# linux4unme channel
+# linux4unme 
 yts-linux4unme() { youtube-viewer -C --results 10 -u linux4unme ;}
-# metalx1000 channel
+# metalx1000
 yts-metalx1000() { youtube-viewer -C --results 10 -u metalx1000 ;}
 # rt channel
 yts-rt() { youtube-viewer -C --results 10 -u russiatoday ;}
-# rtamerica channel
+# rtamerica
 yts-rtamerica() { youtube-viewer -C --results 10 -u rtamerica ;}
-# valve channel
+# why
+yts-whygoldnsilver() { youtube-viewer -C --results 10 -u whygoldandsilver ;}
+# valve
 yts-valve() { youtube-viewer -C --results 10 -u valve ;}
+# gregvegas5909
+yts-gregvegas() { youtube-viewer -C --results 10 -u gregvegas5909 ;}
+# ohheyitslou
+yts-ohheyitslou() { youtube-viewer -C --results 10 -u ohheyitslou ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
 sniff-capture-rtmpsrv() { rtmpsrv ;}
 sniff-end() { sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
-
-
