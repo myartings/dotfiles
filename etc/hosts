@@ -119,6 +119,22 @@
 0.0.0.0 ads.reddit.com
 0.0.0.0 pixel.redditmedia.com
 0.0.0.0 tracker.redditmedia.com
+# [SafeCount]
+0.0.0.0 www.questionmarket.com
+0.0.0.0 questionmarket.com
+0.0.0.0 amch.questionmarket.com
+# [Adversal]
+0.0.0.0 www.adversal.com
+0.0.0.0 adversal.com
+0.0.0.0 go.adversal.com
+0.0.0.0 www.adversalservers.com
+0.0.0.0 www1.adv-adservers.com
+# [adnxs]
+0.0.0.0 www.adnxs.com
+0.0.0.0 adnxs.com
+0.0.0.0 cdn.adnxs.com
+0.0.0.0 ib.adnxs.com
+0.0.0.0 sin1.g.adnxs.com
 # [Mics]
 0.0.0.0 btrll.com
 0.0.0.0 vast.bp3851784.btrll.com
@@ -293,10 +309,6 @@
 0.0.0.0 www.mathtag.com
 0.0.0.0 mathtag.com
 0.0.0.0 sync.mathtag.com
-0.0.0.0 www.adnxs.com
-0.0.0.0 adnxs.com
-0.0.0.0 cdn.adnxs.com
-0.0.0.0 ib.adnxs.com
 0.0.0.0 um.simpli.fi
 0.0.0.0 www.simpli.fi
 0.0.0.0 simpli.fi
@@ -309,6 +321,7 @@
 0.0.0.0 www.invitemedia.com
 0.0.0.0 invitemedia.com
 0.0.0.0 p.rfihub.com
+0.0.0.0 20506791p.rfihub.com
 0.0.0.0 www.quantserve.com
 0.0.0.0 quantserve.com
 0.0.0.0 pixel.quantserve.com
@@ -376,6 +389,7 @@
 0.0.0.0 d.adsbyisocket.com
 0.0.0.0 bs.serving-sys.com
 0.0.0.0 ds.serving-sys.com
+0.0.0.0 s.cxt.ms
 0.0.0.0 www.da-ads.com
 0.0.0.0 da-ads.com
 0.0.0.0 cdnx.tribalfusion.com
@@ -483,7 +497,9 @@
 0.0.0.0 turn.com
 0.0.0.0 ad.turn.com
 0.0.0.0 d.turn.com
+0.0.0.0 atdmt.com
 0.0.0.0 cdn.atdmt.com
+0.0.0.0 atdmt.com
 0.0.0.0 c.atdmt.com
 0.0.0.0 c1.atdmt.com
 0.0.0.0 view.atdmt.com
@@ -652,6 +668,7 @@
 0.0.0.0 www.newrelic.com
 0.0.0.0 newrelic.com
 0.0.0.0 beacon-1.newrelic.com
+0.0.0.0 js-agent.newrelic.com
 0.0.0.0 rpm-images.newrelic.com
 0.0.0.0 www.adroll.com
 0.0.0.0 adroll.com
@@ -800,6 +817,8 @@
 0.0.0.0 s17.sitemeter.com
 0.0.0.0 s51.sitemeter.com
 0.0.0.0 adlog.com.com
+0.0.0.0 adlog.cbsi.com
+0.0.0.0 i.i.cbsi.com
 0.0.0.0 www.clicktale.net
 0.0.0.0 clicktale.net
 0.0.0.0 www.clicktale.com
@@ -1452,5 +1471,11 @@
 0.0.0.0 indobookie.com
 0.0.0.0 www.nagawin.com
 0.0.0.0 nagawin.com
+0.0.0.0 www.wo8cai.com
+0.0.0.0 wo8cai.com
+0.0.0.0 banner.wo8cai.com
+0.0.0.0 www.connextra.com
+0.0.0.0 connextra.com
+0.0.0.0 ff.connextra.com
 
 # End of file
