@@ -16,6 +16,8 @@ fi
 # load Xresources
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
+xsetroot -cursor_name left_ptr &
+
 # set background
 sh $HOME/.fehbg
 
@@ -23,11 +25,11 @@ sh $HOME/.fehbg
 urxvtd -q -o -f &
 
 # start music player daemon
-(mpd ~/.mpd/mpd.conf && mpc pause) &
+mpd ~/.mpd/mpd.conf &
 
 # screen locker
 xautolock &
 
-# start X session
+# launch wm
 exec i3
 
