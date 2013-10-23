@@ -12,20 +12,19 @@ set $mod1 Mod1
 # defaults
 default_orientation vertical
 new_window pixel 1
-#new_float pixel 1
 
 # float the following window
-for_window [class="Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter|Gcr-viewer"] floating enable
+for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter)$"] floating enable
 
 # assign the following to specific workspaces
-assign [class="Dwb|Firefox"] 2
-assign [class="Thunar|Zathura"] 3
+assign [class="^(Dwb|Firefox)$"] 2
+assign [class="^(Spacefm|Zathura)$"] 3
 
-# start a terminal
+# open terminal
 bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc -e tmux
 
 # app launching
-bindsym $mod+p exec dmenu_run -b -fn "-gohu-*-medium-*-*-*-14-*-*-*-*-*-*-*" -i -nb '#1a2633' -nf '#eee8d5' -sb '#4d679a' -p 'Run:'
+bindsym $mod+semicolon exec dmenu_run -y 280 -fn "-gohu-*-medium-*-*-*-14-*-*-*-*-*-*-*" -i -nb '#073642' -nf '#eee8d5' -sb '#d33682' -p 'Run:'
 
 # take screenshot with PrtSc key
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
@@ -75,16 +74,16 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Tab focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+p focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+c focus child
 
 # customize workspace names
 #set $ws1 1:term
@@ -115,7 +114,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+e exec ~/.i3/exit_menu.sh
+bindsym $mod+Shift+e exec --no-startup-id $HOME/dotfiles/scripts/exit_menu.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -147,9 +146,6 @@ bindsym $mod+r mode "resize"
 # volume control
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '3%+'"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '2%-'"
-#bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2dB+ unmute
-#bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 2dB- unmute
-
 
 # lock screen
 bindsym $mod+Control+x exec i3lock -d -c 444444
@@ -159,13 +155,12 @@ bar {
         position top
         workspace_buttons yes
         font -misc-termsyn.icons-medium-r-normal-*-14-*-*-100-*-*-iso8859-1
-        #font -*-ohsnap.icons-medium-r-normal-*-14-*-*-100-*-*-iso8859-1
         #status_command py3status -c ~/.i3status.conf -i ~/.i3/p3smodules
         status_command i3status
         colors {
-            background #1A2633
+            background #002b36
             statusline #bfb5b5
-            separator  #285577
+            separator  #268bd2
 
             focused_workspace  #1C678C #090808 #46a4ff
             active_workspace   #1a2122 #555555 #eee8d5
