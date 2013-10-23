@@ -49,8 +49,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 # alias and function
-[ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
-[ -f ~/.zshrc.function ] && source ~/.zshrc.function
+[ -f $HOME/.zsh/zshrc.alias ] && . $HOME/.zsh/zshrc.alias
+[ -f $HOME/.zsh/zshrc.function ] && . $HOME/.zsh/zshrc.function
+[ -e $HOME/.zsh/notifyosd.zsh ] && . $HOME/.zsh/notifyosd.zsh
 
 # set path
 PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
