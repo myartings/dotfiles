@@ -6,8 +6,10 @@
 
 alias cp='acp -g'   # cp with progress bar
 alias mv='amv -g'   # mv with progress bar
+alias ls='ls --group-directories-first --color'  # group directories before files
 alias vless='/usr/share/vim/vim74/macros/less.sh'
 alias scb='sudo setpci -s 00:02.0 F4.B=70'  # set screen brightness to 70
+alias gensums='[[ -f PKGBUILD ]] && makepkg -g >> PKGBUILD' # generate integrity checks for source files
 alias wlist='nmcli -p dev wifi'  # list available wifi
 alias wup='nmcli -p con up id'    # connect to wifi
 alias wdown='nmcli -p con down id' # disconnect from wifi
@@ -20,3 +22,5 @@ alias mpl='mplayer'
 alias wee='weechat-curses'
 alias speedtest='speedtest-cli'
 alias ytdl='youtube-dl'
+alias alsamixer='alsamixer -c 0'
+alias wgetxc='wget $(xsel -b)'
