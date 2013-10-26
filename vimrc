@@ -4,8 +4,10 @@
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:fdm=indent:fdn=1:ft=vim:
 " ------------------------------------------------------------------------
 
-" general set nocompatible            " we're running Vim, not Vi!
+" general
+set nocompatible            " we're running Vim, not Vi!
 filetype plugin indent on   " filetype detection and settings
+set encoding=utf-8          " we like utf-8
 
 " vundle
 set rtp+=~/.vim/bundle/vundle/
@@ -21,41 +23,38 @@ Bundle 'tomtom/tcomment_vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 
-" Highlighting
+" highlighting
 syntax on
-set t_Co=256
-colorscheme codesweets
+colorscheme solarized
+" set background=dark
 
-" Editing behaviour
+" editing behaviour
 set tabstop=4           " tabs appear as n number of columns
 set shiftwidth=4        " n cols for auto-indenting
 set expandtab           " insert spaces instead of tabs
 set autoindent          " auto indents next new line
-set number              " always show line numbers
+set number              " show the line number for each line
 set backspace=2         " full backspacing capabilities (indent,eol,start)
 set ruler               " show the cursor position all the time
 set linebreak           " attempt to wrap lines cleanly
-set cpoptions=ces$      " `cw` put dollar sign at the end 
-
-" searching
-set hlsearch            " highlight all search results
-set incsearch           " increment search
-set ignorecase          " case-insensitive search
-set smartcase           " uppercase causes case-sensitive search
+set cpoptions=ces$      " `cw` put dollar sign at the end
 
 " vim behaviour
 set norelativenumber    " show no relative line numbers
 set nobackup            " disable backup files (filename~)
 set noswapfile          " do not write annoying intermediate swap files
 set wildmenu            " enhanced tab-completion shows all matching cmds in a popup menu
-
-" status bar info
-set cmdheight=1         " use a one-line tall status line
 set laststatus=2        " always show the status line
 
-" encoding
-set termencoding=utf-8  " we like utf-8
-set encoding=utf-8
+" searching
+set hlsearch            " highlight all search results
+set incsearch           " show match for partly typed search command
+set ignorecase          " case-insensitive search
+set smartcase           " override 'ignorecase' when pattern has upper case characters
+
+" ----------------------
+" custom key mapping
+" ---------------------
 
 " change map <leader> from \ to ,
 let mapleader = ","
@@ -69,7 +68,7 @@ map Y y$
 " toggle line numbers
 nnoremap <leader>n :set nonumber!<CR>
 
-" tabs
+" useful mappings for managing tabs
 nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
 
@@ -78,13 +77,15 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+
+" easier split window navigation
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 " ----------------------------------
-" Settings for Bundles
+" settings for plugins
 " ----------------------------------
 
 " vim-airline settings
