@@ -1,0 +1,20 @@
+"3.7 (created: 2013/04/03 18:20:07)
+" vim: set ft=vim:
+
+" general settings
+colorscheme solarized_dark
+set noscrollbars
+set autocomplete=false
+set hlsearch
+set incsearch
+set ignorecase
+set hintchars=fdsartgbvecwxqyiopmnhzulkj
+
+source! /home/serdotlinecho/.vimperatorrc.local
+
+" custom key mapping
+noremap J gt
+noremap K gT
+noremap j 5j
+noremap k 5k
+
