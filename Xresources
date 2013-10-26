@@ -6,12 +6,14 @@
 
 ! -- Urxvt -- !
 URxvt*termName:         rxvt-256color
+URxvt*loginShell:       false
+URxvt*urgentOnBell:     true
+URxvt*visualBell:       false
 URxvt.geometry:         88x24
 URxvt*scrollBar_right:  false
 URxvt*scrollBar:        false
 URxvt.cursorUnderline:  false
 URxvt.cursorBlink:      false
-URxvt*urgentOnBell:     true
 URxvt*saveLines:        512
 URxvt*borderless:       false
 URxvt*iso14755:         false
@@ -45,11 +47,11 @@ URxvt.keysym.M-c:               perl:clipboard:copy
 URxvt.keysym.M-v:               perl:clipboard:paste
 URxvt.keysym.M-C-v:             perl:clipboard:paste_escaped
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      dwb
+URxvt.url-select.launcher:      firefox
 URxvt.url-select.underline:     true
 URxvt.keysym.M-h:               perl:keyboard-select:activate
 URxvt.keysym.M-s:               perl:keyboard-select:search
-URxvt.url-launcher:             dwb
+URxvt.url-launcher:             firefox
 URxvt.matcher.button:           1
 
 ! -- Xautolock screen locker -- !
