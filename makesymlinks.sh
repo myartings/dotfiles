@@ -9,17 +9,17 @@
 dir=~/dotfiles          # dotfiles directory
 olddir=~/dotfiles_old   # old dotfiles backup directory
 files="xinitrc
-Xresources
 zshrc
+zsh
 zshenv
-zshrc.alias
-zshrc.function
+Xresources
+i3
+i3status.conf
 tmux.conf
 dir_colors
 vimrc
 vim
-i3
-i3status.conf
+vimperatorrc
 colors
 mplayer
 newsbeuter
