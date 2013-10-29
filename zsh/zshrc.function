@@ -8,8 +8,8 @@
 cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
 cfg-zshrc() { $EDITOR ~/.zshrc ;}
     rld-zshrc() { source ~/.zshrc ;}
-cfg-alias() { $EDITOR ~/.zshrc.alias ;}
-cfg-function() { $EDITOR ~/.zshrc.function ;}
+cfg-alias() { $EDITOR ~/.zsh/zshrc.alias ;}
+cfg-function() { $EDITOR ~/.zsh/zshrc.function ;}
 cfg-vimrc() { $EDITOR ~/.vimrc ;}
 cfg-vimp() { $EDITOR ~/.vimperatorrc ;}
     rld-tmuxrc() { tmux source-file ~/.tmux.conf ;}
@@ -25,15 +25,15 @@ url-pyradio() { $EDITOR ~/.pyradio/stations.csv}
 cfg-minitube() { $EDITOR ~/.config/Flavio\ Tordini/Minitube.conf ;}
 
 # transmission-cli
-trsm() { transmission-daemon ;}
-trsm-quit() { killall transmission-daemon ;}
-trsm-cli() { transmission-remote-cli ;}
-trsm-list() { transmission-remote --list ;}
-trsm-add() { transmission-remote --add "$1" ;}
-trsm-pause() { transmission-remote -t"$1" --stop ;}
-trsm-start() { transmission-remote -t"$1" --start ;}
-trsm-purge() { transmission-remote -t"$1" --remove-and-delete ;}
-trsm-remove() { transmission-remote -t"$1" --remove ;}
+tmd() { transmission-daemon ;}
+tmd-quit() { kill -15 $(pidof transmission-daemon) ;}
+tmr-cli() { transmission-remote-cli ;}
+tmr-list() { transmission-remote --list ;}
+tmr-add() { transmission-remote --add "$1" ;}
+tmr-pause() { transmission-remote -t"$1" --stop ;}
+tmr-start() { transmission-remote -t"$1" --start ;}
+tmr-purge() { transmission-remote -t"$1" --remove-and-delete ;}
+tmr-remove() { transmission-remote -t"$1" --remove ;}
 
 # python calculator, press Ctrl+D to quit
 calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
@@ -52,24 +52,26 @@ fi
 ytv() { youtube-viewer -C $@ ;}
 # gotbletu
 yts-gotbletu() { youtube-viewer -C --results 10 -u gotbletu ;}
+# gregvegas5909
+yts-gregvegas() { youtube-viewer -C --results 10 -u gregvegas5909 ;}
+# hawkkeydavischannel
+yts-hawkkeydavischannel() { youtube-viewer -C --results 10 -u hawkkeydavischannel ;}
 # jupiterbroadcasting
 yts-jbcast() { youtube-viewer -C --results 10 -u jupiterbroadcasting ;}
-# linux4unme 
+# linux4unme
 yts-linux4unme() { youtube-viewer -C --results 10 -u linux4unme ;}
 # metalx1000
 yts-metalx1000() { youtube-viewer -C --results 10 -u metalx1000 ;}
+# ohheyitslou
+yts-ohheyitslou() { youtube-viewer -C --results 10 -u ohheyitslou ;}
 # rt channel
 yts-rt() { youtube-viewer -C --results 10 -u russiatoday ;}
 # rtamerica
 yts-rtamerica() { youtube-viewer -C --results 10 -u rtamerica ;}
-# why
-yts-whygoldnsilver() { youtube-viewer -C --results 10 -u whygoldandsilver ;}
 # valve
 yts-valve() { youtube-viewer -C --results 10 -u valve ;}
-# gregvegas5909
-yts-gregvegas() { youtube-viewer -C --results 10 -u gregvegas5909 ;}
-# ohheyitslou
-yts-ohheyitslou() { youtube-viewer -C --results 10 -u ohheyitslou ;}
+# why
+yts-whygoldnsilver() { youtube-viewer -C --results 10 -u whygoldandsilver ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}
