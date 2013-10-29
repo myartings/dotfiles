@@ -24,7 +24,7 @@ assign [class="^(Spacefm|Zathura)$"] 3
 bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc -e tmux
 
 # app launching
-bindsym $mod+semicolon exec dmenu_run -y 280 -fn "-gohu-*-medium-*-*-*-14-*-*-*-*-*-*-*" -i -nb '#073642' -nf '#eee8d5' -sb '#d33682' -p 'Run:'
+bindsym $mod+p exec dmenu_run -b -fn "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#002b36' -nf '#bfb5b5' -sb '#d33682' -p 'Run:'
 exec urxvtc -e tmux
 
 # take screenshot with PrtSc key
@@ -32,7 +32,7 @@ bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
 
 # font for window titles. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font "-gohu-*-medium-*-*-*-14-*-*-*-*-*-*-*"
+font "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*"
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -81,7 +81,7 @@ bindsym $mod+space floating toggle
 bindsym $mod+Tab focus mode_toggle
 
 # focus the parent container
-bindsym $mod+p focus parent
+bindsym $mod+a focus parent
 
 # focus the child container
 bindsym $mod+c focus child
