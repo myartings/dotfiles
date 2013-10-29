@@ -5,7 +5,6 @@
 # vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=sh:
 #################################################
 
-# Source scripts in /etc/X11/xinit/xinitrc.d/
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
     for f in /etc/X11/xinit/xinitrc.d/*; do
         [ -x "$f" ] && . "$f"
@@ -14,18 +13,25 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # load Xresources
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+[[ -f $HOME/.Xresources ]] && xrdb -merge $HOME/.Xresources
 
-xsetroot -cursor_name left_ptr &
+xset +fp /usr/share/fonts/local
+xset fp rehash
 
-# set background
+# set wallpaper
 sh $HOME/.fehbg
 
-# start urxvt terminal daemon
+# set cursor
+xsetroot -cursor_name left_ptr &
+
+# start terminal emulation daemon
 urxvtd -q -o -f &
 
+# hide cursor on inactivity
+/usr/bin/unclutter -noevents -idle 5 &
+
 # start music player daemon
-mpd ~/.mpd/mpd.conf &
+mpd $HOME/.mpd/mpd.conf &
 
 # screen locker
 xautolock &
