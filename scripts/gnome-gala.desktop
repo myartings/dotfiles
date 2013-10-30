@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=GNOME Gala Classic
-Comment=This session logs you into GNOME with the traditional panel without any graphical effect.
-Exec=gnome-session --session=gnome-gala
-TryExec=gnome-session
-Icon=
-Type=Application
-X-Ubuntu-Gettext-Domain=gnome-session-3.0

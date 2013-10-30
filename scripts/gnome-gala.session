@@ -1,7 +1,0 @@
-[GNOME Session]
-Name=GNOME Gala Classic
-RequiredComponents=gnome-panel;gnome-settings-daemon;
-RequiredProviders=windowmanager;
-DefaultProvider-windowmanager=gala
-DefaultProvider-notifications=notify-osd
-DesktopName=GNOME
