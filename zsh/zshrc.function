@@ -5,35 +5,34 @@
 # ------------------------------------------------
 
 # config
-cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
-cfg-zshrc() { $EDITOR ~/.zshrc ;}
-    rld-zshrc() { source ~/.zshrc ;}
 cfg-alias() { $EDITOR ~/.zsh/zshrc.alias ;}
 cfg-function() { $EDITOR ~/.zsh/zshrc.function ;}
-cfg-vimrc() { $EDITOR ~/.vimrc ;}
-cfg-vimp() { $EDITOR ~/.vimperatorrc ;}
-    rld-tmuxrc() { tmux source-file ~/.tmux.conf ;}
-cfg-xresources() { $EDITOR ~/.Xresources ;}
-    rld-xresources() { xrdb -load ~/.Xresources ;}
-cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
+cfg-mplayer() { $EDITOR ~/.mplayer/config ;}
+cfg-ncmpcpp() { $EDITOR ~/.ncmpcpp/config ;}
 cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
     url-newsbeuter() { $EDITOR ~/.newsbeuter/urls ;}
-cfg-mplayer() { $EDITOR ~/.mplayer/config ;}
-url-pyradio() { $EDITOR ~/.pyradio/stations.csv}
-cfg-minitube() { $EDITOR ~/.config/Flavio\ Tordini/Minitube.conf ;}
+cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
+    rld-tmuxrc() { tmux source-file ~/.tmux.conf ;}
+cfg-vimp() { $EDITOR ~/.vimperatorrc ;}
+cfg-vimrc() { $EDITOR ~/.vimrc ;}
+cfg-xinitrc() { $EDITOR ~/.xinitrc ;}
+cfg-xresources() { $EDITOR ~/.Xresources ;}
+    rld-xresources() { xrdb -load ~/.Xresources ;}
+cfg-zshrc() { $EDITOR ~/.zshrc ;}
+    rld-zshrc() { source ~/.zshrc ;}
 
 # transmission-cli
 tmd() { transmission-daemon ;}
 tmd-quit() { kill -15 $(pidof transmission-daemon) ;}
+tmr-add() { transmission-remote --add "$1" ;}
 tmr-cli() { transmission-remote-cli ;}
 tmr-list() { transmission-remote --list ;}
-tmr-add() { transmission-remote --add "$1" ;}
 tmr-pause() { transmission-remote -t"$1" --stop ;}
-tmr-start() { transmission-remote -t"$1" --start ;}
 tmr-purge() { transmission-remote -t"$1" --remove-and-delete ;}
 tmr-remove() { transmission-remote -t"$1" --remove ;}
+tmr-start() { transmission-remote -t"$1" --start ;}
 
 # python calculator, press Ctrl+D to quit
 calc() { python -ic "from __future__ import division; from math import *; from random import *" ;}
@@ -70,6 +69,8 @@ yts-rt() { youtube-viewer -C --results 10 -u russiatoday ;}
 yts-rtamerica() { youtube-viewer -C --results 10 -u rtamerica ;}
 # valve
 yts-valve() { youtube-viewer -C --results 10 -u valve ;}
+# velocitiesinmusic
+yts-velocitiesinmusic() { youtube-viewer -C --results 10 -u velocitiesinmusic ;}
 # why
 yts-whygoldnsilver() { youtube-viewer -C --results 10 -u whygoldandsilver ;}
 
