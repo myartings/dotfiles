@@ -6,8 +6,10 @@
 /mpd/state
 log*
 *~
+*.bak
 *.swp
 *.log
+*.lock
 *.db
 *.cmdline
 *.search
