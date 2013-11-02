@@ -1,16 +1,17 @@
-# --------------------------------------------------------------------------------
+# ---------------------------------------------
 # file: ~/.i3/config
 # author: serdotlinecho
-# Please see http://i3wm.org/docs/userguide.html for a complete reference
 # vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=i3:
-# --------------------------------------------------------------------------------
+# ---------------------------------------------
 
 # modifier key
 set $mod Mod4
 set $mod1 Mod1
 
-# defaults
+# defaults orientation <vertical|horizontal>
 default_orientation vertical
+
+# border style <normal|1pixel>
 new_window pixel 1
 
 # float the following window
@@ -19,6 +20,12 @@ for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter)$"] floating en
 # assign the following to specific workspaces
 assign [class="^(Dwb|Firefox)$"] 2
 assign [class="^(Spacefm|Zathura)$"] 3
+
+# class                 border  backgr. text    indicator
+client.focused          #4c7899 #285577 #ffffff #2e9ef4
+client.focused_inactive #333333 #5f676a #ffffff #484e50
+client.unfocused        #333333 #222222 #888888 #292d2e
+client.urgent           #2f343a #900000 #ffffff #900000
 
 # open terminal
 bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc -e tmux
@@ -29,6 +36,7 @@ exec urxvtc -e tmux
 
 # take screenshot with PrtSc key
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
+bindsym mod1+Print exec --no-startup-id import -window "$(xdotool getwindowfocus -f)" ~/Pictures/snapshot-$(date +%F_%H%M%S_%N).png
 
 # font for window titles. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -142,7 +150,6 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
 
 # volume control
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '3%+'"
