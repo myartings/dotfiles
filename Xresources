@@ -37,7 +37,7 @@ URxvt*boldFont:-*-termsynu-bold-r-*-*-14-*-*-*-*-*-*-*
 ! URxvt*boldFont:-gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
 
 ! -- Cursor -- !
-Xcursor.theme: Vanilla-DMZ
+Xcursor.theme: Vanilla-DMZ-AA
 
 ! ! -- Extensions -- !
 URxvt.perl-ext-common:          default,clipboard,matcher,url-select,keyboard-select
