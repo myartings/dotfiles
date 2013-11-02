@@ -23,7 +23,6 @@ vimperatorrc
 colors
 mplayer
 newsbeuter
-weechat
 mpd
 ncmpcpp
 gtkrc-2.0
