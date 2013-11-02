@@ -30,9 +30,6 @@ urxvtd -q -o -f &
 # hide cursor on inactivity
 /usr/bin/unclutter -noevents -idle 5 &
 
-# start music player daemon
-mpd $HOME/.mpd/mpd.conf &
-
 # screen locker
 xautolock &
 
