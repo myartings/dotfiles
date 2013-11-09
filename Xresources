@@ -19,9 +19,9 @@ URxvt*borderless:       false
 URxvt*iso14755:         false
 
 ! -- Colors -- !
-#include "/home/serdotlinecho/.colors/solarized"
+#include "/home/serdotlinecho/.colors/invisibone"
 ! For solarized colorscheme
-URxvt.intensityStyles:  false
+! URxvt.intensityStyles:  false
 
 ! -- Fonts settings -- !
 Xft.hintstyle: hintmedium
