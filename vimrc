@@ -8,6 +8,8 @@
 set nocompatible            " we're running Vim, not Vi!
 filetype plugin indent on   " filetype detection and settings
 set encoding=utf-8          " we like utf-8
+set ff=unix                 " file format - dos, unix or mac
+set ffs=unix,dos,mac        " file formats to look for
 
 " vundle
 set rtp+=~/.vim/bundle/vundle/
@@ -25,7 +27,7 @@ Bundle "tomtom/tlib_vim"
 
 " highlighting
 syntax on
-colorscheme solarized
+colorscheme bubblegum
 " set background=dark
 
 " editing behaviour
@@ -35,7 +37,7 @@ set expandtab           " insert spaces instead of tabs
 set autoindent          " auto indents next new line
 set number              " show the line number for each line
 set backspace=2         " full backspacing capabilities (indent,eol,start)
-set ruler               " show the cursor position all the time
+set ruler               " show line and column number
 set linebreak           " attempt to wrap lines cleanly
 set cpoptions=ces$      " `cw` put dollar sign at the end
 
@@ -84,6 +86,14 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" trailing whitespace detection
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
 " ----------------------------------
 " settings for plugins
 " ----------------------------------
@@ -92,6 +102,7 @@ nnoremap <C-l> <C-w>l
 " let g:airline_theme='dark'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+let g:airline_detect_modified=1
 let g:airline#extensions#whitespace#trailing_format = 'trailing[%s]'
 let g:airline#extensions#whitespace#mixed_indent_format = 'mixed-indent[%s]'
 let g:airline#extensions#branch#enabled = 1
