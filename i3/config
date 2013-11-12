@@ -18,20 +18,21 @@ new_window pixel 1
 for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter)$"] floating enable
 
 # assign the following to specific workspaces
-assign [class="^(Dwb|Firefox)$"] 2
-assign [class="^(Spacefm|Zathura)$"] 3
+assign [class=Firefox] 2
+assign [class="^(Thunar|Zathura)$"] 4
 
 # class                 border  backgr. text    indicator
-client.focused          #4c7899 #285577 #ffffff #2e9ef4
-client.focused_inactive #333333 #5f676a #ffffff #484e50
-client.unfocused        #333333 #222222 #888888 #292d2e
-client.urgent           #2f343a #900000 #ffffff #900000
+client.focused          #4c7899 #686868 #ffffff #2e9ef4
+client.focused_inactive #333333 #303030 #ffffff #484e50
+client.unfocused        #333333 #222222 #cfcfcf #292d2e
+client.urgent           #d370a3 #ffa7da #ffffff #ffa7da
 
 # open terminal
 bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc -e tmux
+bindsym $mod+Shift+Return exec --no-startup-id /usr/bin/urxvtc
 
 # app launching
-bindsym $mod+p exec dmenu_run -b -fn "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#002b36' -nf '#bfb5b5' -sb '#d33682' -p 'Run:'
+bindsym $mod+p exec dmenu_run -y 20 -fn "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#303030' -nf '#cfcfcf' -sb '#6095c5' -p 'Run:'
 exec urxvtc -e tmux
 
 # take screenshot with PrtSc key
@@ -122,7 +123,6 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+Shift+e exec --no-startup-id $HOME/dotfiles/scripts/exit_menu.sh
 
 # resize window (you can also use the mouse for that)
@@ -163,17 +163,16 @@ bar {
         position top
         workspace_buttons yes
         font -misc-termsyn.icons-medium-r-normal-*-14-*-*-100-*-*-iso8859-1
-        #status_command py3status -c ~/.i3status.conf -i ~/.i3/p3smodules
         status_command i3status
         colors {
-            background #002b36
-            statusline #bfb5b5
-            separator  #268bd2
+            background #232323
+            statusline #a0a0a0
+            separator  #333333
 
-            focused_workspace  #1C678C #090808 #46a4ff
-            active_workspace   #1a2122 #555555 #eee8d5
-            inactive_workspace #333333 #222222 #888888
-            urgent_workspace   #2f343a #ff669d #eee8d5
+            focused_workspace  #333333 #232323 #6095c5
+            active_workspace   #1a2122 #232323 #eee8d5
+            inactive_workspace #303030 #232323 #888888
+            urgent_workspace   #ffa7da #d370a3 #ffffff
         }
 }
 
