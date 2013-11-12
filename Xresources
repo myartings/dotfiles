@@ -45,15 +45,15 @@ URxvt.keysym.M-c:               perl:clipboard:copy
 URxvt.keysym.M-v:               perl:clipboard:paste
 URxvt.keysym.M-C-v:             perl:clipboard:paste_escaped
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      dwb
+URxvt.url-select.launcher:      firefox
 URxvt.url-select.underline:     true
 URxvt.keysym.M-h:               perl:keyboard-select:activate
 URxvt.keysym.M-s:               perl:keyboard-select:search
-URxvt.url-launcher:             dwb
+URxvt.url-launcher:             firefox
 URxvt.matcher.button:           1
 
 ! -- Xautolock screen locker -- !
 Xautolock.time:        10
 Xautolock.corners:     -+00
 Xautolock.cornerdelay: 10
-Xautolock.locker:      i3lock -c 002b36
+Xautolock.locker:      i3lock -c 232323
