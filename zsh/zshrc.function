@@ -7,6 +7,7 @@
 # config
 cfg-alias() { $EDITOR ~/.zsh/zshrc.alias ;}
 cfg-function() { $EDITOR ~/.zsh/zshrc.function ;}
+cfg-awesome() { $EDITOR ~/.config/awesome/rc.lua ;}
 cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
 cfg-mplayer() { $EDITOR ~/.mplayer/config ;}
@@ -49,30 +50,30 @@ fi
 
 # play youtube video with youtube-viewer and mplayer
 ytv() { youtube-viewer -C $@ ;}
+# fulltimedevils
+yts-fulltimedevils() { youtube-viewer -C --results 10 -u fulltimedevils ;}
 # gotbletu
 yts-gotbletu() { youtube-viewer -C --results 10 -u gotbletu ;}
-# gregvegas5909
+# Gregory Mannarino
 yts-gregvegas() { youtube-viewer -C --results 10 -u gregvegas5909 ;}
 # hawkkeydavischannel
 yts-hawkkeydavischannel() { youtube-viewer -C --results 10 -u hawkkeydavischannel ;}
-# jupiterbroadcasting
+# Jupiter Broadcasting
 yts-jbcast() { youtube-viewer -C --results 10 -u jupiterbroadcasting ;}
 # linux4unme
 yts-linux4unme() { youtube-viewer -C --results 10 -u linux4unme ;}
-# metalx1000
+# Yu-Jie Lin
+yts-livibetter() { youtube-viewer -C --results 10 -u livibetter ;}
+# Kris Occhipinti
 yts-metalx1000() { youtube-viewer -C --results 10 -u metalx1000 ;}
 # ohheyitslou
 yts-ohheyitslou() { youtube-viewer -C --results 10 -u ohheyitslou ;}
-# rt channel
+# RT
 yts-rt() { youtube-viewer -C --results 10 -u russiatoday ;}
-# rtamerica
-yts-rtamerica() { youtube-viewer -C --results 10 -u rtamerica ;}
-# valve
+# Valve
 yts-valve() { youtube-viewer -C --results 10 -u valve ;}
 # velocitiesinmusic
 yts-velocitiesinmusic() { youtube-viewer -C --results 10 -u velocitiesinmusic ;}
-# why
-yts-whygoldnsilver() { youtube-viewer -C --results 10 -u whygoldandsilver ;}
 
 # capture rtmp links
 sniff-begin() { sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT ;}

@@ -7,7 +7,8 @@
 alias cp='acp -g'   # cp with progress bar
 alias mv='amv -g'   # mv with progress bar
 alias ls='ls --group-directories-first --color'  # group directories before files
-alias hgrep="history | grep"
+alias hgrep='history | grep'
+alias mgrep='lsmod | grep'
 alias vless='/usr/share/vim/vim74/macros/less.sh'
 alias scb='sudo setpci -s 00:02.0 F4.B=70'  # set screen brightness to 70
 alias gensums='[[ -f PKGBUILD ]] && makepkg -g >> PKGBUILD' # generate integrity checks for source files
@@ -23,7 +24,9 @@ alias mpl='mplayer'
 alias archey='archey3 --config=~/.archey3.cfg'
 alias speedtest='speedtest-cli'
 alias ytdl='youtube-dl'
-alias ytdl3xc='youtube-dl -f 18 $(xsel -b)'
-alias ytdl2xc='youtube-dl -f 5 $(xsel -b)'
+alias ytdl3c='youtube-dl -f 18 $(xsel -b)'
+alias ytdl2c='youtube-dl -f 5 $(xsel -b)'
+alias ytv3c='youtube-viewer -3 $(xsel -b)'
+alias mpv3c='mpv --quvi-format=360p $(xsel -b)'
 alias almi='alsamixer -c 0'
-alias wgetxc='wget $(xsel -b)'
+alias wgetc='wget $(xsel -b)'
