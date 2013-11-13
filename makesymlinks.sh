@@ -8,24 +8,25 @@
 
 dir=~/dotfiles          # dotfiles directory
 olddir=~/dotfiles_old   # old dotfiles backup directory
-files="xinitrc
-zshrc
-zsh
-zshenv
-Xresources
+files="colors
+dir_colors
 i3
 i3status.conf
-tmux.conf
-dir_colors
-vimrc
-vim
-vimperatorrc
-colors
+gtkrc-2.0
+mpd
 mplayer
 newsbeuter
-mpd
 ncmpcpp
-gtkrc-2.0
+tmux.conf
+vim
+vimperatorrc
+vimperator
+vimrc
+xinitrc
+Xresources
+zsh
+zshenv
+zshrc
 "                # list of files/folders to symlink in homedir
 
 ##########
