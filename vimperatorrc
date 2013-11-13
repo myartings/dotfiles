@@ -1,20 +1,44 @@
 "3.7 (created: 2013/04/03 18:20:07)
 " vim: set ft=vim:
 
-" general settings
-colorscheme solarized_dark
+" options
+colorscheme invisibone
+set hintchars=fdsartgbvecwxqyiopmnhzulkj
 set noscrollbars
 set autocomplete=false
 set hlsearch
 set incsearch
 set ignorecase
-set hintchars=fdsartgbvecwxqyiopmnhzulkj
+set smartcase
+set popups=tab
+set focuscontent
 
-source! /home/serdotlinecho/.vimperatorrc.local
+let mapleader = ","
 
 " custom key mapping
+" up and down
 noremap J gt
 noremap K gT
-noremap j 5j
-noremap k 5k
+" noremap j 5j
+" noremap k 5k
+
+" disable open web location shortcut
+nnoremap <C-l> <nop>
+imap <C-l> <nop>
+
+" highlight text on insert mode
+imap <C-f> <A-a>
+
+" tab
+nnoremap <silent> <C-l> :tabmove! +1<CR>
+nnoremap <silent> <C-h> :tabmove! -1<CR>
+
+noremap <silent> <Leader>v :source ~/.vimperatorrc<CR>:echo<Space>"source completed."<CR>
+source! ~/.vimperatorrc.local
+
+" settings for plugin
+" smooziee.js
+let g:smooziee_scroll_amount="80"
+let g:smooziee_scroll_interval="20"
+
 
