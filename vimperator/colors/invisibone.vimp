@@ -1,0 +1,77 @@
+" ==VimperatorColorSchema==
+" name: invisibone
+" vim: ft=vim:
+
+hi  Bell  border: none; background-color: #cfcfcf;
+hi  Boolean   color: #D370A3;
+hi  CmdLine   background: #232323; color: #cfcfcf; -moz-transition: all 0.25s;
+hi  CmdLine>*   font-family: droid sans mono slashed; font-size: 8pt;
+hi  CmdOutput   white-space: pre;
+hi  CompDesc  width: 500px; max-width: 500px; color: #a3d572;
+"hi  CompGroup
+hi  CompGroup:not(:first-of-type)   margin-top: 1ex;
+hi  CompIcon  width: 16px; min-width: 16px; display: inline-block; margin-right: .5ex;
+hi  CompIcon>img  max-width: 16px; max-height: 16px; vertical-align: middle;
+hi  CompItem font-family: droid sans mono slashed; font-size: 8pt;
+hi  CompItem[selected]  background: #303030; box-shadow: 0px 0px 1px #EFBD8B;
+hi  CompItem>*  height: 18px; min-height: 18px; padding: 0 0.5ex;
+hi  CompMsg   font-style: italic; margin-left: 16px;
+hi  CompResult  width: 500px; max-width: 500px; overflow: hidden;
+hi  CompTitle   font-family: droid sans; font-size: 8pt; font-weight: bold; background-color: #303030;
+hi  CompTitle>*   color: #98CBFE; border-top: 1px solid #93A1A1; border-bottom: 1px solid #93A1A1; padding: 1px 0.5ex; text-shadow: 1px 1px 0px #073642;
+hi  ContentSeparator  border-top: 1px dotted #93A1A1; display: -moz-box;
+hi  Disabled  color: #D370A3;
+hi  Enabled   color: #859900;
+hi  ErrorMsg  color: #FFA7DA; background: #232323; font-family: droid sans mono slashed; font-size: 8pt;
+hi  Filter  color: #CB4B16; font-weight: bold;
+hi  FrameIndicator  background-color: #D370A3; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+hi  Function  color: #6095C5;
+hi  Hint  font-family: droid sans mono; font-size: 8pt; font-weight: bold; text-transform: uppercase; color: #000000; background-color: #FFA7DA; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 1px; z-index: 9999;
+hi  Hint::after   content: attr(number);
+hi  HintActive  background-color: rgba(163,213,114,0.5); color: #303030;
+hi  HintElem  background-color: rgba(96,149,197,0.2);  color: #303030;
+hi  HintImage   opacity: .5;
+hi  Indicator   color: #98CBFE;
+hi  InfoMsg   color: #FFA7DA; background: #232323; font-family: droid sans mono slashed; font-size: 8pt;
+hi  Key   font-weight: bold;
+hi  Keyword   color: #D370A3;
+hi  LineNr  color: #CB4B16; background: #232323;
+"hi  Logo
+hi  Mapping   color: #D33682;
+hi  Message   white-space: normal; min-width: 100%; padding-left: 2em; text-indent: -2em; display: block;
+hi  ModeMsg   font-family: droid sans; font-size: 8pt; font-weight: bold; color: #000000; background: #AFD787; padding: 0px 8px;
+hi  MoreMsg   color: #859900; background: #232323;
+hi  NonText   color: #268BD2; min-height: 16px; padding-left: 2px;
+hi  Normal  color: #cfcfcf; background: #232323;
+hi  Null  color: #268BD2;
+hi  Number  color: #268BD2;
+hi  Object  color: #B58900;
+hi  Preview   color: #586E75;
+hi  Prompt  background: url("chrome://liberator/skin/prompt.png"); width: 10px; background-position: center; background-repeat: no-repeat;
+hi  PromptText  color: #232323; background: #AC7BDE; font-family: droid sans; font-size: 10pt; font-weight: bold; padding: 2px 6px;
+hi  Question  color: #859900; background: #232323; font-weight: bold;
+"hi  Search
+hi  StatusLine  color: #cfcfcf; background: transparent; font-family: droid sans mono slashed; font-size: 8pt; font-weight: small;
+hi  String  color: #859900;
+"hi  TabClose
+"hi  TabIcon
+"hi  TabIconNumber
+hi  TabNumber   font-weight: bold; margin: 0px; padding-right: .3ex;
+"hi  TabText
+hi  Tag   color: #6095C5;
+hi  Title   color: #AC7BDE; background: #232323; font-weight: bold; font-size: 120%;
+hi  URL   text-decoration: none; color: #6095C5;
+hi  URL:hover   text-decoration: underline; cursor: pointer;
+hi  WarningMsg  color: #D370A3; background: #232323;
+
+" hints-ext.js
+"hi  HintExt  font-family: monospace; font-size: medium; font-weight: bold; text-transform: uppercase; color: #FDF6E3; background-color: #DC322F; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 1px;
+"hi  HintExtActive  background-color: rgba(133,153,0,.3);
+"hi  HintExtActive>*  background-color: #268BD2;
+"hi  HintExtActive>span  background-color: #268BD2;
+"hi  HintExtElem  border: 1px solid rgba(147,161,161,.5); -moz-border-radius: 2px; background-color: rgba(238,232,213, .1); -moz-box-sizing: border-box;
+
+"hi StatusLine color: #002b36; background: #002b36; font-weight: normal; font-family: droid sans mono slashed; font-size: 9pt;
+"hi StatusLineBroken color: #93a1a1; background: #ffffd7; font-weight: normal; font-family: droid sans mono slashed; font-size: 9pt;
+"hi StatusLineExtended color: #93a1a1; background: #af005f; font-weight: normal; font-family: droid sans mono slashed; font-size: 9pt;
+"hi StatusLineSecure color: #93a1a1; background: #b58900; font-weight: normal; font-family: droid sans mono slashed; font-size: 9pt;
