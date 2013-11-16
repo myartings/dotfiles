@@ -15,7 +15,7 @@ default_orientation vertical
 new_window pixel 1
 
 # float the following window
-for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter)$"] floating enable
+for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter|mpv)$"] floating enable
 
 # assign the following to specific workspaces
 assign [class=Firefox] 2
