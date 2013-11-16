@@ -40,7 +40,6 @@ bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
 bindsym mod1+Print exec --no-startup-id import -window "$(xdotool getwindowfocus -f)" ~/Pictures/snapshot-$(date +%F_%H%M%S_%N).png
 
 # font for window titles. ISO 10646 = Unicode
-#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*"
 
 # use Mouse+$mod to drag floating windows to their wanted position
