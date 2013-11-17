@@ -56,8 +56,6 @@ yts-fulltimedevils() { youtube-viewer -C --results 10 -u fulltimedevils ;}
 yts-gotbletu() { youtube-viewer -C --results 10 -u gotbletu ;}
 # Gregory Mannarino
 yts-gregvegas() { youtube-viewer -C --results 10 -u gregvegas5909 ;}
-# hawkkeydavischannel
-yts-hawkkeydavischannel() { youtube-viewer -C --results 10 -u hawkkeydavischannel ;}
 # Jupiter Broadcasting
 yts-jbcast() { youtube-viewer -C --results 10 -u jupiterbroadcasting ;}
 # linux4unme
@@ -66,6 +64,8 @@ yts-linux4unme() { youtube-viewer -C --results 10 -u linux4unme ;}
 yts-livibetter() { youtube-viewer -C --results 10 -u livibetter ;}
 # Kris Occhipinti
 yts-metalx1000() { youtube-viewer -C --results 10 -u metalx1000 ;}
+# Muktware
+yts-muktware() { youtube-viewer -C --results 10 -u muktware ;}
 # ohheyitslou
 yts-ohheyitslou() { youtube-viewer -C --results 10 -u ohheyitslou ;}
 # RT
