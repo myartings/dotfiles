@@ -37,7 +37,7 @@ exec urxvtc -e tmux
 
 # take screenshot with PrtSc key
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
-bindsym mod1+Print exec --no-startup-id import -window "$(xdotool getwindowfocus -f)" ~/Pictures/snapshot-$(date +%F_%H%M%S_%N).png
+bindsym mod1+Print exec --no-startup-id import -window "$(xdotool getwindowfocus -f)" ~/Pictures/snapwin-$(date +%F_%H%M%S_%N).png
 
 # font for window titles. ISO 10646 = Unicode
 font "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*"
@@ -93,6 +93,12 @@ bindsym $mod+a focus parent
 
 # focus the child container
 bindsym $mod+c focus child
+
+# make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# show the first scratchpad window
+bindsym $mod+grave scratchpad show
 
 # customize workspace names
 #set $ws1 1:term
