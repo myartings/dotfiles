@@ -18,7 +18,7 @@ new_window pixel 1
 for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter|mpv)$"] floating enable
 
 # assign the following to specific workspaces
-assign [class=Firefox] 2
+assign [class="^(Firefox|Dwb)$"] 2
 assign [class="^(Thunar|Zathura)$"] 4
 
 # class                 border  backgr. text    indicator
