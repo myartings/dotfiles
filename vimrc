@@ -1,17 +1,18 @@
 " ------------------------------------------------------------------------
 " file:     ~/.vimrc
 " authtor:  serdotlinecho
-" vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:fdm=indent:fdn=1:ft=vim:
+" vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:fdm=marker:fdn=1:ft=vim:
 " ------------------------------------------------------------------------
 
-" general
+" ----- general {{{
 set nocompatible            " we're running Vim, not Vi!
 filetype plugin indent on   " filetype detection and settings
 set encoding=utf-8          " we like utf-8
 set ff=unix                 " file format - dos, unix or mac
 set ffs=unix,dos,mac        " file formats to look for
 
-" vundle
+" }}}
+" ----- vundle {{{
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -25,12 +26,13 @@ Bundle 'tomtom/tcomment_vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 
-" highlighting
+" }}}
+" ----- highlighting {{{
 syntax on
 colorscheme bubblegum
-" set background=dark
 
-" editing behaviour
+" }}}
+" ----- editing behaviour {{{
 set tabstop=4           " tabs appear as n number of columns
 set shiftwidth=4        " n cols for auto-indenting
 set expandtab           " insert spaces instead of tabs
@@ -41,28 +43,29 @@ set ruler               " show line and column number
 set linebreak           " attempt to wrap lines cleanly
 set cpoptions=ces$      " `cw` put dollar sign at the end
 
-" vim behaviour
+" }}}
+" ----- vim behaviour {{{
 set norelativenumber    " show no relative line numbers
 set nobackup            " disable backup files (filename~)
 set noswapfile          " do not write annoying intermediate swap files
 set wildmenu            " enhanced tab-completion shows all matching cmds in a popup menu
 set laststatus=2        " always show the status line
 
-" searching
+" }}}
+" ----- searching {{{
 set hlsearch            " highlight all search results
 set incsearch           " show match for partly typed search command
 set ignorecase          " case-insensitive search
 set smartcase           " override 'ignorecase' when pattern has upper case characters
 
-" ----------------------
-" custom key mapping
-" ---------------------
+" }}}
+" ----- custom key mapping {{{
 
 " change map <leader> from \ to ,
 let mapleader = ","
 
 " reload .vimrc
-map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+map <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'source completed'"<CR>
 
 " Y to yank to end of line
 map Y y$
@@ -74,7 +77,7 @@ nnoremap <leader>n :set nonumber!<CR>
 nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
 
-" disable arrow keys
+" disable arrow keys on normal mode
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -94,12 +97,11 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" ----------------------------------
-" settings for plugins
-" ----------------------------------
+" }}}
+" ----- settings for plugins {{{
 
 " vim-airline settings
-" let g:airline_theme='dark'
+let g:airline_theme='bubblegum'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_detect_modified=1
@@ -110,5 +112,5 @@ let g:airline#extensions#branch#empty_message = ''
 
 " NERDtree
 nmap <leader>d :NERDTreeToggle <CR>
-nmap <leader>f :NERDTreeFind <CR>
+nmap <leader>nf :NERDTreeFind <CR>
 
