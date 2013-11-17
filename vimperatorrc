@@ -1,9 +1,13 @@
-"3.7 (created: 2013/04/03 18:20:07)
-" vim: set ft=vim:
+" -----------------------------------------------
+" file: ~/.vimperatorrc
+" author: serdotlinecho
+" vim: set fdm=marker ft=vim:
+" -----------------------------------------------
 
-" options
-colorscheme invisibone
-set hintchars=fdsartgbvecwxqyiopmnhzulkj
+" ----- general settings {{{
+colorscheme darkness2
+" set hintchars=fdsartgbvecwxqyiopmnhzulkj
+set hintchars="hjklasdfgyuiopqwertnmzxcvb"
 set noscrollbars
 set autocomplete=false
 set hlsearch
@@ -13,32 +17,84 @@ set smartcase
 set popups=tab
 set focuscontent
 
+" disable accesskey
+set! ui.key.generalAccessKey=0
+
+" always show http
+set! browser.urlbar.trimURLs=false
+
+" make caret mode's bar more visible
+set! ui.caretWidth=1
+set! ui.caretBlinkTime=1000
+
+" JIT
+set! javascript.options.jit.chrome=true
+
+" disable IPv6
+set! network.dns.disableIPv6=true
+
+" }}}
+" ----- custom key mappings {{{
+
 let mapleader = ","
 
-" custom key mapping
-" up and down
-noremap J gt
-noremap K gT
-" noremap j 5j
-" noremap k 5k
+" switching tabs
+nnoremap J gt
+nnoremap K gT
+
+" moving tab
+nnoremap <silent> <C-l> :tabmove! +1<CR>
+nnoremap <silent> <C-h> :tabmove! -1<CR>
+
+" scroll faster
+" nnoremap j 5j
+" nnoremap k 5k
+
+" use :wqa or :xa instead
+nnoremap ZZ <Nop>
+
+" disable next and previous key
+noremap <C-p> <Nop>
+noremap <C-n> <Nop>
+
+" show page information
+nnoremap <C-p> g<C-g>
+
+" stop loading the current web page
+nnoremap <silent> <Leader>s :stop<CR>
+
+" list buffers
+nnoremap <Leader>b :buffer!<TAB>
+
+" open bookmarks
+nnoremap <Leader>B :bmarks<Space>
+
+" disable Ctrl+Q
+nnoremap <C-q> <Nop>
 
 " disable open web location shortcut
-nnoremap <C-l> <nop>
-imap <C-l> <nop>
+nnoremap <C-l> <Nop>
+imap <C-l> <Nop>
 
 " highlight text on insert mode
 imap <C-f> <A-a>
 
-" tab
-nnoremap <silent> <C-l> :tabmove! +1<CR>
-nnoremap <silent> <C-h> :tabmove! -1<CR>
+" }}}
+" ----- settings for plugin {{{
 
-noremap <silent> <Leader>v :source ~/.vimperatorrc<CR>:echo<Space>"source completed."<CR>
-source! ~/.vimperatorrc.local
-
-" settings for plugin
 " smooziee.js
 let g:smooziee_scroll_amount="80"
 let g:smooziee_scroll_interval="20"
+
+" }}}
+" ----- external commands {{{
+
+" play youtube videos with mpv
+command! -nargs=0 mpv :execute "!urxvt -e mpv --quvi-format=360p \""+content.location.href+"\" "
+
+" }}}
+" ----- source vimperator {{{
+nnoremap <silent> <Leader>v :source ~/.vimperatorrc<CR>:echo<Space>"source completed."<CR>
+source! ~/.vimperatorrc.local
 
 
