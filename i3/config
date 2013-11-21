@@ -28,8 +28,7 @@ client.unfocused        #333333 #222222 #cfcfcf #292d2e
 client.urgent           #d370a3 #ffa7da #ffffff #ffa7da
 
 # open terminal
-bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc -e tmux
-bindsym $mod+Shift+Return exec --no-startup-id /usr/bin/urxvtc
+bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc
 
 # app launching
 bindsym $mod+p exec dmenu_run -y 20 -fn "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#303030' -nf '#cfcfcf' -sb '#6095c5' -p 'Run:'
