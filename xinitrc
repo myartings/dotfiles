@@ -24,7 +24,7 @@ sh $HOME/.fehbg
 # set cursor
 xsetroot -cursor_name left_ptr &
 
-# start terminal emulation daemon
+# urxvt daemon
 urxvtd -q -o -f &
 
 # hide cursor on inactivity
