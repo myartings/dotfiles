@@ -12,6 +12,7 @@ alias mgrep='lsmod | grep'
 alias vless='/usr/share/vim/vim74/macros/less.sh'
 alias scb='sudo setpci -s 00:02.0 F4.B=70'  # set screen brightness to 70
 alias gensums='[[ -f PKGBUILD ]] && makepkg -g >> PKGBUILD' # generate integrity checks for source files
+alias pacmod='pacman -Qii $@ | awk '/^MODIFIED/ {print $2}''
 alias wlist='nmcli -p dev wifi'  # list available wifi
 alias wup='nmcli -p con up id'    # connect to wifi
 alias wdown='nmcli -p con down id' # disconnect from wifi
@@ -21,12 +22,11 @@ alias wmenu='sudo wifi-menu'
 alias zzz='systemctl suspend'  # suspend the machine
 alias ncm='ncmpcpp'
 alias mpl='mplayer'
-alias archey='archey3 --config=~/.archey3.cfg'
 alias speedtest='speedtest-cli'
 alias ytdl='youtube-dl'
 alias ytdl3c='youtube-dl -f 18 $(xsel -b)'
 alias ytdl2c='youtube-dl -f 5 $(xsel -b)'
 alias ytv3c='youtube-viewer -3 $(xsel -b)'
-alias mpv3c='mpv --quvi-format=360p $(xsel -b)'
+alias mpv3c='mpv --quvi-format=medium_mp4_i18_360p $(xsel -b)'
 alias almi='alsamixer -c 0'
 alias wgetc='wget $(xsel -b)'
