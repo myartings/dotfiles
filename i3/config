@@ -8,18 +8,22 @@
 set $mod Mod4
 set $mod1 Mod1
 
-# defaults orientation <vertical|horizontal>
+# defaults orientation (vertical|horizontal)
 default_orientation vertical
 
 # border style <normal|1pixel>
 new_window pixel 1
 
-# float the following window
-for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter|mpv)$"] floating enable
+# window rules
+for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter|MPlayer|mpv)$"] floating enable
+for_window [class="^(MPlayer|mpv)$"] border normal
+for_window [class="^Firefox$" title="^Library$"] floating enable
+for_window [class="^Firefox$" title="^Library$"] border normal
 
 # assign the following to specific workspaces
-assign [class="^(Firefox|Dwb)$"] 2
-assign [class="^(Thunar|Zathura)$"] 4
+assign [class="^(Firefox|Dwb)$"] 2:www
+assign [class="^(Thunar|Zathura)$"] 4:file
+assign [class="^URxvt$" title="^irssi$"] 3:irc
 
 # class                 border  backgr. text    indicator
 client.focused          #4c7899 #686868 #ffffff #2e9ef4
@@ -32,6 +36,11 @@ bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc
 
 # app launching
 bindsym $mod+p exec dmenu_run -y 20 -fn "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#303030' -nf '#cfcfcf' -sb '#6095c5' -p 'Run:'
+
+# open irssi
+bindsym $mod+i exec "urxvtc -e irssi"
+
+# autostart
 exec urxvtc -e tmux
 
 # take screenshot with PrtSc key
@@ -94,28 +103,28 @@ bindsym $mod+a focus parent
 bindsym $mod+c focus child
 
 # make the currently focused window a scratchpad
-bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+BackSpace move scratchpad
 
 # show the first scratchpad window
 bindsym $mod+grave scratchpad show
 
 # customize workspace names
-#set $ws1 1:term
-#set $ws2 2:www
-#set $ws3 3:fm
-#set $ws4 4:misc
+set $ws1 1:term
+set $ws2 2:www
+set $ws3 3:irc
+set $ws4 4:file
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
 
 # switch between the current and the previously focused one
 bindsym $mod+n workspace next
