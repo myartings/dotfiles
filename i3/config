@@ -26,7 +26,7 @@ assign [class="^(Thunar|Zathura)$"] 4:file
 assign [class="^URxvt$" title="^irssi$"] 3:irc
 
 # class                 border  backgr. text    indicator
-client.focused          #4c7899 #686868 #ffffff #2e9ef4
+client.focused          #303030 #686868 #ffffff #2e9ef4
 client.focused_inactive #333333 #303030 #ffffff #484e50
 client.unfocused        #333333 #222222 #cfcfcf #292d2e
 client.urgent           #d370a3 #ffa7da #ffffff #ffa7da
