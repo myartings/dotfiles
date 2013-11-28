@@ -27,9 +27,6 @@ xsetroot -cursor_name left_ptr &
 # urxvt daemon
 urxvtd -q -o -f &
 
-# hide cursor on inactivity
-/usr/bin/unclutter -noevents -idle 5 &
-
 # screen locker
 xautolock &
 
