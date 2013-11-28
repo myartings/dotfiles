@@ -2,8 +2,10 @@
 # file: ~/.zshrc
 # https://github.com/robbyrussell/oh-my-zsh
 # author: serdotlinecho
+# vim:fdm=marker:
 # -------------------------------------------
 
+# ----- oh-my-zsh settings {{{
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -37,27 +39,30 @@ plugins=(fasd zsh-syntax-highlighting git colored-man vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-# alias and function
+# }}}
+# ----- alias, function and path {{{
 [ -f $HOME/.zsh/zshrc.alias ] && . $HOME/.zsh/zshrc.alias
 [ -f $HOME/.zsh/zshrc.function ] && . $HOME/.zsh/zshrc.function
 [ -e $HOME/.zsh/notifyosd.zsh ] && . $HOME/.zsh/notifyosd.zsh
 
-# set path
 PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
+
 # ccache
 export CCACHE_DIR="/home/serdotlinecho/.ccache"
 export PATH="/usr/lib/ccache/bin/:$PATH"
 
+# }}}
+# ----- vi-mode {{{
 # add missing vi hotkeys
 # fixes backspace deletion issues
 # http://zshwiki.org/home/zle/vi-mode
 # bindkey -a u undo
 bindkey -a '^R' redo
-bindkey '^?' backward-delete-char
 bindkey '^H' backward-delete-char
 
 # # history search in vim mode
 # http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
 bindkey -M viins '^s' history-incremental-search-backward
 bindkey -M vicmd '^s' history-incremental-search-backward
+
+# }}}
