@@ -23,6 +23,7 @@ cfg-xresources() { $EDITOR ~/.Xresources ;}
     rld-xresources() { xrdb -load ~/.Xresources ;}
 cfg-zshrc() { $EDITOR ~/.zshrc ;}
     rld-zshrc() { source ~/.zshrc ;}
+edit-cfg() { [ "$1" != "" ] && cp "$1" "$1".bak-`date +%d%m%y`; $EDITOR "$1"; }
 
 # transmission-cli
 tmd() { transmission-daemon ;}
