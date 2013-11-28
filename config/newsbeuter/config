@@ -1,10 +1,10 @@
 ######################################
-##  file:     ~/.newsbeuter/config  ##
-##  author:   serdotlinecho         ##
-##  vim: set ft=config:             ##
+#  file: newsbeuter config
+#  author: serdotlinecho
+#  vim: fdm=marker:ft=config:
 ######################################
 
-# Settings
+# settings {{{
 always-display-description true
 browser $BROWSER
 player mplayer
@@ -17,7 +17,8 @@ reload-time 30
 confirm-exit yes
 notify-program "notify-send"
 
-# Theme
+# }}}
+# theme {{{
 #color background        color12 color8
 #color listnormal        default default
 color listfocus         color7 color8 bold
@@ -32,12 +33,14 @@ highlight article "^Author: .*$" color5 default
 highlight article "^Link: .*$" color6 default
 highlight article "^Date: .*$" color4 default
 
-# Podbeuter {{{1
+# }}}
+# podbeuter {{{
 #player "mplayer"
 #download-path "~/Podcasts"
 #max-downloads 3
 
-# Bindings {{{1
+# }}}
+# key bindings {{{
 bind-key k      prev-unread
 bind-key j      next-unread
 bind-key <esc>k prev-feed
@@ -49,3 +52,5 @@ bind-key l      pagedown
 bind-key p      pb-play  podbeuter
 bind-key o      open-in-browser
 bind-key SPACE  toggle-article-read
+
+# }}}
