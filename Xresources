@@ -1,10 +1,10 @@
 ! ------------------------------------------------------------- !
 ! file:     ~/.Xresources
 ! author:   serdotlinecho
-! vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
+! vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:fdm=marker:ft=xdefaults:
 ! ------------------------------------------------------------- !
 
-! -- Urxvt -- !
+! ----- urxvt {{{
 URxvt*termName:         rxvt-256color
 URxvt*loginShell:       false
 URxvt*urgentOnBell:     true
@@ -18,28 +18,22 @@ URxvt*saveLines:        512
 URxvt*borderless:       false
 URxvt*iso14755:         false
 
-! -- Colors -- !
+! }}}
+! ----- color, fonts and cursor {{{
 #include "/home/serdotlinecho/.colors/invisibone"
 ! For solarized colorscheme
 ! URxvt.intensityStyles:  false
-
-! -- Fonts settings -- !
+URxvt*font:-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*
+URxvt*boldFont:-*-termsynu-bold-r-*-*-14-*-*-*-*-*-*-*
 Xft.hintstyle: hintmedium
 Xft.hinting:   true
 Xft.antialias: true
 Xft.dpi:       96
 Xft.rgba:      rgb
+Xcursor.theme: AnArchCursor-22
 
-! -- Fonts -- !
-URxvt*font:-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*
-URxvt*boldFont:-*-termsynu-bold-r-*-*-14-*-*-*-*-*-*-*
-! URxvt*font:-gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646-1
-! URxvt*boldFont:-gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
-
-! -- Cursor -- !
-Xcursor.theme: Vanilla-DMZ-AA
-
-! ! -- Extensions -- !
+! }}}
+! ----- extensions {{{
 URxvt.perl-ext-common:          default,clipboard,matcher,url-select,keyboard-select
 URxvt.keysym.M-c:               perl:clipboard:copy
 URxvt.keysym.M-v:               perl:clipboard:paste
@@ -52,8 +46,11 @@ URxvt.keysym.M-s:               perl:keyboard-select:search
 URxvt.url-launcher:             firefox
 URxvt.matcher.button:           1
 
-! -- Xautolock screen locker -- !
+! }}}
+! ----- xautolock screen locker {{{
 Xautolock.time:        10
 Xautolock.corners:     -+00
 Xautolock.cornerdelay: 10
 Xautolock.locker:      i3lock -c 232323
+
+! }}}
