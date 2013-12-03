@@ -1,0 +1,6 @@
+# MPV preferences
+# vim:ft=conf:
+
+vo = xv
+ao = pulse
+osc = no
