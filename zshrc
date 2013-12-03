@@ -35,7 +35,7 @@ DISABLE_CORRECTION="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(fasd zsh-syntax-highlighting git colored-man vi-mode)
+plugins=(fasd git vi-mode colored-man zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
