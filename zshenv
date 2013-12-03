@@ -3,5 +3,3 @@
 
 # setup environment
 export EDITOR="vim"
-# export BROWSER="dwb"
-export BROWSER="firefox"
