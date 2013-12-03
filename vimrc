@@ -33,8 +33,8 @@ colorscheme bubblegum
 
 " }}}
 " ----- editing behaviour {{{
-set tabstop=4           " tabs appear as n number of columns
-set shiftwidth=4        " n cols for auto-indenting
+" set tabstop=4           " tabs appear as n number of columns
+" set shiftwidth=4        " n cols for auto-indenting
 set expandtab           " insert spaces instead of tabs
 set autoindent          " auto indents next new line
 set number              " show the line number for each line
@@ -65,7 +65,7 @@ set smartcase           " override 'ignorecase' when pattern has upper case char
 let mapleader = ","
 
 " reload .vimrc
-map <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'source completed'"<CR>
+map <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'Source completed'"<CR>
 
 " Y to yank to end of line
 map Y y$
