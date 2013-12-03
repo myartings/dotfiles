@@ -15,6 +15,7 @@ i3
 i3status.conf
 mpd
 mplayer
+mpv
 ncmpcpp
 tmux.conf
 vim
