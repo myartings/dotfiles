@@ -21,9 +21,9 @@ notify-program "notify-send"
 # theme {{{
 #color background        color12 color8
 #color listnormal        default default
-color listfocus         color7 color8 bold
+color listfocus         color7 color4 bold
 color listnormal_unread color15 default
-color listfocus_unread  color7 color8 bold
+color listfocus_unread  color7 color4 bold
 color info              color8 color0 bold
 #color article           default default
 

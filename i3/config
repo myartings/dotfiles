@@ -14,16 +14,8 @@ default_orientation vertical
 # border style <normal|1pixel>
 new_window pixel 1
 
-# window rules
-for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter|MPlayer|mpv)$"] floating enable
-for_window [class="^(MPlayer|mpv)$"] border normal
-for_window [class="^Firefox$" title="^Library$"] floating enable
-for_window [class="^Firefox$" title="^Library$"] border normal
-
-# assign the following to specific workspaces
-assign [class="^(Firefox|Dwb)$"] 2:www
-assign [class="^(Thunar|Zathura)$"] 4:file
-assign [class="^URxvt$" title="^irssi$"] 3:chat
+# font for window titles. ISO 10646 = Unicode
+font "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*"
 
 # class                 border  backgr. text    indicator
 client.focused          #303030 #686868 #ffffff #2e9ef4
@@ -31,14 +23,21 @@ client.focused_inactive #333333 #303030 #ffffff #484e50
 client.unfocused        #333333 #222222 #cfcfcf #292d2e
 client.urgent           #d370a3 #ffa7da #ffffff #ffa7da
 
+# window rules
+for_window [class="^(Gcolor2|Gnome-keyring-prompt-3|Gcr-prompter|MPlayer|mpv|Sxiv)$"] floating enable
+for_window [class="^(MPlayer|mpv)$"] border normal
+for_window [class="^Firefox$" title="^Library$"] floating enable
+for_window [class="^Firefox$" title="^Library$"] border normal
+
+# assign the following to specific workspaces
+assign [class="^(Firefox|Dwb)$"] 2
+assign [class="^(Thunar|Zathura)$"] 3
+
 # open terminal
 bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc
 
 # app launching
 bindsym $mod+p exec dmenu_run -y 20 -fn "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#303030' -nf '#cfcfcf' -sb '#6095c5' -p 'Run:'
-
-# open irssi
-bindsym $mod+i exec "urxvtc -e irssi"
 
 # autostart
 exec urxvtc -e tmux
@@ -46,9 +45,6 @@ exec urxvtc -e tmux
 # take screenshot with PrtSc key
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
 bindsym mod1+Print exec --no-startup-id import -window "$(xdotool getwindowfocus -f)" ~/Pictures/snapwin-$(date +%F_%H%M%S_%N).png
-
-# font for window titles. ISO 10646 = Unicode
-font "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*"
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -90,7 +86,7 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# toggle tiling / floating
+# toggle tiling/floating
 bindsym $mod+space floating toggle
 
 # change focus between tiling / floating windows
@@ -109,22 +105,22 @@ bindsym $mod+BackSpace move scratchpad
 bindsym $mod+grave scratchpad show
 
 # customize workspace names
-set $ws1 1:term
-set $ws2 2:www
-set $ws3 3:chat
-set $ws4 4:file
+#set $ws1 1:term
+#set $ws2 2:www
+#set $ws3 3:chat
+#set $ws4 4:file
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
 
 # switch between the current and the previously focused one
 bindsym $mod+n workspace next
@@ -168,8 +164,8 @@ bindsym $mod+r mode "resize"
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '3%+'"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '2%-'"
 
-# lock screen
-bindsym $mod+Control+x exec i3lock -d -c 444444
+# suspend and lock screen
+bindsym $mod+Control+x exec systemctl suspend
 
 # i3bar
 bar {
