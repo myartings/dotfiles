@@ -12,8 +12,9 @@ cfg-i3conf() { $EDITOR ~/.i3/config ;}
 cfg-i3status() { $EDITOR ~/.i3status.conf ;}
 cfg-mplayer() { $EDITOR ~/.mplayer/config ;}
 cfg-ncmpcpp() { $EDITOR ~/.ncmpcpp/config ;}
-cfg-newsbeuter() { $EDITOR ~/.newsbeuter/config ;}
-    url-newsbeuter() { $EDITOR ~/.newsbeuter/urls ;}
+cfg-newsbeuter() { $EDITOR ~/.config/newsbeuter/config ;}
+    url-newsbeuter() { $EDITOR ~/.config/newsbeuter/urls ;}
+cfg-rtorrent() { $EDITOR ~/.rtorrent.rc ;}
 cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
     rld-tmuxrc() { tmux source-file ~/.tmux.conf ;}
 cfg-vimp() { $EDITOR ~/.vimperatorrc ;}
