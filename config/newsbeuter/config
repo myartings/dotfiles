@@ -4,21 +4,20 @@
 #  vim: fdm=marker:ft=config:
 ######################################
 
-# settings {{{
+# ----- settings {{{
 always-display-description true
-browser $BROWSER
-player mplayer
+browser "firefox -new-tab %u 2> /dev/null &"
 external-url-viewer "urlview"
 goto-first-unread yes
 ignore-mode "display"
 refresh-on-startup yes
 auto-reload yes
 reload-time 30
-confirm-exit yes
+notify-format "RSS: New %d Unread %n"
 notify-program "notify-send"
 
 # }}}
-# theme {{{
+# ----- theme {{{
 #color background        color12 color8
 #color listnormal        default default
 color listfocus         color7 color4 bold
@@ -34,13 +33,13 @@ highlight article "^Link: .*$" color6 default
 highlight article "^Date: .*$" color4 default
 
 # }}}
-# podbeuter {{{
-#player "mplayer"
-#download-path "~/Podcasts"
-#max-downloads 3
+# ----- podbeuter {{{
+download-path "~/Podcasts/%n"
+max-downloads 2
+player "mpv"
 
 # }}}
-# key bindings {{{
+# ----- key bindings {{{
 bind-key k      prev-unread
 bind-key j      next-unread
 bind-key <esc>k prev-feed
@@ -49,8 +48,8 @@ bind-key J      next
 bind-key K      prev
 bind-key h      pageup
 bind-key l      pagedown
-bind-key p      pb-play  podbeuter
-bind-key o      open-in-browser
+bind-key o      open-in-browser-and-mark-read
+bind-key f      open-in-browser
 bind-key SPACE  toggle-article-read
 
 # }}}
