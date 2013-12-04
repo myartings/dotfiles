@@ -11,7 +11,6 @@ olddir=~/dotfiles_old   # old dotfiles backup directory
 files="colors
 dir_colors
 gtkrc-2.0
-i3
 i3status.conf
 mpd
 mplayer
