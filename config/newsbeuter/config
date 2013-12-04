@@ -6,7 +6,8 @@
 
 # ----- settings {{{
 always-display-description true
-browser "firefox -new-tab %u 2> /dev/null &"
+#browser "firefox -new-tab %u 2> /dev/null &"
+browser "dwb %u 2> /dev/null &"
 external-url-viewer "urlview"
 goto-first-unread yes
 ignore-mode "display"
@@ -15,6 +16,7 @@ auto-reload yes
 reload-time 30
 notify-format "RSS: New %d Unread %n"
 notify-program "notify-send"
+save-path "~/Downloads/Articles"
 
 # }}}
 # ----- theme {{{
@@ -34,7 +36,7 @@ highlight article "^Date: .*$" color4 default
 
 # }}}
 # ----- podbeuter {{{
-download-path "~/Podcasts/%n"
+download-path "~/Downloads/%n"
 max-downloads 2
 player "mpv"
 
@@ -49,7 +51,7 @@ bind-key K      prev
 bind-key h      pageup
 bind-key l      pagedown
 bind-key o      open-in-browser-and-mark-read
-bind-key f      open-in-browser
+bind-key O      open-in-browser
 bind-key SPACE  toggle-article-read
 
 # }}}
