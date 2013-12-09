@@ -57,6 +57,13 @@ battery 1 {
         threshold_type = "percentage"
 }
 
+volume master {
+        format = "í %volume"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
 run_watch DHCP {
         pidfile = "/var/run/dhclient*.pid"
 }

@@ -1,2 +1,2 @@
 #!/bin/bash
-notify-send "RTorrent: torrent $1 finished downloading"
+notify-send "Torrent $1 finished downloading"
