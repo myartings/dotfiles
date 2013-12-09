@@ -8,9 +8,10 @@
 cfg-alias() { $EDITOR ~/.zsh/zshrc.alias ;}
 cfg-function() { $EDITOR ~/.zsh/zshrc.function ;}
 cfg-awesome() { $EDITOR ~/.config/awesome/rc.lua ;}
-cfg-i3conf() { $EDITOR ~/.i3/config ;}
-cfg-i3status() { $EDITOR ~/.i3status.conf ;}
+cfg-i3conf() { $EDITOR ~/.config/i3/config ;}
+cfg-i3status() { $EDITOR ~/.config/i3status/config ;}
 cfg-mplayer() { $EDITOR ~/.mplayer/config ;}
+cfg-mpv() { $EDITOR ~/.mpv/config ;}
 cfg-ncmpcpp() { $EDITOR ~/.ncmpcpp/config ;}
 cfg-newsbeuter() { $EDITOR ~/.config/newsbeuter/config ;}
     url-newsbeuter() { $EDITOR ~/.config/newsbeuter/urls ;}
@@ -52,27 +53,31 @@ fi
 
 # play youtube video with youtube-viewer and mplayer
 ytv() { youtube-viewer -C $@ ;}
+# adammckola
+yts-adammckola() { youtube-viewer -C --results 10 -u adammckola ;}
 # fulltimedevils
 yts-fulltimedevils() { youtube-viewer -C --results 10 -u fulltimedevils ;}
 # gotbletu
 yts-gotbletu() { youtube-viewer -C --results 10 -u gotbletu ;}
-# Gregory Mannarino
+# gregory Mannarino
 yts-gregvegas() { youtube-viewer -C --results 10 -u gregvegas5909 ;}
-# Jupiter Broadcasting
+# jupiter Broadcasting
 yts-jbcast() { youtube-viewer -C --results 10 -u jupiterbroadcasting ;}
 # linux4unme
 yts-linux4unme() { youtube-viewer -C --results 10 -u linux4unme ;}
-# Yu-Jie Lin
+# yu-Jie Lin
 yts-livibetter() { youtube-viewer -C --results 10 -u livibetter ;}
-# Kris Occhipinti
+# kris Occhipinti
 yts-metalx1000() { youtube-viewer -C --results 10 -u metalx1000 ;}
-# Muktware
+# mufc on yt
+yts-mufconyt() { youtube-viewer -C --results 10 -u thempdgamer ;}
+# muktware
 yts-muktware() { youtube-viewer -C --results 10 -u muktware ;}
 # ohheyitslou
 yts-ohheyitslou() { youtube-viewer -C --results 10 -u ohheyitslou ;}
 # RT
 yts-rt() { youtube-viewer -C --results 10 -u russiatoday ;}
-# Valve
+# valve
 yts-valve() { youtube-viewer -C --results 10 -u valve ;}
 # velocitiesinmusic
 yts-velocitiesinmusic() { youtube-viewer -C --results 10 -u velocitiesinmusic ;}
