@@ -62,7 +62,7 @@ bindkey '^H' backward-delete-char
 
 # # history search in vim mode
 # http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
-bindkey -M viins '^s' history-incremental-search-backward
-bindkey -M vicmd '^s' history-incremental-search-backward
+bindkey -M viins '^s' history-incremental-pattern-search-backward
+bindkey -M vicmd '^s' history-incremental-pattern-search-backward
 
 # }}}

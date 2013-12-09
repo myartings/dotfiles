@@ -13,6 +13,7 @@ alias vless='/usr/share/vim/vim74/macros/less.sh'
 alias scb='sudo setpci -s 00:02.0 F4.B=70'  # set screen brightness to 70
 alias gensums='[[ -f PKGBUILD ]] && makepkg -g >> PKGBUILD' # generate integrity checks for source files
 alias pacmod='pacman -Qii $@ | awk '/^MODIFIED/ {print $2}''
+alias pacnew='egrep "pac(new|orig|save)" /var/log/pacman.log'
 alias wlist='nmcli -p dev wifi'  # list available wifi
 alias wup='nmcli -p con up id'    # connect to wifi
 alias wdown='nmcli -p con down id' # disconnect from wifi
@@ -28,6 +29,7 @@ alias ytdl3c='youtube-dl -f 18 $(xsel -b)'
 alias ytdl2c='youtube-dl -f 5 $(xsel -b)'
 alias ytv3c='youtube-viewer -3 $(xsel -b)'
 alias mpv3c='mpv --quvi-format=medium_mp4_i18_360p $(xsel -b)'
+alias mpv2c='mpv --quvi-format=small_flv_i05_240p $(xsel -b)'
 alias almi='alsamixer -c 0'
 alias wgetc='wget $(xsel -b)'
 alias rt='rtorrent'
