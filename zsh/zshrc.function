@@ -51,6 +51,11 @@ define() {
 fi
 }
 
+# set the cpu frequency scaling governor
+function setgov() {
+    echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+}
+
 # play youtube video with youtube-viewer and mplayer
 ytv() { youtube-viewer -C $@ ;}
 # adammckola
@@ -69,8 +74,6 @@ yts-linux4unme() { youtube-viewer -C --results 10 -u linux4unme ;}
 yts-livibetter() { youtube-viewer -C --results 10 -u livibetter ;}
 # kris Occhipinti
 yts-metalx1000() { youtube-viewer -C --results 10 -u metalx1000 ;}
-# mufc on yt
-yts-mufconyt() { youtube-viewer -C --results 10 -u thempdgamer ;}
 # muktware
 yts-muktware() { youtube-viewer -C --results 10 -u muktware ;}
 # ohheyitslou
