@@ -14,11 +14,10 @@ mpd_crossfade_time = "5"
 # }}}
 # ----- UI {{{
 song_list_format = " {$2%a$1 - }{$8%t$1}$R{$4%l} "
-song_status_format = "{$8%a$9 $9>$9 $b$8%t$/b$9 $9>$9 $8%b$9 {$9>$9 $8%y$9}}|{$8%f$9}"
+song_status_format = "$2%t $0on $8%b $0by $8%a$0"
 selected_item_prefix = "$8"
 selected_item_suffix = "$9"
-alternative_header_first_line_format = "$b$8$aqqu$/a$9 $/b$6{%t}|{%f}$9 $b$8$atqq$/a$9$/b"
-alternative_header_second_line_format = "{{$4%a$9}{ ($5%y$9$/b)}}|{%D}"
+header_visibility = "no"
 now_playing_prefix = ">>"
 # progressbar_look = "─╼ "
 progressbar_look = "─░─"

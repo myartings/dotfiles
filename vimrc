@@ -25,6 +25,7 @@ Bundle "garbas/vim-snipmate"
 Bundle 'tomtom/tcomment_vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
+Bundle "PotatoesMaster/i3-vim-syntax"
 
 " }}}
 " ----- highlighting {{{

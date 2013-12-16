@@ -17,6 +17,8 @@ URxvt.cursorBlink:      false
 URxvt*saveLines:        512
 URxvt*borderless:       false
 URxvt*iso14755:         false
+URxvt.depth: 32
+URxvt.background: rgba:2600/2600/2600/dddd
 
 ! }}}
 ! ----- color, fonts and cursor {{{

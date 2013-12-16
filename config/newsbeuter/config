@@ -16,6 +16,7 @@ auto-reload yes
 reload-time 30
 notify-format "RSS: New %d Unread %n"
 notify-program "notify-send"
+notify-always yes
 
 # }}}
 # ----- theme {{{

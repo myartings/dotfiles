@@ -45,6 +45,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f $HOME/.zsh/zshrc.function ] && . $HOME/.zsh/zshrc.function
 [ -e $HOME/.zsh/notifyosd.zsh ] && . $HOME/.zsh/notifyosd.zsh
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 PATH=$PATH:/home/serdotlinecho/dotfiles/scripts
 
 # ccache

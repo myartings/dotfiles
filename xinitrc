@@ -12,22 +12,25 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
     unset f
 fi
 
-# load Xresources
-[[ -f $HOME/.Xresources ]] && xrdb -merge $HOME/.Xresources
+# load up Xresources
+[[ -f $HOME/.Xresources && -r ~/.Xresources ]] && xrdb -merge $HOME/.Xresources
 
 xset +fp /usr/share/fonts/local
 xset fp rehash
 
-# set wallpaper
-sh $HOME/.fehbg
+# load a background image
+[[ -f ~/.fehbg && -r ~/.fehbg ]] && { sh ~/.fehbg & }
 
-# set cursor
+# set the cursor
 xsetroot -cursor_name left_ptr &
 
-# urxvt daemon
-urxvtd -q -o -f &
+# start a urxvt daemon
+hash urxvtd 2>/dev/null && urxvtd -q -o -f &
 
-# screen locker
+# Start compositing manager
+hash xcompmgr 2>/dev/null && { xcompmgr -c & }
+
+# start a screen locker
 xautolock &
 
 # launch wm
