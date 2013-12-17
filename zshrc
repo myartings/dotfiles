@@ -1,7 +1,6 @@
 # -------------------------------------------
 # file: ~/.zshrc
 # https://github.com/robbyrussell/oh-my-zsh
-# author: serdotlinecho
 # vim:fdm=marker:
 # -------------------------------------------
 
@@ -35,7 +34,7 @@ DISABLE_CORRECTION="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(fasd git vi-mode colored-man zsh-syntax-highlighting)
+plugins=(fasd git vi-mode colored-man)
 
 source $ZSH/oh-my-zsh.sh
 
