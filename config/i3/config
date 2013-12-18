@@ -40,7 +40,7 @@ bindsym $mod+Return exec --no-startup-id /usr/bin/urxvtc
 bindsym $mod+p exec dmenu_run -y 20 -fn "-*-termsynu-medium-r-*-*-14-*-*-*-*-*-*-*" -i -nb '#303030' -nf '#cfcfcf' -sb '#6095c5' -p 'Run:'
 
 # autostart
-exec urxvtc -e tmux
+exec urxvt -e zsh -c "tmux -q has-session && exec tmux attach-session -d || exec tmux new-session"
 
 # take screenshot with PrtSc key
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/ 2>/dev/null'
