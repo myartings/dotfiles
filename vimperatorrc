@@ -1,24 +1,29 @@
 " -----------------------------------------------
 " file: ~/.vimperatorrc
 " author: serdotlinecho
-" vim: set fdm=marker ft=vim:
+" vim:fdm=marker:ft=vimperator:
 " -----------------------------------------------
 
 " ----- general settings {{{
 colorscheme darkness2
-" set hintchars=fdsartgbvecwxqyiopmnhzulkj
-set hintchars="hjklasdfgyuiopqwertnmzxcvb"
+set defsearch=ge
+set editor="urxvtc -e vim"
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set noscrollbars
 set autocomplete=false
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set visualbell
 set popups=tab
 set focuscontent
 
 " disable accesskey
 set! ui.key.generalAccessKey=0
+
+" disable tab animation
+set! browser.tabs.animate=false
 
 " always show http
 set! browser.urlbar.trimURLs=false
@@ -27,14 +32,8 @@ set! browser.urlbar.trimURLs=false
 set! ui.caretWidth=1
 set! ui.caretBlinkTime=1000
 
-" JIT
-set! javascript.options.jit.chrome=true
-
-" disable IPv6
-set! network.dns.disableIPv6=true
-
 " }}}
-" ----- custom key mappings {{{
+" ----- custom key mapping {{{
 
 let mapleader = ","
 
@@ -42,9 +41,11 @@ let mapleader = ","
 nnoremap J gt
 nnoremap K gT
 
-" moving tab
-nnoremap <silent> <C-l> :tabmove! +1<CR>
-nnoremap <silent> <C-h> :tabmove! -1<CR>
+" move current tab left/right
+" nnoremap <silent> <C-l> :tabmove! +1<CR>
+" nnoremap <silent> <C-h> :tabmove! -1<CR>
+map <S-Right> :tabmove! +1<CR>
+map <S-Left> :tabmove! -1<CR>
 
 " scroll faster
 " nnoremap j 5j
@@ -59,12 +60,6 @@ noremap <C-n> <Nop>
 
 " show page information
 nnoremap <C-p> g<C-g>
-
-" stop loading the current web page
-nnoremap <silent> <Leader>s :stop<CR>
-
-" list buffers
-nnoremap <Leader>b :buffer!<TAB>
 
 " open bookmarks
 nnoremap <Leader>B :bmarks<Space>
@@ -87,7 +82,10 @@ let g:smooziee_scroll_amount="80"
 let g:smooziee_scroll_interval="20"
 
 " }}}
-" ----- external commands {{{
+" ----- commands and functions {{{
+
+command settings :open about:preferences
+command config :open about:config
 
 " play youtube videos with mpv
 command! -nargs=0 mpv :execute "!urxvt -e mpv --quvi-format=360p \""+content.location.href+"\" "
@@ -96,5 +94,4 @@ command! -nargs=0 mpv :execute "!urxvt -e mpv --quvi-format=360p \""+content.loc
 " ----- source vimperator {{{
 nnoremap <silent> <Leader>v :source ~/.vimperatorrc<CR>:echo<Space>"source completed."<CR>
 source! ~/.vimperatorrc.local
-
 
