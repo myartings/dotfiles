@@ -60,7 +60,7 @@ set ignorecase          " case-insensitive search
 set smartcase           " override 'ignorecase' when pattern has upper case characters
 
 " }}}
-" ----- custom key mapping {{{
+" ----- custom mapping {{{
 
 " change map <leader> from \ to ,
 let mapleader = ","
@@ -68,8 +68,15 @@ let mapleader = ","
 " reload .vimrc
 map <silent> <leader>v :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'Source completed'"<CR>
 
+" allows writing to files with root priviledges
+" command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+cmap w!! w !sudo tee % > /dev/null
+
 " Y to yank to end of line
 map Y y$
+
+" copy to X clipboard
+cmap cc w !xsel -ib > /dev/null
 
 " toggle line numbers
 nnoremap <leader>n :set nonumber!<CR>
@@ -97,6 +104,9 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+" ROT13
+map <F12> ggVGg?
 
 " }}}
 " ----- settings for plugins {{{
